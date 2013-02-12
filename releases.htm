@@ -41,6 +41,21 @@ $(document).ready(function()
 	{$('[title]').qtip({position: {my: 'bottom center', at: 'top center', adjust: {x: 12, y: -6}}});}
 );
 </script>
+
+<script type="text/javascript" src="js/hoverintent.js"></script>
+<script type="text/javascript">
+// Подсветка неактивных (вышедших) фильмов
+$(document).ready(function(){
+	$(".past_day").hoverIntent(superpaston,superpastoff);
+});
+
+function superpaston(){
+	$('.past_day').stop().animate({"opacity": 1}, "normal");
+}
+function superpastoff(){
+	$('.past_day').stop().animate({"opacity": 0.6}, "normal");
+}
+</script>
 </head><body>
 
 
@@ -91,115 +106,19 @@ $(document).ready(function()
 <!-- ============== CONTENT ============== -->
 <div class="content page_movie clearfix">
 
+
 	<div class="page_lists_tabs clearfix">
 		<a href="#" id="page_lists_tab1_hd" class="active">Премьеры&nbsp;по&nbsp;дате</a><a href="#" id="page_lists_tab2_hd" class="inactive">Все&nbsp;премьеры</a>
 	</div>
 
 
-
-
-
-
-<script type="text/javascript" src="js/hoverintent.js"></script>
-<script type="text/javascript">
-// Подсветка неактивных (вышедших) фильмов
-$(document).ready(function(){
-	$(".past_day").hoverIntent(superpaston,superpastoff);
-});
-
-function superpaston(){
-	$('.past_day').stop().animate({"opacity": 1}, "normal");
-}
-function superpastoff(){
-	$('.past_day').stop().animate({"opacity": 0.6}, "normal");
-}
-</script>
-
-
-
-<style type="text/css">
-
-/* Releases */
-.page_movie .releases_datepicker .months {background-color: #3c5e68;}
-.page_game .releases_datepicker .months {background-color: #443655;}
-.page_default .releases_datepicker .months {background-color: #394042;}
-
-
-/* Datepicker */
-.page_releases_short .releases_datepicker {padding: 0 10px 25px 10px;}
-.page_releases_full .releases_datepicker {display: none;}
-
-.page_releases_short .releases_datepicker .years a {display: inline-block; padding: 6px 10px 10px 10px; font-size: 15px;}
-.page_releases_short .releases_datepicker .years a.active {cursor: default; color: #000000; text-shadow: 0 1px 1px #fff7d0; text-decoration: none; -webkit-border-top-left-radius: 8px; -webkit-border-top-right-radius: 8px; -moz-border-radius-topleft: 8px; -moz-border-radius-topright: 8px; border-top-left-radius: 8px; border-top-right-radius: 8px; background: #ffeb67; background: -moz-linear-gradient(top,  #ffeb67 0%, #e9b500 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffeb67), color-stop(100%,#e9b500)); background: -webkit-linear-gradient(top,  #ffeb67 0%,#e9b500 100%); background: -o-linear-gradient(top,  #ffeb67 0%,#e9b500 100%); background: -ms-linear-gradient(top,  #ffeb67 0%,#e9b500 100%);
-background: linear-gradient(to bottom,  #ffeb67 0%,#e9b500 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeb67', endColorstr='#e9b500',GradientType=0 );}
-.page_releases_short .releases_datepicker .years a.past {color: #9db6bf;}
-.page_releases_short .releases_datepicker .years a.past:hover {color: #b6d4df;}
-.page_releases_short .releases_datepicker .years a.past.active,
-.page_releases_short .releases_datepicker .years a.active.past,
-.page_releases_short .releases_datepicker .years a.past.active:hover,
-.page_releases_short .releases_datepicker .years a.active.past:hover {color: #9b9684;}
-
-.page_releases_short .releases_datepicker .months {display: inline-block; margin-bottom: 20px; font-size: 12px; line-height: 30px; box-shadow: 0px 5px 15px rgba(203, 215, 217, 1); -moz-box-shadow: 0px 5px 15px rgba(203, 215, 217, 1); -webkit-box-shadow: 0px 5px 15px rgba(203, 215, 217, 1); filter: progid:DXImageTransform.Microsoft.shadow(direction=90, color=#cbd7d9, strength=4);}
-.page_releases_short .releases_datepicker .months a,
-.page_releases_short .releases_datepicker .months a:visited {display: inline-block; padding: 0 6px 0 6px; font-size: 13px; color: #b6edff;}
-.page_releases_short .releases_datepicker .months a:hover,
-.page_releases_short .releases_datepicker .months a:active {color: #69e1ff;}
-.page_releases_short .releases_datepicker .months a.active {cursor: default; color: #000000; text-shadow: 0 1px 1px #fff7d0; text-decoration: none; background-color: #ffe04d;}
-.page_releases_short .releases_datepicker .months a.past {color: #c0d8e0;}
-.page_releases_short .releases_datepicker .months a.past:hover {color: #e0eaed;}
-.page_releases_short .releases_datepicker .months a.past.active,
-.page_releases_short .releases_datepicker .months a.active.past,
-.page_releases_short .releases_datepicker .months a.past.active:hover,
-.page_releases_short .releases_datepicker .months a.active.past:hover {color: #8d8d8b;}
-
-
-/* Days */
-.page_releases_short .releases_day {position: relative; padding-top: 40px; margin: 10px 10px 60px 10px; background: url('i/releases_day_bg.png') left top repeat-x; -webkit-border-top-right-radius: 14px; -moz-border-radius-topright: 14px; border-top-right-radius: 14px;}
-.page_releases_short .releases_day h4 {position: absolute; top: -15px; left: 0px; padding: 5px 10px; font-size: 20px; font-weight: normal; line-height: 20px; color: #000000; text-shadow: 0 1px 1px #fff7d0; background-color: #ffe04d; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;}
-
-.page_releases_short .releases_day ul li {display: inline-block; width: 214px; min-height: 70px; padding: 0; margin: 0 0 20px 10px; vertical-align: top; /* IE7 fix*/ zoom: 1; *display: inline;}
-.page_releases_short .releases_day a.poster {display: inline-block; float: left; width: 48px; height: 65px; border: 1px solid #e0e0e0; text-decoration: none; background-color: #e1e1e1; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
-.page_releases_short .releases_day div.info {display: inline-block; float: left; width: 154px; margin: 0 5px 5px 5px;}
-.page_releases_short .releases_day div.info h5 {margin-bottom: 4px; font-size: 14px; font-weight: normal; line-height: 15px;}
-.page_releases_short .releases_day div.info h6 {margin-bottom: 3px; font-size: 11px; font-weight: normal; line-height: 12px; color: #363e41;}
-.page_releases_short .releases_day div.info p {margin-bottom: 3px; font-size: 11px; line-height: 12px; color: #7b8285;}
-
-.page_releases_short .releases_day span.rating {display: inline-block; cursor: default; min-width: 12px; padding: 1px 4px 1px 4px; font-size: 11px; line-height: 12px; font-weight: normal; text-align: center;}
-.page_releases_short .site_rating_good {color: #ffffff; background-color: #00ba1f;}
-.page_releases_short .site_rating_average {color: #ffffff; background-color: #ffa200;}
-.page_releases_short .site_rating_bad {color: #ffffff; background-color: #de160a;}
-.page_releases_short .site_rating_awful {color: #ffffff; background-color: #404040;}
-.page_releases_short .site_rating_none {color: #ffffff; background-color: #cfcfcf;}
-
-
-.releases_day.past_day {opacity: 0.60; -moz-opacity: 0.60; -khtml-opacity: 0.60; filter: alpha(opacity=60);}
-.page_releases_short .releases_day.past_day {padding-top: 25px; background-image: none;}
-.page_releases_short .releases_day.past_day h4 {padding: 5px 10px; font-size: 16px; font-weight: normal; line-height: 16px; color: #747474; text-shadow: 0 1px 1px #f3f3f3; background-color: #e8e8e8;}
-.page_releases_short .releases_day.past_day ul li {min-height: 40px; margin: 0 0 10px 10px;}
-.page_releases_short .releases_day.past_day a.poster {display: none;}
-.page_releases_short .releases_day.past_day h5 a,
-.page_releases_short .releases_day.past_day h5 a:visited {color: #639eb1;}
-.page_releases_short .releases_day.past_day h5 a:hover,
-.page_releases_short .releases_day.past_day h5 a:active {color: #5ab8d7;}
-.page_releases_short .releases_day.past_day div.info {width: 202px; margin: 0 5px 5px 0;}
-.page_releases_short .releases_day.past_day div.info h6 {display: inline; margin-right: 4px; font-size: 11px; line-height: 12px; color: #8a8a8a; vertical-align: top;}
-.page_releases_short .releases_day.past_day div.info p {display: none;}
-.page_releases_short .releases_day.past_day span.rating {display: inline-block; padding: 0 2px 0 2px; vertical-align: top;}
-
-
-
-</style>
-
-
-<!-- RELEASES SHORT -->
+	<!-- RELEASES SHORT -->
 	<div class="page_lists page_lists_default page_releases_short">
 
-
 		<div class="releases_datepicker">
 			<div class="years"><a href="#" class="past">2012</a><a href="#" class="active">2013</a><a href="#" class="">2014</a><a href="#" class="">2015</a></div>
 			<div class="months"><a href="#" class="past">январь</a><a href="#" class="past">февраль</a><a href="#" class="active">март</a><a href="#" class="">апрель</a><a href="#" class="">май</a><a href="#" class="">июнь</a><a href="#" class="">июль</a><a href="#" class="">август</a><a href="#" class="">сентябрь</a><a href="#" class="">октябрь</a><a href="#" class="">ноябрь</a><a href="#" class="">декабрь</a></div>
 		</div>
-
 
 		<div class="clearfix releases_day past_day">
 			<h4>11 марта</h4>
@@ -312,145 +231,8 @@ background: linear-gradient(to bottom,  #ffeb67 0%,#e9b500 100%); filter: progid
 			</ul>
 		</div>
 
-
 	</div>
-
-
-
-
-<!-- RELEASES FULL -->
-	<div class="page_lists page_lists_default page_releases_short" style="display: none;">
-
-
-		<div class="releases_datepicker">
-			<div class="years"><a href="#" class="past">2012</a><a href="#" class="active">2013</a><a href="#" class="">2014</a><a href="#" class="">2015</a></div>
-			<div class="months"><a href="#" class="past">январь</a><a href="#" class="past">февраль</a><a href="#" class="active">март</a><a href="#" class="">апрель</a><a href="#" class="">май</a><a href="#" class="">июнь</a><a href="#" class="">июль</a><a href="#" class="">август</a><a href="#" class="">сентябрь</a><a href="#" class="">октябрь</a><a href="#" class="">ноябрь</a><a href="#" class="">декабрь</a></div>
-		</div>
-
-
-		<div class="clearfix releases_day past_day">
-			<h4>11 марта</h4>
-			<ul>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p><span class="rating site_rating_bad">47</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><p>информация</p></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Магазин самоубийств</a></h5><h6>The Suicide Shop</h6><p>анимация, музыкальный, комедия</p><span class="rating site_rating_awful">7</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Неудержимый</a></h5><h6>Bullet to the Head</h6><p>триллер</p></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хоббит: Нежданное путешествие</a></h5><h6>The Hobbit: An Unexpected Journey</h6><p>приключения, фэнтези, экранизация</p><span class="rating site_rating_good">97</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p><span class="rating site_rating_bad">30</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Проект Динозавр</a></h5><h6>The Dinosaur Project</h6><p>фантастика, триллер</p></div>
-				</li>
-			</ul>
-		</div>
-
-		<div class="clearfix releases_day">
-			<h4>18 марта</h4>
-			<ul>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">В первый раз</a></h5><h6>The First Time</h6><p>мелодрама, комедия</p><span class="rating site_rating_good">92</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гайд-Парк на Гудзоне</a></h5><h6>Hyde Park on Hudson</h6><p>комедия, биография</p></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p><span class="rating site_rating_bad">47</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><p>информация</p></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p><span class="rating site_rating_average">61</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Крутые кексы</a></h5><h6>High School</h6><p>комедия</p></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Магазин самоубийств</a></h5><h6>The Suicide Shop</h6><p>анимация, музыкальный, комедия</p><span class="rating site_rating_awful">7</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Неудержимый</a></h5><h6>Bullet to the Head</h6><p>триллер</p></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хоббит: Нежданное путешествие</a></h5><h6>The Hobbit: An Unexpected Journey</h6><p>приключения, фэнтези, экранизация</p><span class="rating site_rating_good">97</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p><span class="rating site_rating_bad">30</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Проект Динозавр</a></h5><h6>The Dinosaur Project</h6><p>фантастика, триллер</p></div>
-				</li>
-			</ul>
-		</div>
-
-		<div class="clearfix releases_day">
-			<h4>25 марта</h4>
-			<ul>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p><span class="rating site_rating_bad">47</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><p>информация</p></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p><span class="rating site_rating_average">61</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p><span class="rating site_rating_bad">30</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
-				</li>
-			</ul>
-		</div>
-
-		<div class="clearfix releases_day">
-			<h4>31 марта</h4>
-			<ul>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><p>информация</p></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p><span class="rating site_rating_average">61</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p><span class="rating site_rating_bad">30</span></div>
-				</li>
-				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
-				</li>
-			</ul>
-		</div>
-
-
-	</div>
-
-
-
-
-
-
-
-
-
-
+	<!-- //RELEASES SHORT -->
 
 
 	<div class="page_lists_side clearfix">
