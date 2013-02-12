@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>Критиканство &#8212; Издание &laquo;Афиша&raquo;</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1061">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="apple-touch-icon" href="apple-touch-icon.png"><!-- 144x114 -->
+<link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<script type="text/javascript" src="js/jquery.1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="js/jquery.rating.pack.js"></script>
+<!--script type="text/javascript" src="js/jquery.color.js"></script>
+<script type="text/javascript" src="js/css_browser_selector.js"></script-->
+<script type="text/javascript">
+// Qtip
+$(document).ready(function()
+	{$('[title]').qtip({position: {my: 'bottom center', at: 'top center', adjust: {x: 12, y: -6}}});}
+);
+</script>
+<!-- Smooth scroll to anchors -->
+<script type="text/javascript">
+		function goToByScroll(id){
+     			$('html,body').animate({scrollTop: $("#"+id).offset().top},'normal');
+		}
+</script>
+
+</head><body>
+
+
+
+<!-- ============== TOP ============== -->
+<div class="userbar clearfix">
+	<div class="guest_wrap">
+		<a href="#" class="guest_login"><span>Вход на сайт</span></a>
+		<a href="#" class="button_add" title="Добавить ссылку на рецензию">Добавить&nbsp;<b>&#43;</b></a>
+	</div>
+</div>
+
+<div class="menu clearfix">
+	<a href="#"><img src="i/logo.png" alt="" class="logo"></a>
+	<div class="search">
+		<form id="searchForm"><fieldset><input type="text" name="s" id="s" value=""><input type="submit" id="search_submit" value="OK"></fieldset></form>
+	</div>
+	<div id="tabs">
+		<ul>
+		<li><a href="#" id="tab_first" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_first').show();">Фильмы</a></li>
+		<li><a href="#" id="tab_second" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_second').show();">Игры</a></li>
+		<li><a href="javascript:void(0)" id="tab_third" class="parent" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_third').show();">Критики</a></li>
+		<li><a href="#" id="tab_fourth" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_fourth').show();">Блог</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="submenu">
+	<div style="display: none;" id="subtabs_first" onmouseover="$('#tab_first').addClass('subtabs_hover');" onmouseout="$('#tab_first').removeClass('subtabs_hover');">
+		<ul><li><a href="javascript:void(0)" class="">Скоро в прокате</a></li><li><a href="#" class="">Лучшие и худшие за год</a></li><li><a href="#" class="">Лучшие и худшие за всё время</a></li><li><a href="#" class="">Выбор пользователей</a></li><li><a href="#" class="">Кассовые сборы</a></li></ul>
+	</div>
+	<div style="display: none;" id="subtabs_second" onmouseover="$('#tab_second').addClass('subtabs_hover');" onmouseout="$('#tab_second').removeClass('subtabs_hover');">
+		<ul><li><a href="#" class="">Скоро в продаже</a></li><li><a href="#" class="">Лучшие и худшие за год</a></li><li><a href="#" class="">Лучшие и худшие за всё время</a></li><li><a href="#" class="">Выбор пользователей</a></li><li><a href="#" class="">Рейтинги продаж</a></li></ul>
+	</div>
+	<div style="display: block;" id="subtabs_third">
+		<ul><li><a href="#" class="">Лучшие и худшие критики</a></li><li><a href="javascript:void(0)" class="parent">Лучшие и худшие издания</a></li><li><a href="#" class="">Рейтинг &laquo;мудрецов&raquo;</a></li><li><a href="#" class="">Самые активные критики</a></li></ul>
+	</div>
+	<div style="display: none;" id="subtabs_fourth" onmouseover="$('#tab_fourth').addClass('subtabs_hover');" onmouseout="$('#tab_fourth').removeClass('subtabs_hover');">
+		<ul><li><a href="#" class="">Архив записей</a></li><li><a href="#" class="">Комментарии</a></li></ul>
+	</div>
+	<div style="display: none;" id="subtabs_slogan">Сайт, где объективная критика невозможна</div>
+</div>
+<!-- ============== // TOP ============== -->
+
+
+
+<!-- ============== CONTENT ============== -->
+<div class="content clearfix">
+
+	<div class="page_item_title">
+		<h1>Афиша</h1>
+	</div>
+
+	<div class="page_default clearfix">
+
+		<div class="page_critic_ratings clearfix">
+			<div class="page_critic_photo" style="background-image: url('temp/cover1.jpg');">&nbsp;</div>
+			<div class="page_critic_user_rating users_rating_good"><h4>95</h4>Рейтинг издания среди<br><u>посетителей &laquo;Критиканства&raquo;</u><i>14 место в общем рейтинге</i></div>
+			<div class="page_critic_average_rating site_rating_average"><h4>64</h4><u>Средняя оценка</u>, которую выставляют критики издания<i>1445 рецензий</i></div>
+			<div class="page_critic_wisdom critic_wisdom_heavy"><div>&nbsp;</div>&laquo;<span class="pseudolink" onClick="goToByScroll('wisdom_list')">Мудрость</span>&raquo; проявлена критиками издания 145 раз<br> <i>Градус &laquo;мудрости&raquo; <u>критический</u></i></div>
+		</div>
+		
+		<div class="page_critic_info clearfix">
+			<div class="page_item_user_rating rate_critic">
+				<p>Ваша оценка издания</p>
+				<div>
+				<input name="star1" type="radio" class="star" title="10">
+				<input name="star1" type="radio" class="star" title="20">
+				<input name="star1" type="radio" class="star" title="30">
+				<input name="star1" type="radio" class="star" title="40">
+				<input name="star1" type="radio" class="star" title="50">
+				<input name="star1" type="radio" class="star" title="60">
+				<input name="star1" type="radio" class="star" title="70">
+				<input name="star1" type="radio" class="star" title="80">
+				<input name="star1" type="radio" class="star" title="90">
+				<input name="star1" type="radio" class="star" title="100">
+				</div>
+			</div>
+
+			<div class="page_critic_timeline">
+				<div class="page_critic_empl">
+					<span>Критики</span>
+					<p><b><a href="#">Станислав Зельвенский</a></b> (43 рецензии)</p>
+					<p><b><a href="#">Лидия Маслова</a></b> (215 рецензий)</p>
+					<p><b><a href="#">Александр Голубчиков</a></b> (4 рецензии)</p>
+					<p><b><a href="#">Алекс Экслер</a></b> (1 рецензия)</p>
+					<p><b><a href="#">Роман Волобуев</a></b> (126 рецензий)</p>
+					<p><b><a href="#">Станислав Зельвенский</a></b> (1001 рецензия)</p>
+					<p><b><a href="#">Лидия Маслова</a></b> (16 рецензий)</p>
+					<p><b><a href="#">Александр Голубчиков</a></b> (4 рецензии)</p>
+					<p><b><a href="#">Алекс Экслер</a></b> (1 рецензия)</p>
+					<p><b><a href="#">Роман Волобуев</a></b> (126 рецензий)</p>
+					<p>&nbsp;</p><p><b><a href="#" class="page_critic_pseudolink">Еще 10 авторов издания</a></b></p>
+				</div>
+			</div>
+			<div class="page_item_share_short">
+				<p>Поделиться ссылкой</p><a href="#" title="ВКонтакте" class="vk">&nbsp;</a><a href="#" title="Facebook" class="fb">&nbsp;</a><a href="#" title="Twitter" class="twitter">&nbsp;</a><a href="#" title="LiveJournal" class="livejournal">&nbsp;</a>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+	<div class="page_default clearfix">
+
+		<div class="item_reviews_list_sorting clearfix">
+			<div class="source">Критик, <a href="#" class="active">дата</a></div>
+			<div class="grade"><a href="#" class="">Оценка критика</a></div>
+		</div>
+	
+		<div class="item_reviews_list_header">
+			<h2>Рецензии</h2>
+			<!--div class="ad_side_small"><a href="#"><img src="temp/banner2.png" alt=""></a></div-->
+		</div>
+	
+		<div class="item_reviews_list clearfix">
+			<!--div class="noreviews clearfix"><a href="#" class="button_add" title="Добавить ссылку на рецензию">Добавить&nbsp;<b>&#43;</b></a><u>Рецензий пока нет<i>Если вы нашли обзор, можете добавить его на сайт.</i></u></div-->
+			<div class="row_a clearfix">
+				<div class="source"><a href="#">Станислав Зельвенский</a><i>19 августа</i></div>
+				<div class="author">
+					<p><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Хоббит: Нежданное путешествие</a></p>
+					<p class="review_links"><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Обсудить рецензию</a><span class="comments_count">(35)</span> <a href="#" target="_blank">Прочесть рецензию</a><span class="newwindow">&nbsp;</span></p>
+				</div>
+				<div class="rating site_rating_average"><h4>70</h4><span class="help" title="Поскольку издание не выставило явную оценку, она была определена редакцией «Критиканства» исходя из тона рецензии">&#8212; (нормально)</span></div>
+			</div>
+			<div class="row_b clearfix">
+				<div class="source"><a href="#">Лидия Маслова</a><i>18 августа</i></div>
+				<div class="author">
+					<p><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Голодные игры</a></p>
+					<p class="quote">«Неудержимые» по-прежнему настраивают рецензентов на сентиментальные метафоры, но этот фильм если и похож на семейное сборище, то не на день рождения любимого дедушки, как первая серия, а, больно говорить, скорее на поминки по нему же.</p>
+					<p class="review_links"><span class="wisdom_grade" style="background-image: url('i/wisdom_grade3.png');" title="Градус «мудрости» в рецензии критический">&nbsp;</span><a href="#">Обсудить рецензию</a><span class="comments_count">(30)</span> <a href="#" target="_blank">Прочесть рецензию</a><span class="newwindow">&nbsp;</span></p>
+				</div>
+				<div class="rating site_rating_good"><h4>92</h4><span class="" title="">5/5</span></div>
+			</div>
+			<div class="row_a clearfix">
+				<div class="source"><a href="#">Александр Голубчиков</a><i>18 августа</i></div>
+				<div class="author">
+					<p><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Репортаж из преисподней</a></p>
+					<p class="review_links"><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Начать обсуждение</a><span class="comments_count">&nbsp;</span> <a href="#" target="_blank">Прочесть рецензию</a><span class="newwindow">&nbsp;</span></p>
+				</div>
+				<div class="rating site_rating_bad"><h4>15</h4><span class="help" title="Поскольку издание не выставило явную оценку, она была определена редакцией «Критиканства» исходя из тона рецензии">&#8212; (плохо)</span></div>
+			</div>
+			<div class="row_b clearfix">
+				<div class="source"><a href="#">Алекс Экслер</a><i>19 августа</i></div>
+				<div class="author">
+					<p><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Мстители</a></p>
+					<p class="review_links"><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Обсудить рецензию</a><span class="comments_count">(35)</span> <a href="#" target="_blank">Прочесть рецензию</a><span class="newwindow">&nbsp;</span></p>
+				</div>
+				<div class="rating site_rating_good"><h4>95</h4><span class="" title="">Охуительное кино</span></div>
+			</div>
+			<div class="row_a clearfix">
+				<div class="source"><a href="#">Роман Волобуев</a><i>19 августа</i></div>
+				<div class="author">
+					<p><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Обитель зла: Возмездие</a></p>
+					<p class="review_links"><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Обсудить рецензию</a><span class="comments_count">(1)</span> <a href="#" target="_blank">Прочесть рецензию</a><span class="newwindow">&nbsp;</span></p>
+				</div>
+				<div class="rating site_rating_awful"><h4>5</h4><span class="" title="">0/5</span></div>
+			</div>
+			<div class="row_b clearfix">
+				<div class="source"><a href="#">Станислав Зельвенский</a><i>18 августа</i></div>
+				<div class="author">
+					<p><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Тачбэк</a></p>
+					<p class="quote">«Неудержимые» по-прежнему настраивают рецензентов на сентиментальные метафоры, но этот фильм если и похож на семейное сборище, то не на день рождения любимого дедушки, как первая серия, а, больно говорить, скорее на поминки по нему же.</p>
+					<p class="review_links"><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Начать обсуждение</a><span class="comments_count">&nbsp;</span> <a href="#" target="_blank">Прочесть рецензию</a><span class="newwindow">&nbsp;</span></p>
+				</div>
+				<div class="rating site_rating_good"><h4>92</h4><span class="" title="">5/5</span></div>
+			</div>
+			<div class="row_a clearfix">
+				<div class="source"><a href="#">Лидия Маслова</a><i>18 августа</i></div>
+				<div class="author">
+					<p><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Тёмный рыцарь: Возрождение легенды</a></p>
+					<p class="quote">«Неудержимые» по-прежнему настраивают рецензентов на сентиментальные метафоры, но этот фильм если и похож на семейное сборище, то не на день рождения любимого дедушки, как первая серия, а, больно говорить, скорее на поминки по нему же.</p>
+					<p class="review_links"><span class="wisdom_grade" style="background-image: url('i/wisdom_grade1.png');" title="Градус «мудрости» в рецензии умеренный">&nbsp;</span><a href="#">Обсудить рецензию</a><span class="comments_count">(20)</span> <a href="#" target="_blank">Прочесть рецензию</a><span class="newwindow">&nbsp;</span></p>
+				</div>
+				<div class="rating site_rating_good"><h4>92</h4><span class="" title="">5/5</span></div>
+			</div>
+			<div class="item_reviews_list_more"><a href="javascript:void(0)" class="pseudolink">Еще 10 обзоров</a>&bull;<a href="#" class="link">Показать все 145</a></div>
+		</div>
+	
+	</div>
+
+
+
+
+	<div class="page_default clearfix">
+
+		<div class="item_reviews_list_sorting clearfix">
+			<div class="source">Издание, <a href="#" class="active">дата</a></div>
+		</div>
+	
+		<div class="item_wisdom_list_header" id="wisdom_list">
+			<h3>«Мудрость»<br>критиков</h3>
+			<!--div class="ad_side_small"><a href="#"><img src="temp/banner2.png" alt=""></a></div-->
+		</div>
+	
+		<div class="item_reviews_list clearfix">
+			<!--div class="nowisdom clearfix"><a href="#" class="button_add" title="Добавить «мудрость»">Добавить&nbsp;<b>&#43;</b></a><u>Ни одной «мудрости» пока не зафиксировано<i>Если вы нашли в рецензии неточность или нелепость, можете добавить её на сайт.</i></u></div-->
+			<div class="row_c clearfix">
+				<div class="source"><a href="#">Станислав Зельвенский</a><i>18 августа</i></div>
+				<div class="wisdom">
+					<p><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Репортаж из преисподней</a></p>
+					<ul class="wisdom_quotes"><li>По сути, определения «Криминальная драма про копа под прикрытием» хватит, чтобы дать поразительно точное представление о том, что вас ждёт.</li><li>Конечно, ничего принципиально нового в геймплее Sleeping Dogs нет, и слеплен он из множества знакомых идей.</li></ul>
+					<p class="review_links"><span class="wisdom_grade" style="background-image: url('i/wisdom_grade2.png');" title="Градус «мудрости» в рецензии повышен">&nbsp;</span><a href="#">Начать обсуждение</a><span class="comments_count">&nbsp;</span> <a href="#" target="_blank">Прочесть рецензию</a><span class="newwindow">&nbsp;</span></p>
+				</div>
+			</div>
+			<div class="row_b clearfix">
+				<div class="source"><a href="#">Лидия Маслова</a><i>19 августа</i></div>
+				<div class="wisdom">
+					<p><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Хоббит: Нежданное путешествие</a></p>
+					<ul class="wisdom_quotes"><li>Несоразмерность сил Кросса и его преследователей на корню убивает любое напряжение</li><li>В середине повествование немного провисает, теряет шарм настоящей научной фантастики, что есть первые минут 30. Но потом все возвращается на круги своя.</li><li>За несколько лет это пожалуй самая хорошая научная фантастика про космос и другие миры, что я видел.</li></ul>
+					<p class="review_links"><span class="wisdom_grade" style="background-image: url('i/wisdom_grade3.png');" title="Градус «мудрости» в рецензии критический">&nbsp;</span><a href="#">Обсудить рецензию</a><span class="comments_count">(35)</span> <a href="#" target="_blank">Прочесть рецензию</a><span class="newwindow">&nbsp;</span></p>
+				</div>
+			</div>
+			<div class="row_c clearfix">
+				<div class="source"><a href="#">Александр Голубчиков</a><i>19 августа</i></div>
+				<div class="wisdom">
+					<p><span class="wisdom_grade" style="" title="">&nbsp;</span><a href="#">Тачбэк</a></p>
+					<ul class="wisdom_quotes"><li>Без папаши-Борна «Эволюции», разумеется, было бы совсем хреноватенько.</li></ul>
+					<p class="review_links"><span class="wisdom_grade" style="background-image: url('i/wisdom_grade1.png');" title="Градус «мудрости» в рецензии умеренный">&nbsp;</span><a href="#">Обсудить рецензию</a><span class="comments_count">(1)</span> <a href="#" target="_blank">Прочесть рецензию</a><span class="newwindow">&nbsp;</span></p>
+				</div>
+			</div>
+			<div class="item_reviews_list_more"><a href="javascript:void(0)" class="pseudolink">Еще 10 откровений</a>&bull;<a href="#" class="link">Показать все 40</a></div>
+		</div>
+	
+	</div>
+
+
+
+
+</div>
+<!-- ============== // CONTENT ============== -->
+
+
+
+<!-- ============== FOOTER ============== -->
+<div class="footer clearfix">
+	<div class="left">
+		<p>&copy; 2012 <span>Критиканство</span></p>
+		<p>Электронная почта: <a href="mailto:mail@kritikanstvo.ru">mail@kritikanstvo.ru</a></p>
+		<p><a href="#">О проекте</a></p>
+	</div>
+	<div class="left">
+		<p>На сайте используются материалы <a href="http://www.rottentomatoes.com" target="_blank" title="Откроется в новом окне">Rotten Tomatoes</a>, <a href="http://www.gamerankings.com" target="_blank" title="Откроется в новом окне">GameRankings</a> и других ресурсов.</p>
+	</div>
+	<div class="right"><p>Создание сайта: <a href="http://www.kino-govno.com" target="_blank" title="Откроется в новом окне">КГ.Дизайн</a></p></div>
+</div>
+<!-- ============== // FOOTER ============== -->
+
+
+
+</body></html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>Критиканство &#8212; Любимые и нелюбимые игры пользователей</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1061">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="apple-touch-icon" href="apple-touch-icon.png"><!-- 144x114 -->
+<link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="css/main.css">
+
+<script type="text/javascript" src="js/jquery.1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+<!--script type="text/javascript" src="js/jquery.color.js"></script>
+<script type="text/javascript" src="js/css_browser_selector.js"></script-->
+<script type="text/javascript">
+// Front row switcher
+$(document).ready(function(){
+	$('#button_frontrow_games').click(function () {
+	$('#frontrow_movies').hide(); $('#frontrow_games').show();
+	$('#button_frontrow_games').removeClass('button_frontrow').addClass('button_frontrow_down');
+	$('#button_frontrow_movies').removeClass('button_frontrow_down').addClass('button_frontrow');
+});});
+$(document).ready(function(){
+	$('#button_frontrow_movies').click(function () {
+	$('#frontrow_games').hide(); $('#frontrow_movies').show();
+	$('#button_frontrow_movies').removeClass('button_frontrow').addClass('button_frontrow_down');
+	$('#button_frontrow_games').removeClass('button_frontrow_down').addClass('button_frontrow');
+});});
+// Reviews list switcher
+$(document).ready(function(){
+	$('#button_reviews_list_games').click(function () {
+	$('#reviews_list_movies').hide(); $('#reviews_list_games').show();
+	$('#button_reviews_list_games').removeClass('button_frontrow').addClass('button_frontrow_down');
+	$('#button_reviews_list_movies').removeClass('button_frontrow_down').addClass('button_frontrow');
+});});
+$(document).ready(function(){
+	$('#button_reviews_list_movies').click(function () {
+	$('#reviews_list_games').hide(); $('#reviews_list_movies').show();
+	$('#button_reviews_list_movies').removeClass('button_frontrow').addClass('button_frontrow_down');
+	$('#button_reviews_list_games').removeClass('button_frontrow_down').addClass('button_frontrow');
+});});
+// Qtip
+$(document).ready(function()
+	{$('[title]').qtip({position: {my: 'bottom center', at: 'top center', adjust: {x: 12, y: -6}}});}
+);
+</script>
+
+<script type="text/javascript" src="js/hoverintent.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".range").hoverIntent(rangeon,blank);
+});
+$(document).ready(function(){
+	$(".years").hoverIntent(yearson,blank);
+});
+
+function rangeon(){
+	$('.range').stop().animate({"opacity": 1}, "normal");
+	$('.years').stop().animate({"opacity": 0.5}, "normal");
+}
+function yearson(){
+	$('.range').stop().animate({"opacity": 0.5}, "normal");
+	$('.years').stop().animate({"opacity": 1}, "normal");
+}
+function blank(){
+}
+// Trying to fix dropdown menu flickering
+$(document).ready(function(){
+	$('.navigator .years .text').click(function() { 
+		$('.years').stop().animate({"opacity": 1}, 1); 
+});});
+$(document).ready(function(){
+	$('.navigator .range .text').click(function() { 
+		$('.range').stop().animate({"opacity": 1}, 1); 
+});});
+</script>
+
+<script type="text/javascript" src="js/selectbox.js"></script>
+<script>
+(function($) {
+ $(function() {
+   $('select').selectbox();
+})
+})(jQuery)
+</script>
+
+
+<script type="text/javascript">
+// Hover-unhover example (might be useful for menu)
+//$(document).ready(function(){
+//	$('.range').hover(function() { 
+//	    $('.range_inactive').stop().animate({"opacity": 1}, "normal"); 
+//	},function() { 
+//	    $('.range_inactive').stop().animate({"opacity": 0.5}, "normal"); 
+//});});
+</script>
+
+</head><body>
+
+
+
+
+<!-- ============== TOP ============== -->
+<div class="userbar clearfix">
+	<div class="guest_wrap">
+		<a href="#" class="guest_login"><span>Вход на сайт</span></a>
+		<a href="#" class="button_add" title="Добавить ссылку на рецензию">Добавить&nbsp;<b>&#43;</b></a>
+	</div>
+</div>
+
+<div class="menu clearfix">
+	<a href="#"><img src="i/logo.png" alt="" class="logo"></a>
+	<div class="search">
+		<form id="searchForm"><fieldset><input type="text" name="s" id="s" value=""><input type="submit" id="search_submit" value="OK"></fieldset></form>
+	</div>
+	<div id="tabs">
+		<ul>
+		<li><a href="#" id="tab_first" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_first').show();">Фильмы</a></li>
+		<li><a href="javascript:void(0)" id="tab_second" class="parent" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_second').show();">Игры</a></li>
+		<li><a href="#" id="tab_third" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_third').show();">Критики</a></li>
+		<li><a href="#" id="tab_fourth" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_fourth').show();">Блог</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="submenu">
+	<div style="display: none;" id="subtabs_first" onmouseover="$('#tab_first').addClass('subtabs_hover');" onmouseout="$('#tab_first').removeClass('subtabs_hover');">
+		<ul><li><a href="javascript:void(0)" class="">Скоро в прокате</a></li><li><a href="#" class="">Лучшие и худшие за год</a></li><li><a href="#" class="">Лучшие и худшие за всё время</a></li><li><a href="#" class="">Выбор пользователей</a></li><li><a href="#" class="">Кассовые сборы</a></li></ul>
+	</div>
+	<div style="display: block;" id="subtabs_second">
+		<ul><li><a href="#" class="">Скоро в продаже</a></li><li><a href="#" class="">Лучшие и худшие за год</a></li><li><a href="#" class="">Лучшие и худшие за всё время</a></li><li><a href="#" class="active">Выбор пользователей</a></li><li><a href="#" class="">Рейтинги продаж</a></li></ul>
+	</div>
+	<div style="display: none;" id="subtabs_third" onmouseover="$('#tab_third').addClass('subtabs_hover');" onmouseout="$('#tab_third').removeClass('subtabs_hover');">
+		<ul><li><a href="#" class="">Лучшие и худшие критики</a></li><li><a href="#" class="">Лучшие и худшие издания</a></li><li><a href="#" class="">Рейтинг &laquo;мудрецов&raquo;</a></li><li><a href="#" class="">Самые активные критики</a></li></ul>
+	</div>
+	<div style="display: none;" id="subtabs_fourth" onmouseover="$('#tab_fourth').addClass('subtabs_hover');" onmouseout="$('#tab_fourth').removeClass('subtabs_hover');">
+		<ul><li><a href="#" class="">Архив записей</a></li><li><a href="#" class="">Комментарии</a></li></ul>
+	</div>
+	<div style="display: none;" id="subtabs_slogan">Сайт, где объективная критика невозможна</div>
+</div>
+<!-- ============== // TOP ============== -->
+
+
+
+<!-- ============== CONTENT ============== -->
+<div class="content page_game clearfix">
+
+	<div class="navigator navigator_inset clearfix">
+		<div class="years years_inactive">
+			Игры <a href="/2012" onclick="return false" class="button_years">за всё время</a> <a href="#" class="button_years">2012</a> <a href="#" class="button_years">2011</a> <a href="#" class="button_years">2010</a>&nbsp;
+			<select class="styled" name="years_list" onchange="document.location.href=this.options[this.selectedIndex].value;"><option value="years_2009">2009</option><option value="years_2008">2008</option><option value="years_2007">2007</option><option value="years_2006">2006</option><option value="years_2005">2005</option><option value="years_2004">2004</option></select>
+		</div>
+		<div class="range range_active">
+			<form method="post" action="/years_range">Игры с&nbsp;<select class="styled" name="years_range_from"><option value="from_2011">2011</option><option value="from_2010">2010</option><option value="from_2009">2009</option><option value="from_2008">2008</option><option value="from_2007">2007</option><option value="from_2011">2006</option><option value="from_2010">2005</option><option value="from_2009">2004</option><option value="from_2008">2003</option><option value="from_2007">2002</option><option value="from_2011">2001</option><option value="from_2010">2000</option><option value="from_2009">1999</option><option value="from_2008">1998</option><option value="from_2007">1997</option><option value="from_2011">1996</option><option value="from_2010">1995</option><option value="from_2009">1994</option><option value="from_2008">1993</option><option value="from_2007">1992</option><option value="from_2011">1991</option><option value="from_2010">1990</option><option value="from_2009">1989</option><option value="from_2008">1988</option><option value="from_2007">1987</option><option value="from_2011">1986</option><option value="from_2010">1985</option><option value="from_2009">1984</option><option value="from_2008">1983</option><option value="from_2007">1982</option><option value="from_2011">1981</option><option value="from_2010">1980</option><option value="from_2009">1979</option><option value="from_2008">1978</option><option value="from_2007">1977</option><option value="from_2011">1976</option><option value="from_2010">1975</option><option value="from_2009">1974</option><option value="from_2008">1973</option><option value="from_2007">1972</option><option value="from_2011">1971</option><option value="from_2010">1970</option><option value="from_2009">1969</option><option value="from_2008">1968</option><option value="from_2007">1967</option><option value="from_2011">1966</option><option value="from_2010">1965</option><option value="from_2009">1964</option><option value="from_2008">1963</option><option value="from_2007">1962</option><option value="from_2011">1961</option><option value="from_2010">1960</option><option value="from_2009">1959</option><option value="from_2008">1958</option><option value="from_2007">1957</option><option value="from_2011">1956</option><option value="from_2010">1955</option><option value="from_2009">1954</option><option value="from_2008">1953</option><option value="from_2007">1952</option><option value="from_2011">1951</option><option value="from_2010">1950</option></select>&nbsp;по&nbsp;<select class="styled" name="years_range_to"><option value="to_2012">2012</option><option value="to_2011">2011</option><option value="to_2010">2010</option><option value="to_2009">2009</option><option value="to_2008">2008</option><option value="to_2007">2007</option></select><input type="submit" id="search_submit_range" value="ОК">
+			</form>
+		</div>
+	</div>
+
+	<div class="page_lists_tabs clearfix">
+		<a href="#" id="page_lists_tab1_hd" class="active">Любимые игры 2011—2012 годов</a><a href="#" id="page_lists_tab2_hd" class="inactive">Нелюбимые игры 2011—2012 годов</a>
+	</div>
+
+	<div class="page_lists page_lists_default">
+		<ul>
+		<li class="row_a users_rating_good clearfix">
+			<div class="left"><a href="movie.htm"><div class="cover" style="background-image: url('temp/poster2.jpg');"></div></a><h4>95</h4><h2><a href="movie.htm">Хоббит: Нежданное путешествие</a></h2><p>The Hobbit: An Unexpected Journey</p><p><i>США, 2 октября 2012</i></p><p><a href="#">Xbox 360</a></p></div>
+			<div class="center"><b>Оценка русских изданий:<span class="site_rating_small_good">92</span></b><p>45 рецензий</p><p><a href="#">217 комментариев</a></p></div>
+			<div class="right">1</div>
+		</li>
+		<li class="row_b users_rating_bad clearfix">
+			<div class="left"><a href="movie.htm"><div class="cover" style="background-image: url('temp/poster3.jpg');"></div></a><h4>23</h4><h2><a href="movie.htm">Голодные игры</a></h2><p>The Hunger Games</p><p><i>США, 2011</i></p><p><a href="#">PC</a>, <a href="#">PS3</a></p></div>
+			<div class="center"><b>Оценка русских изданий:<span class="site_rating_small_average">40</span></b><p>1 рецензия</p><p><a href="#">Начать обсуждение</a></p></div>
+			<div class="right">2</div>
+		</li>
+		<li class="row_a users_rating_awful clearfix">
+			<div class="left"><a href="movie.htm"><div class="cover" style="background-image: url('temp/poster1.jpg');"></div></a><h4>14</h4><h2><a href="movie.htm">Репортаж из преисподней</a></h2><p>Rec 2</p><p><i>США, 1 марта 2010</i></p><p><a href="#">Xbox 360</a></p></div>
+			<div class="center"><b>Оценка русских изданий:<span class="site_rating_small_awful">1</span></b><p>14 рецензий</p><p><a href="#">101 комментарий</a></p></div>
+			<div class="right">3</div>
+		</li>
+		<li class="row_b users_rating_good clearfix">
+			<div class="left"><a href="movie.htm"><div class="cover" style="background-image: url('temp/poster6.jpg');"></div></a><h4>95</h4><h2><a href="movie.htm">Тачбэк</a></h2><p>The Hobbit: An Unexpected Journey</p><p><i>США, 2 октября 2012</i></p><p><a href="#">PC</a></p></div>
+			<div class="center"><b>Оценка русских изданий:<span class="site_rating_small_good">92</span></b><p>45 рецензий</p><p><a href="#">217 комментариев</a></p></div>
+			<div class="right">4</div>
+		</li>
+		<li class="row_a users_rating_average clearfix">
+			<div class="left"><a href="movie.htm"><div class="cover" style="background-image: url('temp/poster5.jpg');"></div></a><h4>37</h4><h2><a href="movie.htm">Голодные игры</a></h2><p>The Hunger Games</p><p><i>США, 2011</i></p><p><a href="#">Xbox 360</a>, <a href="#">PS3</a>, <a href="#">Wii</a>, <a href="#">PC</a></div>
+			<div class="center"><b>Оценка русских изданий:<span class="site_rating_small_bad">20</span></b><p>1 рецензия</p><p><a href="#">Начать обсуждение</a></p></div>
+			<div class="right">5</div>
+		</li>
+		<li class="row_b users_rating_good clearfix">
+			<div class="left"><a href="movie.htm"><div class="cover" style="background-image: url('temp/poster2.jpg');"></div></a><h4>95</h4><h2><a href="movie.htm">Хоббит: Нежданное путешествие</a></h2><p>The Hobbit: An Unexpected Journey</p><p><i>США, 2 октября 2012</i></p><p><a href="#">PS Vita</a>, <a href="#">DS</a></p></div>
+			<div class="center"><b>Оценка русских изданий:<span class="site_rating_small_good">92</span></b><p>45 рецензий</p><p><a href="#">217 комментариев</a></p></div>
+			<div class="right">6</div>
+		</li>
+		<li class="row_a users_rating_bad clearfix">
+			<div class="left"><a href="movie.htm"><div class="cover" style="background-image: url('temp/poster3.jpg');"></div></a><h4>23</h4><h2><a href="movie.htm">Голодные игры</a></h2><p>The Hunger Games</p><p><i>США, 2011</i></p><p><a href="#">Xbox 360</a>, <a href="#">PC</a></p></div>
+			<div class="center"><b>Оценка русских изданий:<span class="site_rating_small_average">40</span></b><p>1 рецензия</p><p><a href="#">Начать обсуждение</a></p></div>
+			<div class="right">7</div>
+		</li>
+		<li class="row_b users_rating_awful clearfix">
+			<div class="left"><a href="movie.htm"><div class="cover" style="background-image: url('temp/poster1.jpg');"></div></a><h4>14</h4><h2><a href="movie.htm">Репортаж из преисподней</a></h2><p>Rec 2</p><p><i>США, 1 марта 2010</i></p><p><a href="#">PC</a>, <a href="#">PS3</a></p></div>
+			<div class="center"><b>Оценка русских изданий:<span class="site_rating_small_awful">1</span></b><p>14 рецензий</p><p><a href="#">101 комментарий</a></p></div>
+			<div class="right">8</div>
+		</li>
+		<li class="row_a users_rating_none clearfix">
+			<div class="left"><a href="movie.htm"><div class="cover" style="background-image: url('temp/poster6.jpg');"></div></a><h4>&minus;</h4><h2><a href="movie.htm">Тачбэк</a></h2><p>The Hobbit: An Unexpected Journey</p><p><i>США, 2 октября 2012</i></p><p><a href="#">Xbox 360</a>, <a href="#">PS3</a></p></div>
+			<div class="center"><b>Оценка русских изданий:<span class="site_rating_small_none">&minus;</span></b><p>45 рецензий</p><p><a href="#">217 комментариев</a></p></div>
+			<div class="right">9</div>
+		</li>
+		<li class="row_b users_rating_average clearfix">
+			<div class="left"><a href="movie.htm"><div class="cover" style="background-image: url('temp/poster5.jpg');"></div></a><h4>37</h4><h2><a href="movie.htm">Голодные игры</a></h2><p>The Hunger Games</p><p><i>США, 2011</i></p><p><a href="#">Wii</a>, <a href="#">DS</a></p></div>
+			<div class="center"><b>Оценка русских изданий:<span class="site_rating_small_bad">20</span></b><p>1 рецензия</p><p><a href="#">Начать обсуждение</a></p></div>
+			<div class="right">10</div>
+		</li>
+		</ul>
+		<div class="page_lists_more"><a href="javascript:void(0)" class="pseudolink">Следующие 20 игр</a></div>
+		
+	</div>	
+
+
+	<div class="page_lists_side">
+		<!--div class="ad_side_lists"><a href="#"><img src="temp/banner1.png" alt=""></a></div-->
+		<div class="reviews_list">
+			<h1>Недавние рецензии</h1>
+			<ul id="reviews_list_movies" style="display: block;">
+				<li><a href="#">Михаил Судаков</a> (Кино-Говно.ком) оценивает игру <a href="#">Тачбэк</a> на <span class="site_rating_small_good">83</span></li>
+				<li><a href="#">Александр Голубчиков</a> (Filmz.ru) оценивает игру <a href="#">Хоббит: Нежданное путешествие</a> на <span class="site_rating_small_bad">20</span></li>
+				<li><a href="#">Алекс Экслер</a> (Exler.ru) оценивает игру <a href="#">Мстители</a> на <span class="site_rating_small_good">отлично</span></li>
+				<li><a href="#">Лидия Маслова</a> (Коммерсантъ) оценивает игру <a href="#">Репортаж из преисподней</a> на <span class="site_rating_small_average">нормально</span></li>
+				<li><a href="#">Михаил Судаков</a> (Кино-Говно.ком) оценивает игру <a href="#">Мстители</a> на <span class="site_rating_small_good">98</span></li>
+				<!--li><a href="#">Станислав Зельвенский</a> (Афиша) оценивает фильм <a href="#">Тёмный рыцарь: Возрождение легенды</a> на <span class="site_rating_small_awful">15</span></li>
+				<li><a href="#">Михаил Судаков</a> (Кино-Говно.ком) оценивает фильм <a href="#">Тачбэк</a> на <span class="site_rating_small_average">69</span></li>
+				<li><a href="#">Александр Голубчиков</a> (Filmz.ru) оценивает фильм <a href="#">Хоббит: Нежданное путешествие</a> на <span class="site_rating_small_bad">20</span></li>
+				<li><a href="#">Алекс Экслер</a> (Exler.ru) оценивает фильм <a href="#">Мстители</a> на <span class="site_rating_small_good">отлично</span></li>
+				<li><a href="#">Лидия Маслова</a> (Коммерсантъ) оценивает фильм <a href="#">Репортаж из преисподней</a> на <span class="site_rating_small_average">нормально</span></li-->
+			</ul>
+			<div class="reviews_list_more"><a href="javascript:void(0)" class="pseudolink">Еще 10 обзоров</a></div>
+		</div>
+	</div>
+
+
+</div>
+<!-- ============== // CONTENT ============== -->
+
+
+
+<!-- ============== FOOTER ============== -->
+<div class="footer clearfix">
+	<div class="left">
+		<p>&copy; 2012 <span>Критиканство</span></p>
+		<p>Электронная почта: <a href="mailto:mail@kritikanstvo.ru">mail@kritikanstvo.ru</a></p>
+		<p><a href="#">О проекте</a></p>
+	</div>
+	<div class="left">
+		<p>На сайте используются материалы <a href="http://www.rottentomatoes.com" target="_blank" title="Откроется в новом окне">Rotten Tomatoes</a>, <a href="http://www.gamerankings.com" target="_blank" title="Откроется в новом окне">GameRankings</a> и других ресурсов.</p>
+	</div>
+	<div class="right"><p>Создание сайта: <a href="http://www.kino-govno.com" target="_blank" title="Откроется в новом окне">КГ.Дизайн</a></p></div>
+</div>
+<!-- ============== // FOOTER ============== -->
+
+
+
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
