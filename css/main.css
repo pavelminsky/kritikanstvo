@@ -312,6 +312,7 @@ div.rating-cancel {display: none;}
 .page_item_title {margin: 5px 5px 12px 220px;}
 .page_item_title h1 {padding-bottom: 2px; font-size: 26px; font-weight: normal; color: #282828;}
 .page_item_title h1 span {display: inline-block; vertical-align: 2px; font-size: 16px; color: #5b6769;}
+.page_item_title h1 sup {margin-left: 5px; font-size: 11px; font-weight: normal; color: #5b5b5b; vertical-align: top;}
 .page_item_title h2 {padding-bottom: 3px; font-size: 16px; font-weight: normal; color: #92999c;}
 .page_item_title h3 {padding-bottom: 2px; font-size: 18px; font-weight: normal; color: #282828;}
 .page_item_title h3 a, .page_item_title h3 a:visited {color: #598da2;}
@@ -366,7 +367,7 @@ a.item_tag_platform:hover {opacity: 0.80; -moz-opacity: 0.80; -khtml-opacity: 0.
 .page_item_share a.googleplus, .page_item_share_short a.googleplus {background-position: 0 -150px;}
 .page_item_share a.liveinternet, .page_item_share_short a.liveinternet {background-position: 0 -180px;}
 
-.page_item_user_rating {float: left; width: 154px; height: 34px; padding: 8px; margin: 0 10px 10px 0; font-size: 12px; color: #ffffff; background-color: #4dbade;}
+.page_item_user_rating {float: left; width: 154px; height: 34px; padding: 8px; margin: 2px 10px 10px 0; font-size: 12px; color: #ffffff; background-color: #4dbade;}
 .page_item_user_rating p {padding: 0 0 2px 1px;}
 
 .page_item_stills, .page_item_videos {float: left; position: relative; width: 180px; height: 50px; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
@@ -485,7 +486,7 @@ span.wisdom_grade_inset {display: inline-block; width: 14px; height: 14px; margi
 
 
 
-.page_critic_photo {position: absolute; left: 55px; top: 0; z-index: 2; height: 100px; width: 100px; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; background-color: #f2f2f2; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
+.page_critic_photo {position: absolute; left: 55px; top: 0; z-index: 2; height: 100px; width: 100px; border: 1px solid #394042; background-color: #f2f2f2; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
 
 .page_critic_info {margin-top: 20px; margin-bottom: 40px;}
 .rate_critic {margin-left: 20px; text-align: center;}
