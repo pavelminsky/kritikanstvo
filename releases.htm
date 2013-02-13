@@ -103,17 +103,37 @@ function superpastoff(){
 
 
 
+<!-- FOR TESTING (FEEL FREE TO REMOVE) -->
+<script type="text/javascript">
+// Reviews list switcher
+$(document).ready(function(){
+	$('#page_lists_tab1_hd').click(function () {
+	$('.page_releases_full').hide(); $('.page_releases_short').show();
+	$('#page_lists_tab1_hd').removeClass('inactive').addClass('active');
+	$('#page_lists_tab2_hd').removeClass('active').addClass('inactive');
+});});
+$(document).ready(function(){
+	$('#page_lists_tab2_hd').click(function () {
+	$('.page_releases_short').hide(); $('.page_releases_full').show();
+	$('#page_lists_tab2_hd').removeClass('inactive').addClass('active');
+	$('#page_lists_tab1_hd').removeClass('active').addClass('inactive');
+});});
+</script>
+<!-- //FOR TESTING (FEEL FREE TO REMOVE) -->
+
+
+
 <!-- ============== CONTENT ============== -->
-<div class="content page_movie clearfix">
+<div class="content page_game clearfix">
 
 
 	<div class="page_lists_tabs clearfix">
-		<a href="#" id="page_lists_tab1_hd" class="active">Премьеры&nbsp;по&nbsp;дате</a><a href="#" id="page_lists_tab2_hd" class="inactive">Все&nbsp;премьеры</a>
+		<a href="javascript:void(0)" id="page_lists_tab1_hd" class="inactive">Премьеры&nbsp;по&nbsp;дате</a><a href="javascript:void(0)" id="page_lists_tab2_hd" class="active">Все&nbsp;премьеры</a>
 	</div>
 
 
 	<!-- RELEASES SHORT -->
-	<div class="page_lists_default page_releases_short">
+	<div class="page_lists_default page_releases_short" style="display: none;">
 
 		<div class="releases_datepicker">
 			<div class="years"><a href="#" class="past"><span>2012</span></a><a href="#" class="active"><span>2013</span></a><a href="#" class=""><span>2014</span></a><span class="empty">2015</span><a href="#" class=""><span>2016</span></a></div>
@@ -124,10 +144,10 @@ function superpastoff(){
 			<h4>11 марта</h4>
 			<ul>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p><span class="rating site_rating_bad">47</span></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p><span class="platform">PC</span><span class="rating site_rating_bad">47</span></div>
 				</li>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><p>информация</p></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><span class="platform">X360</span><span class="platform">PS3</span></div>
 				</li>
 				<li>
 				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Магазин самоубийств</a></h5><h6>The Suicide Shop</h6><p>анимация, музыкальный, комедия</p><span class="rating site_rating_awful">7</span></div>
@@ -136,7 +156,7 @@ function superpastoff(){
 				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Неудержимый</a></h5><h6>Bullet to the Head</h6><p>триллер</p></div>
 				</li>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хоббит: Нежданное путешествие</a></h5><h6>The Hobbit: An Unexpected Journey</h6><p>приключения, фэнтези, экранизация</p><span class="rating site_rating_good">97</span></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хоббит: Нежданное путешествие</a></h5><h6>The Hobbit: An Unexpected Journey</h6><p>приключения, фэнтези, экранизация</p><span class="platform">PC</span><span class="platform">Wii</span><span class="rating site_rating_good">97</span></div>
 				</li>
 				<li>
 				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p><span class="rating site_rating_bad">30</span></div>
@@ -154,7 +174,7 @@ function superpastoff(){
 			<h4>18 марта</h4>
 			<ul>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">В первый раз</a></h5><h6>The First Time</h6><p>мелодрама, комедия</p><span class="rating site_rating_good">92</span></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">В первый раз</a></h5><h6>The First Time</h6><p>мелодрама, комедия</p><span class="platform">PC</span><span class="platform">DS</span><span class="rating site_rating_good">92</span></div>
 				</li>
 				<li>
 				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гайд-Парк на Гудзоне</a></h5><h6>Hyde Park on Hudson</h6><p>комедия, биография</p></div>
@@ -163,31 +183,31 @@ function superpastoff(){
 				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p><span class="rating site_rating_bad">47</span></div>
 				</li>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><p>информация</p></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><span class="platform">PC</span><span class="platform">X360</span><span class="platform">PS3</span></div>
 				</li>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p><span class="rating site_rating_average">61</span></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p><span class="platform">PS3</span><span class="platform">PSP</span><span class="platform">PSVITA</span><span class="rating site_rating_average">61</span></div>
 				</li>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Крутые кексы</a></h5><h6>High School</h6><p>комедия</p></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Крутые кексы</a></h5><h6>High School</h6><p>комедия</p><span class="platform">PC</span></div>
 				</li>
 				<li>
 				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Магазин самоубийств</a></h5><h6>The Suicide Shop</h6><p>анимация, музыкальный, комедия</p><span class="rating site_rating_awful">7</span></div>
 				</li>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Неудержимый</a></h5><h6>Bullet to the Head</h6><p>триллер</p></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Неудержимый</a></h5><h6>Bullet to the Head</h6><p>триллер</p><span class="platform">PC</span></div>
 				</li>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хоббит: Нежданное путешествие</a></h5><h6>The Hobbit: An Unexpected Journey</h6><p>приключения, фэнтези, экранизация</p><span class="rating site_rating_good">97</span></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хоббит: Нежданное путешествие</a></h5><h6>The Hobbit: An Unexpected Journey</h6><p>приключения, фэнтези, экранизация</p><span class="platform">Wii</span><span class="platform">DS</span><span class="platform">PSVITA</span><span class="rating site_rating_good">97</span></div>
 				</li>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p><span class="rating site_rating_bad">30</span></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p><span class="platform">X360</span><span class="platform">PS3</span><span class="rating site_rating_bad">30</span></div>
 				</li>
 				<li>
 				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
 				</li>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Проект Динозавр</a></h5><h6>The Dinosaur Project</h6><p>фантастика, триллер</p></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Проект Динозавр</a></h5><h6>The Dinosaur Project</h6><p>фантастика, триллер</p><span class="platform">PC</span></div>
 				</li>
 			</ul>
 		</div>
@@ -199,7 +219,7 @@ function superpastoff(){
 				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p><span class="rating site_rating_bad">47</span></div>
 				</li>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><p>информация</p></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p></div>
 				</li>
 				<li>
 				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p><span class="rating site_rating_average">61</span></div>
@@ -217,7 +237,7 @@ function superpastoff(){
 			<h4>31 марта</h4>
 			<ul>
 				<li>
-				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><p>информация</p></div>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p></div>
 				</li>
 				<li>
 				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p><span class="rating site_rating_average">61</span></div>
@@ -235,11 +255,293 @@ function superpastoff(){
 	<!-- //RELEASES SHORT -->
 
 
+
+
+
+
+	<!-- RELEASES FULL -->
+	<div class="page_lists_default page_releases_full" style="display: block;">
+
+		<div class="releases_datepicker">
+			<div class="years"><a href="#" class="past"><span>2012</span></a><a href="#" class="active"><span>2013</span></a><a href="#" class=""><span>2014</span></a><span class="empty">2015</span><a href="#" class=""><span>2016</span></a></div>
+			<div class="months"><a href="#" class="past"><span>январь</span></a><a href="#" class="past"><span>февраль</span></a><a href="#" class="active"><span>март</span></a><a href="#" class=""><span>апрель</span></a><span class="empty">май</span><a href="#" class=""><span>июнь</span></a><a href="#" class=""><span>июль</span></a><a href="#" class=""><span>август</span></a><a href="#" class=""><span>сентябрь</span></a><a href="#" class=""><span>октябрь</span></a><a href="#" class=""><span>ноябрь</span></a><a href="#" class=""><span>декабрь</span></a></div>
+		</div>
+
+		<div class="releases_year year_past">2012</div>
+
+		<div class="clearfix releases_day past_day">
+			<h4>29 декабря 2012 года</h4>
+			<ul>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p><span class="platform">X360</span><span class="rating site_rating_bad">47</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><span class="platform">PC</span><span class="platform">X360</span><span class="platform">PS3</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Магазин самоубийств</a></h5><h6>The Suicide Shop</h6><p>анимация, музыкальный, комедия</p><span class="platform">X360</span><span class="rating site_rating_awful">7</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Неудержимый</a></h5><h6>Bullet to the Head</h6><p>триллер</p><span class="platform">Wii</span><span class="platform">DS</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хоббит: Нежданное путешествие</a></h5><h6>The Hobbit: An Unexpected Journey</h6><p>приключения, фэнтези, экранизация</p><span class="rating site_rating_good">97</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p><span class="rating site_rating_bad">30</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Проект Динозавр</a></h5><h6>The Dinosaur Project</h6><p>фантастика, триллер</p><span class="platform">PSVITA</span><span class="platform">PSP</span></div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="releases_year">2013</div>
+
+		<div class="clearfix releases_day">
+			<h4>11 марта 2013 года</h4>
+			<ul>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p><span class="platform">PC</span><span class="rating site_rating_bad">47</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><span class="platform">X360</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Магазин самоубийств</a></h5><h6>The Suicide Shop</h6><p>анимация, музыкальный, комедия</p><span class="platform">PC</span><span class="platform">X360</span><span class="platform">PS3</span><span class="rating site_rating_awful">7</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Неудержимый</a></h5><h6>Bullet to the Head</h6><p>триллер</p><span class="platform">PC</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хоббит: Нежданное путешествие</a></h5><h6>The Hobbit: An Unexpected Journey</h6><p>приключения, фэнтези, экранизация</p><span class="platform">X360</span><span class="rating site_rating_good">97</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p><span class="platform">PS3</span><span class="platform">PSVITA</span><span class="platform">PSP</span><span class="rating site_rating_bad">30</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p><span class="platform">X360</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Проект Динозавр</a></h5><h6>The Dinosaur Project</h6><p>фантастика, триллер</p><span class="platform">PC</span></div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="clearfix releases_day">
+			<h4>Октябрь 2013 года</h4>
+			<ul>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">В первый раз</a></h5><h6>The First Time</h6><p>мелодрама, комедия</p><span class="platform">X360</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гайд-Парк на Гудзоне</a></h5><h6>Hyde Park on Hudson</h6><p>комедия, биография</p><span class="platform">PC</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p><span class="platform">DS</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p><span class="platform">PSVITA</span></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Крутые кексы</a></h5><h6>High School</h6><p>комедия</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Магазин самоубийств</a></h5><h6>The Suicide Shop</h6><p>анимация, музыкальный, комедия</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Неудержимый</a></h5><h6>Bullet to the Head</h6><p>триллер</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хоббит: Нежданное путешествие</a></h5><h6>The Hobbit: An Unexpected Journey</h6><p>приключения, фэнтези, экранизация</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Проект Динозавр</a></h5><h6>The Dinosaur Project</h6><p>фантастика, триллер</p></div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="clearfix releases_day">
+			<h4>25 октября 2013 года</h4>
+			<ul>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="clearfix releases_day">
+			<h4>2013 год</h4>
+			<ul>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="releases_year">2014</div>
+
+		<div class="clearfix releases_day">
+			<h4>Март 2014 года</h4>
+			<ul>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Магазин самоубийств</a></h5><h6>The Suicide Shop</h6><p>анимация, музыкальный, комедия</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Неудержимый</a></h5><h6>Bullet to the Head</h6><p>триллер</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хоббит: Нежданное путешествие</a></h5><h6>The Hobbit: An Unexpected Journey</h6><p>приключения, фэнтези, экранизация</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Проект Динозавр</a></h5><h6>The Dinosaur Project</h6><p>фантастика, триллер</p></div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="clearfix releases_day">
+			<h4>Первая половина 2014 года</h4>
+			<ul>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">В первый раз</a></h5><h6>The First Time</h6><p>мелодрама, комедия</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гайд-Парк на Гудзоне</a></h5><h6>Hyde Park on Hudson</h6><p>комедия, биография</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Крутые кексы</a></h5><h6>High School</h6><p>комедия</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Магазин самоубийств</a></h5><h6>The Suicide Shop</h6><p>анимация, музыкальный, комедия</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Неудержимый</a></h5><h6>Bullet to the Head</h6><p>триллер</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хоббит: Нежданное путешествие</a></h5><h6>The Hobbit: An Unexpected Journey</h6><p>приключения, фэнтези, экранизация</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Проект Динозавр</a></h5><h6>The Dinosaur Project</h6><p>фантастика, триллер</p></div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="clearfix releases_day">
+			<h4>Сентябрь 2014 года</h4>
+			<ul>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Гладиаторы Рима</a></h5><h6>Not Born to Be Gladiators</h6><p>анимация</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="clearfix releases_day">
+			<h4>2014 год</h4>
+			<ul>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter04s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Президент Линкольн: Охотник на вампиров</a></h5><h6>Abraham Lincoln: Vampire Hunter</h6><p>боевик, исторический, комедия</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter01s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Группа 7</a></h5><h6>Grupo 7</h6><p>боевик, триллер, драма</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter02s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Отверженные</a></h5><h6>Les Miserables</h6><p>драма, музыкальный</p></div>
+				</li>
+				<li>
+				<a class="poster" href="#" style="background-image: url('temp/testposter03s.jpg');">&nbsp;</a><div class="info"><h5><a href="#">Хуан - истребитель кубинских зомби</a></h5><h6>Juan de los Muertos</h6><p>комедия, ужасы</p></div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- //RELEASES FULL -->
+
+
+
+
+
+
+
+
+
+
 	<div class="page_lists_side clearfix">
 		<!--div class="ad_side"><a href="#"><img src="temp/banner1.png" alt=""></a></div-->
 		<div class="reviews_list">
 			<h1>Недавние рецензии</h1>
-			<!--div class="reviews_list_tabs"><a href="javascript:void(0)" id="button_reviews_list_movies" class="button_frontrow_down"><span>фильмы</span></a><a href="javascript:void(0)" id="button_reviews_list_games" class="button_frontrow"><span>игры</span></a></div-->
+			<div class="reviews_list_tabs"><a href="javascript:void(0)" id="button_reviews_list_movies" class="button_frontrow_down"><span>фильмы</span></a><a href="javascript:void(0)" id="button_reviews_list_games" class="button_frontrow"><span>игры</span></a></div>
 			<ul id="reviews_list_movies" style="display: block;">
 				<li><a href="#">Михаил Судаков</a> (Кино-Говно.ком) оценивает фильм <a href="#">Тачбэк</a> на <span class="site_rating_small_good">83</span></li>
 				<li><a href="#">Александр Голубчиков</a> (Filmz.ru) оценивает фильм <a href="#">Хоббит: Нежданное путешествие</a> на <span class="site_rating_small_bad">20</span></li>
@@ -252,7 +554,7 @@ function superpastoff(){
 				<li><a href="#">Алекс Экслер</a> (Exler.ru) оценивает фильм <a href="#">Мстители</a> на <span class="site_rating_small_good">отлично</span></li>
 				<li><a href="#">Лидия Маслова</a> (Коммерсантъ) оценивает фильм <a href="#">Репортаж из преисподней</a> на <span class="site_rating_small_average">нормально</span></li>
 			</ul>
-			<!--ul id="reviews_list_games" style="display: block;">
+			<ul id="reviews_list_games" style="display: none;">
 				<li><a href="#">Лидия Маслова</a> (Коммерсантъ) оценивает игру <a href="#">Mass Effect 3</a> на <span class="site_rating_small_average">74</span></li>
 				<li><a href="#">Михаил Судаков</a> (Кино-Говно.ком) оценивает игру <a href="#">I Am Alive</a> на <span class="site_rating_small_good">83</span></li>
 				<li><a href="#">Александр Голубчиков</a> (Filmz.ru) оценивает игру <a href="#">Wargame: European Escalation</a> на <span class="site_rating_small_bad">20</span></li>
@@ -263,7 +565,7 @@ function superpastoff(){
 				<li><a href="#">Михаил Судаков</a> (Кино-Говно.ком) оценивает игру <a href="#">Darksiders 2</a> на <span class="site_rating_small_average">69</span></li>
 				<li><a href="#">Александр Голубчиков</a> (Filmz.ru) оценивает игру <a href="#">Deadlight</a> на <span class="site_rating_small_bad">20</span></li>
 				<li><a href="#">Алекс Экслер</a> (Exler.ru) оценивает игру <a href="#">Hybrid</a> на <span class="site_rating_small_good">отлично</span></li>
-			</ul-->
+			</ul>
 			<div class="reviews_list_more"><a href="javascript:void(0)" class="pseudolink">Еще 10 обзоров</a></div>
 		</div>
 	</div>
