@@ -30,10 +30,10 @@ $(function() {
 
 		$(this).before(
 			'<span class="selectbox" style="display: inline-block; position: relative">'+
-				'<span class="select" style="position: relative; z-index: 10000"><span class="text">' + selectText + '</span>'+
+				'<span class="select" style="position: relative; z-index: 100"><span class="text">' + selectText + '</span>'+
 					'<b class="trigger"><i class="arrow"></i></b>'+
 				'</span>'+
-				'<ul class="dropdown" style="position: absolute; z-index: 9999; overflow: auto; overflow-x: hidden; list-style: none">' + dropdown + '</ul>'+
+				'<ul class="dropdown" style="position: absolute; z-index: 99; overflow: auto; overflow-x: hidden; list-style: none">' + dropdown + '</ul>'+
 			'</span>'
 		).css({position: 'absolute', left: -9999});
 
