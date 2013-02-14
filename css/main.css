@@ -16,7 +16,8 @@ html[xmlns] .clearfix {display: block;}
 body {background: #bfc9cd url('/i/body_top_bg.png') right top repeat-x; background-attachment: fixed;}
 img {-ms-interpolation-mode:bicubic}
 a:focus {outline: none;}
-a:link, a:visited {color: #006e93;}
+a:link {color: #006e93;}
+a:visited {color: #815a9f;}
 a:hover {color: #008fbf;}
 .left {float: left;}
 .right {float: right;}
