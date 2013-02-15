@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head><title>Критиканство &#8212; Лучшие и худшие издания</title>
+<html><head><title>Критиканство &#8212; Блог</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -80,8 +80,8 @@ $(document).ready(function()
 		<ul>
 		<li><a href="#" id="tab_first" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_first').show();">Фильмы</a></li>
 		<li><a href="#" id="tab_second" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_second').show();">Игры</a></li>
-		<li><a href="javascript:void(0)" id="tab_third" class="parent" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_third').show();">Критики</a></li>
-		<li><a href="#" id="tab_fourth" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_fourth').show();">Блог</a></li>
+		<li><a href="#" id="tab_third" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_third').show();">Критики</a></li>
+		<li><a href="javascript:void(0)" id="tab_fourth" class="parent" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_fourth').show();">Блог</a></li>
 		</ul>
 	</div>
 </div>
@@ -93,11 +93,11 @@ $(document).ready(function()
 	<div style="display: none;" id="subtabs_second" onmouseover="$('#tab_second').addClass('subtabs_hover');" onmouseout="$('#tab_second').removeClass('subtabs_hover');">
 		<ul><li><a href="#" class="">Скоро в продаже</a></li><li><a href="#" class="">Лучшие и худшие за год</a></li><li><a href="#" class="">Лучшие и худшие за всё время</a></li><li><a href="#" class="">Выбор пользователей</a></li><li><a href="#" class="">Рейтинги продаж</a></li></ul>
 	</div>
-	<div style="display: block;" id="subtabs_third">
-		<ul><li><a href="#" class="">Лучшие и худшие критики</a></li><li><a href="javascript:void(0)" class="active">Лучшие и худшие издания</a></li><li><a href="#" class="">Рейтинг &laquo;мудрецов&raquo;</a></li><li><a href="#" class="">Самые активные критики</a></li></ul>
+	<div style="display: none;" id="subtabs_third">
+		<ul><li><a href="#" class="">Лучшие и худшие критики</a></li><li><a href="#" class="">Лучшие и худшие издания</a></li><li><a href="#" class="">Рейтинг &laquo;мудрецов&raquo;</a></li><li><a href="#" class="">Самые активные критики</a></li></ul>
 	</div>
-	<div style="display: none;" id="subtabs_fourth" onmouseover="$('#tab_fourth').addClass('subtabs_hover');" onmouseout="$('#tab_fourth').removeClass('subtabs_hover');">
-		<ul><li><a href="#" class="">Архив записей</a></li><li><a href="#" class="">Комментарии</a></li></ul>
+	<div style="display: block;" id="subtabs_fourth" onmouseover="$('#tab_fourth').addClass('subtabs_hover');" onmouseout="$('#tab_fourth').removeClass('subtabs_hover');">
+		<ul><li><a href="javascript:void(0)" class="active">Новые записи</a></li><li><a href="#" class="">Архив записей</a></li><li><a href="#" class="">Комментарии</a></li></ul>
 	</div>
 	<div style="display: none;" id="subtabs_slogan">Сайт, где объективная критика невозможна</div>
 </div>
@@ -108,17 +108,13 @@ $(document).ready(function()
 <!-- ============== CONTENT ============== -->
 <div class="content page_default clearfix">
 
-	<div class="page_lists_tabs clearfix">
-		<a href="#" id="page_lists_tab1_hd" class="active">Лучшие издания</a><a href="#" id="page_lists_tab2_hd" class="inactive">Худшие издания</a>
-	</div>
-
 	<div class="page_lists page_lists_default page_lists_critics">
 		<ul>
 		<li class="row_a users_rating_good clearfix">
 			<div class="left"><a href="critic.htm"><div class="photo" style="background-image: url('temp/cover1.jpg');"></div></a><h4>95</h4><h2><a href="edition.htm">Афиша</a><span class="wisdom_grade_inset" style="background-image: url('i/wisdom_grade3.png');" title="Издание исключительной «мудрости»">&nbsp;</span></h2><p><i>6 критиков</i></p></div>
 			<div class="center"><p>45 рецензий</p><b>Средняя оценка в рецензиях:<span class="site_rating_small_good">92</span></b></div>
 			<div class="right">1</div>
-		</li>
+   		</li>
 		<li class="row_b users_rating_good clearfix">
 			<div class="left"><a href="critic.htm"><div class="photo" style="background-image: url('temp/cover2.jpg');"></div></a><h4>94</h4><h2><a href="edition.htm">Кино-Говно.ком</a><span class="wisdom_grade_inset" style="background-image: url('i/wisdom_grade2.png');" title="Издание повышенной «мудрости»">&nbsp;</span></h2><p><i>13 критиков</i></p></div>
 			<div class="center"><p>171 рецензия</p><b>Средняя оценка в рецензиях:<span class="site_rating_small_bad">34</span></b></div>
@@ -172,12 +168,6 @@ $(document).ready(function()
 
 	<div class="page_lists_side">
 		<!--div class="ad_side_lists"><a href="#"><img src="temp/banner1.png" alt=""></a></div-->
-
-		<div class="side_stats">
-			<h6>Фактика <u>не хромает</u></h6>
-			<p>В базе сайта <b>219</b> сайтов, журналов и газет, для которых пишут (или писали) <b>1519</b> авторов. Наибольшее число рецензий — <b>4310</b> — опубликовало издание &laquo;Лучшие Компьютерные Игры&raquo;.</p>
-			<p>Благодаря своим критикам, у <b>18</b> изданий градус &laquo;мудрости&raquo; повышен до критического.</p>
-		</div>
 
 		<div class="reviews_list">
 			<h1>Недавние рецензии</h1>
