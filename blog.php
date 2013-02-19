@@ -15,19 +15,6 @@
 <script type="text/javascript" src="js/jquery.1.8.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.qtip.min.js"></script>
 <script type="text/javascript">
-// Front row switcher
-$(document).ready(function(){
-	$('#button_frontrow_games').click(function () {
-	$('#frontrow_movies').hide(); $('#frontrow_games').show();
-	$('#button_frontrow_games').removeClass('button_frontrow').addClass('button_frontrow_down');
-	$('#button_frontrow_movies').removeClass('button_frontrow_down').addClass('button_frontrow');
-});});
-$(document).ready(function(){
-	$('#button_frontrow_movies').click(function () {
-	$('#frontrow_games').hide(); $('#frontrow_movies').show();
-	$('#button_frontrow_movies').removeClass('button_frontrow').addClass('button_frontrow_down');
-	$('#button_frontrow_games').removeClass('button_frontrow_down').addClass('button_frontrow');
-});});
 // Reviews list switcher
 $(document).ready(function(){
 	$('#button_reviews_list_games').click(function () {
@@ -108,6 +95,37 @@ $(document).ready(function()
 <!-- ============== CONTENT ============== -->
 <div class="content page_default clearfix">
 
+
+<div class="blog_pagination">
+	<ul>
+	<li>pagination</li>
+	</ul>
+</div>
+
+<div class="blog_wrap">
+
+<div class="blog_item">
+	<div class="header">header</div>
+	<div class="output">date, time, author</div>
+	<div class="body clearfix">
+		h1, h2, h3, h4, h5, h6
+		p, ul, ol, img, b/strong, i/em, u, s
+		cover-left, cover-center, cover-right
+		quote
+	</div>
+	<div class="blog_cut">cut</div>
+	<div class="footer">
+		<div class="comments">comments</div>
+		<div class="share">share</div>
+		<div class="info"><p>source</p>	<p>movies/games</p>	<p>tags</p></div>			
+	</div>
+</div>
+
+</div>
+
+
+
+
 	<div class="page_lists page_lists_default page_lists_critics">
 		<ul>
 		<li class="row_a users_rating_good clearfix">
@@ -167,7 +185,7 @@ $(document).ready(function()
 
 
 	<div class="page_lists_side">
-		<!--div class="ad_side_lists"><a href="#"><img src="temp/banner1.png" alt=""></a></div-->
+		<div class="ad_side_lists"><a href="#"><img src="temp/banner1.png" alt=""></a></div>
 
 		<div class="reviews_list">
 			<h1>Недавние рецензии</h1>
