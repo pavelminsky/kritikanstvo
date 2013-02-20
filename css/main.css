@@ -140,10 +140,10 @@ a.button_add:active, a.button_add_down {cursor: default; border-top: 1px solid #
 .blog_list b {font-size: 12px; color: #32444a; font-weight: normal;}
 .blog_list b.today {color: #ab4b4b;}
 
-.special_promo {cursor: pointer; position: relative; width: 328px; height: 170px; margin-bottom: 20px; border: 1px solid #ffd34d; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
+.special_promo {display: inline-block; cursor: pointer; position: relative; width: 328px; height: 170px; margin-bottom: 20px; border: 1px solid #ffd34d; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
 .special_promo:hover {opacity: 0.90; -moz-opacity: 0.90; -khtml-opacity: 0.90; filter: alpha(opacity=90);}
-.special_promo h4 {position: absolute; bottom: 0; left: 0; width: 100%; font-size: 14px; background-color: #ffd34d; background-image: url('/i/special_promo.png'); background-repeat: repeat;}
-.special_promo h4 a, .special_promo h4 a:visited {display: block; padding: 7px 10px 6px 10px; color: #171717; font-weight: normal; text-shadow: 0 1px 1px #fffadf;}
+.special_promo h4 {position: absolute; bottom: 0; left: 0; width: 100%; font-size: 14px; background-image: url('/i/special_promo.png'); background-repeat: repeat;}
+.special_promo h4 a, .special_promo h4 a:visited {display: block; padding: 7px 10px 6px 10px; color: #171717; font-weight: normal; text-shadow: 0 1px 1px #f5e8a0;}
 
 .reviews_list_home {width: 240px; margin: 10px;}
 .content_home .reviews_list h1 {background-color: #394042;}
@@ -555,7 +555,7 @@ a:hover#float_quote {color: #3789ac; text-decoration: none; background-color: #a
 .comments_pagination a, .comments_pagination a:visited {display: inline-block; min-width: 28px; height: 28px; font-size: 14px; color: #277995; line-height: 28px; text-align: center; text-decoration: none; border: 1px solid #c5dfe8; border-left-width: 0; background-color: #e8f4f8;}
 .comments_pagination a:hover {background-color: #ffffff;}
 .comments_pagination a:first-child, .comments_pagination {border-left-width: 1px;}
-.comments_pagination span {display: inline-block; min-width: 28px; height: 30px; font-size: 14px; color: #9db3ba; line-height: 30px; text-align: center; border: 1px solid #c5dfe8; border-left-width: 0; border-top-width: 0; border-bottom-width: 0;}
+.comments_pagination span {display: inline-block; cursor: default; min-width: 28px; height: 30px; font-size: 14px; color: #9db3ba; line-height: 30px; text-align: center; border: 1px solid #c5dfe8; border-left-width: 0; border-top-width: 0; border-bottom-width: 0;}
 .comments_pagination a.current, .comments_pagination a.current:visited {padding: 0 8px 0 8px; cursor: default; color: #282828; text-shadow: 0 1px 1px #fffadf; background-color: #ffe04d; box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.30); -moz-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.30); -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.30);}
 .comments_pagination a.prev {background-image: url('/i/pages_prev.png'); background-position: 50% 50%; background-repeat: no-repeat;}
 .comments_pagination a.next {background-image: url('/i/pages_next.png'); background-position: 50% 50%; background-repeat: no-repeat;}
@@ -614,6 +614,7 @@ textarea {width: 634px; height: 194px; resize: none; overflow-y: hidden; vertica
 /* Lists */
 .page_lists_tabs {width: 100%; text-align: center; padding-bottom: 1px; margin-bottom: 30px; margin-top: 30px; background: url('/i/page_comments_tabs_bg.png') center bottom no-repeat;}
 .page_lists_side {float: right; width: 240px;}
+.page_lists_side_blog {float: right; width: 240px; margin: 10px;}
 .page_lists_default {float: left; width: 710px; margin-right: 10px; margin-bottom: 30px;}
 .page_lists ul li.row_a {background-color: #f0f3f3;}
 .page_lists ul li.row_b {background-color: #ffffff;}

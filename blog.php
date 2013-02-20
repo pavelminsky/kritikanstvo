@@ -84,7 +84,7 @@ $(document).ready(function()
 		<ul><li><a href="#" class="">Лучшие и худшие критики</a></li><li><a href="#" class="">Лучшие и худшие издания</a></li><li><a href="#" class="">Рейтинг &laquo;мудрецов&raquo;</a></li><li><a href="#" class="">Самые активные критики</a></li></ul>
 	</div>
 	<div style="display: block;" id="subtabs_fourth" onmouseover="$('#tab_fourth').addClass('subtabs_hover');" onmouseout="$('#tab_fourth').removeClass('subtabs_hover');">
-		<ul><li><a href="javascript:void(0)" class="active">Новые записи</a></li><li><a href="#" class="">Архив записей</a></li><li><a href="#" class="">Комментарии</a></li></ul>
+		<ul><li><a href="javascript:void(0)" class="active">Новые записи</a></li><li><a href="#" class="">Архив записей</a></li><!--li><a href="#" class="">Комментарии</a></li--></ul>
 	</div>
 	<div style="display: none;" id="subtabs_slogan">Сайт, где объективная критика невозможна</div>
 </div>
@@ -95,129 +95,209 @@ $(document).ready(function()
 <!-- ============== CONTENT ============== -->
 <div class="content page_default clearfix">
 
-
-<div class="blog_pagination">
-	<ul>
-	<li>pagination</li>
-	</ul>
-</div>
-
-<div class="blog_wrap">
-
-<div class="blog_item">
-	<div class="header">header</div>
-	<div class="output">date, time, author</div>
-	<div class="body clearfix">
-		h1, h2, h3, h4, h5, h6
-		p, ul, ol, img, b/strong, i/em, u, s
-		cover-left, cover-center, cover-right
-		quote
-	</div>
-	<div class="blog_cut">cut</div>
-	<div class="footer">
-		<div class="comments">comments</div>
-		<div class="share">share</div>
-		<div class="info"><p>source</p>	<p>movies/games</p>	<p>tags</p></div>			
-	</div>
-</div>
-
-</div>
+	<div class="page_lists page_lists_blog">
 
 
 
 
-	<div class="page_lists page_lists_default page_lists_critics">
-		<ul>
-		<li class="row_a users_rating_good clearfix">
-			<div class="left"><a href="critic.htm"><div class="photo" style="background-image: url('temp/cover1.jpg');"></div></a><h4>95</h4><h2><a href="edition.htm">Афиша</a><span class="wisdom_grade_inset" style="background-image: url('i/wisdom_grade3.png');" title="Издание исключительной «мудрости»">&nbsp;</span></h2><p><i>6 критиков</i></p></div>
-			<div class="center"><p>45 рецензий</p><b>Средняя оценка в рецензиях:<span class="site_rating_small_good">92</span></b></div>
-			<div class="right">1</div>
-   		</li>
-		<li class="row_b users_rating_good clearfix">
-			<div class="left"><a href="critic.htm"><div class="photo" style="background-image: url('temp/cover2.jpg');"></div></a><h4>94</h4><h2><a href="edition.htm">Кино-Говно.ком</a><span class="wisdom_grade_inset" style="background-image: url('i/wisdom_grade2.png');" title="Издание повышенной «мудрости»">&nbsp;</span></h2><p><i>13 критиков</i></p></div>
-			<div class="center"><p>171 рецензия</p><b>Средняя оценка в рецензиях:<span class="site_rating_small_bad">34</span></b></div>
-			<div class="right">2</div>
-		</li>
-		<li class="row_a users_rating_good clearfix">
-			<div class="left"><a href="critic.htm"><div class="photo" style="background-image: url('temp/cover3.jpg');"></div></a><h4>92</h4><h2><a href="edition.htm">Ведомости</a><span class="wisdom_grade_inset" style="" title="">&nbsp;</span></h2><p><i>7 критиков</i></p></div>
-			<div class="center"><p>90 рецензий</p><b>Средняя оценка в рецензиях:<span class="site_rating_small_average">65</span></b></div>
-			<div class="right">3</div>
-		</li>
-		<li class="row_b users_rating_good clearfix">
-			<div class="left"><a href="critic.htm"><div class="photo" style="background-image: url('temp/cover4.jpg');"></div></a><h4>86</h4><h2><a href="edition.htm">Коммерсантъ</a><span class="wisdom_grade_inset" style="background-image: url('i/wisdom_grade1.png');" title="Издание умеренной «мудрости»">&nbsp;</span></h2><p><i>3 критика</i></p></div>
-			<div class="center"><p>437 рецензий</p><b>Средняя оценка в рецензиях:<span class="site_rating_small_awful">10</span></b></div>
-			<div class="right">4</div>
-		</li>
-		<li class="row_a users_rating_good clearfix">
-			<div class="left"><a href="critic.htm"><div class="photo" style="background-image: url('temp/cover5.jpg');"></div></a><h4>85</h4><h2><a href="edition.htm">Авторский проект Алекса Экслера</a><span class="wisdom_grade_inset" style="" title="">&nbsp;</span></h2><p><i>1 критик</i></p></div>
-			<div class="center"><p>130 рецензий</p><b>Средняя оценка в рецензиях:<span class="site_rating_small_good">83</span></b></div>
-			<div class="right">5</div>
-		</li>
-		<li class="row_b users_rating_good clearfix">
-			<div class="left"><a href="critic.htm"><div class="photo" style="background-image: url('temp/cover6.jpg');"></div></a><h4>84</h4><h2><a href="edition.htm">Filmz.ru</a><span class="wisdom_grade_inset" style="background-image: url('i/wisdom_grade3.png');" title="Издание исключительной «мудрости»">&nbsp;</span></h2><p><i>4 критика</i></p></div>
-			<div class="center"><p>45 рецензий</p><b>Средняя оценка в рецензиях:<span class="site_rating_small_good">92</span></b></div>
-			<div class="right">6</div>
-		</li>
-		<li class="row_a users_rating_good clearfix">
-			<div class="left"><a href="critic.htm"><div class="photo" style="background-image: url('temp/cover7.jpg');"></div></a><h4>83</h4><h2><a href="edition.htm">Лучшие Компьютерные Игры</a><span class="wisdom_grade_inset" style="background-image: url('i/wisdom_grade2.png');" title="Издание повышенной «мудрости»">&nbsp;</span></h2><p><i>20 критиков</i></p></div>
-			<div class="center"><p>171 рецензия</p><b>Средняя оценка в рецензиях:<span class="site_rating_small_bad">34</span></b></div>
-			<div class="right">7</div>
-		</li>
-		<li class="row_b users_rating_good clearfix">
-			<div class="left"><a href="critic.htm"><div class="photo" style="background-image: url('i/nophoto.png');"></div></a><h4>83</h4><h2><a href="edition.htm">КиноПоиск</a><span class="wisdom_grade_inset" style="" title="">&nbsp;</span></h2><p><i>14 критиков</i></p></div>
-			<div class="center"><p>90 рецензий</p><b>Средняя оценка в рецензиях:<span class="site_rating_small_average">65</span></b></div>
-			<div class="right">8</div>
-		</li>
-		<li class="row_a users_rating_average clearfix">
-			<div class="left"><a href="critic.htm"><div class="photo" style="background-image: url('temp/cover9.jpg');"></div></a><h4>79</h4><h2><a href="edition.htm">Петербургский Телезритель</a><span class="wisdom_grade_inset" style="background-image: url('i/wisdom_grade1.png');" title="Издание умеренной «мудрости»">&nbsp;</span></h2><p><i>83 критика</i></p></div>
-			<div class="center"><p>437 рецензий</p><b>Средняя оценка в рецензиях:<span class="site_rating_small_awful">10</span></b></div>
-			<div class="right">9</div>
-		</li>
-		<li class="row_b users_rating_average clearfix">
-			<div class="left"><a href="critic.htm"><div class="photo" style="background-image: url('temp/cover10.jpg');"></div></a><h4>77</h4><h2><a href="edition.htm">TotalDVD</a><span class="wisdom_grade_inset" style="" title="">&nbsp;</span></h2><p><i>26 критиков</i></p></div>
-			<div class="center"><p>130 рецензий</p><b>Средняя оценка в рецензиях:<span class="site_rating_small_good">83</span></b></div>
-			<div class="right">10</div>
-		</li>
-		</ul>
-		<div class="page_lists_more"><a href="javascript:void(0)" class="pseudolink">Следующие 20 изданий</a></div>
-		
+
+<style type="text/css">
+
+.page_lists_blog {float: left; width: 680px; margin: 10px 10px 0px 10px;}
+
+.blog_pagination {float: left; width: 660px; height: 30px; padding: 10px; margin-bottom: 10px; background-color: #f9f6ed;}
+.blog_pagination a, .blog_pagination a:visited {display: inline-block; min-width: 28px; height: 28px; font-size: 14px; color: #4c3821; line-height: 28px; text-align: center; text-decoration: none; border: 1px solid #f8e2c6; border-left-width: 0; background-color: #fbf8ef;}
+.blog_pagination a:hover {color: #282828; text-shadow: 0 1px 1px #fffadf; background-color: #fcf1d2;}
+.blog_pagination a:first-child, .blog_pagination {border-left-width: 1px;}
+.blog_pagination span {display: inline-block; cursor: default; min-width: 28px; height: 30px; font-size: 14px; color: #bab29d; line-height: 30px; text-align: center; border: 1px solid #f8e2c6; border-left-width: 0; border-top-width: 0; border-bottom-width: 0;}
+.blog_pagination a.current, .blog_pagination a.current:visited {padding: 0 8px 0 8px; cursor: default; color: #282828; text-shadow: 0 1px 1px #fffadf; background-color: #ffe04d; box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.30); -moz-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.30); -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.30);}
+.blog_pagination a.prev {background-image: url('/i/blog_pages_prev.png'); background-position: 50% 50%; background-repeat: no-repeat;}
+.blog_pagination a.next {background-image: url('/i/blog_pages_next.png'); background-position: 50% 50%; background-repeat: no-repeat;}
+
+.special_promo_side {display: inline-block; cursor: pointer; position: relative; width: 236px; height: 154px; margin-bottom: 15px; border: 2px solid #ffd34d; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
+.special_promo_side:hover {opacity: 0.90; -moz-opacity: 0.90; -khtml-opacity: 0.90; filter: alpha(opacity=90);}
+.special_promo_side h4 {position: absolute; bottom: 0; left: 0; width: 100%; font-size: 12px;  background-image: url('/i/special_promo.png'); background-repeat: repeat;}
+.special_promo_side h4 a, .special_promo_side h4 a:visited {display: block; padding: 7px 5px 6px 5px; color: #171717; font-weight: normal; text-shadow: 0 1px 1px #f5e8a0;}
+
+.blog_popular_list h1 {display: block; height: 20px; padding: 10px; font-size: 20px; line-height: 20px; color: #171717; font-weight: normal; text-shadow: 0 1px 1px #fff6c1; background-color: #ffd34d;}
+.blog_popular_list li {position: relative; padding: 10px 10px 10px 40px; font-size: 12px; line-height: 14px; color: #919b9f; border-bottom: 1px solid #dee0e1;}
+.blog_popular_list li div {cursor: default; position: absolute; display: inline-block; overflow: hidden; top: 10px; right: 205px; padding: 1px 5px 1px 5px; font-size: 11px; line-height: 12px; color: #171717; text-shadow: 0 1px 1px #fff6c1; text-align: center; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;}
+.blog_popular_list li div {background-color: #ffd34d;}
+.blog_popular_list li + li div {background-color: #fad258;}
+.blog_popular_list li + li + li div {background-color: #f8d467;}
+.blog_popular_list li + li + li + li div {background-color: #f4d579;}
+.blog_popular_list li + li + li + li + li div {background-color: #f2d786;}
+.blog_popular_list li + li + li + li + li + li div {background-color: #ecd58e;}
+.blog_popular_list li + li + li + li + li + li + li div {background-color: #e9d69b;}
+.blog_popular_list li + li + li + li + li + li + li + li div {background-color: #e2d3a3;}
+.blog_popular_list li + li + li + li + li + li + li + li + li div {background-color: #e1d5ad;}
+.blog_popular_list li + li + li + li + li + li + li + li + li + li div {background-color: #ddd4b4;}
+.blog_popular_list li + li + li + li + li + li + li + li + li + li + li div {background-color: #dbd4bb;}
+
+
+.blog_entry {font-size: 12px; margin: 10px 10px 30px 10px;}
+
+</style>
+
+
+
+	
+		<div class="blog_pagination_wrap clearfix">
+			<div class="blog_pagination"><a href="#" class="prev">&nbsp;</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="javascript:void(0)" class="current">5 страница</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><span>&#133;</span><a href="#">24</a><a href="#" class="next">&nbsp;</a></div>
+		</div>
+
+		<div class="blog_entry">
+			<div class="blog_header">header</div>
+			<div class="blog_output">date, time, author</div>
+			<div class="blog_content clearfix">
+				h1, h2, h3, h4, h5, h6
+				p, ul, ol, img, b/strong, i/em, u, s
+				cover-left, cover-center, cover-right
+				quote
+			<div class="blog_cut">cut</div>
+			</div>
+			<div class="blog_footer">
+				<div class="blog_comments">comments</div>
+				<div class="blog_share">share</div>
+				<div class="blog_info"><p>source</p>	<p>movies/games</p>	<p>tags</p></div>			
+			</div>
+		</div>
+
+		<div class="blog_entry">
+			<div class="blog_header">header</div>
+			<div class="blog_output">date, time, author</div>
+			<div class="blog_content clearfix">
+				h1, h2, h3, h4, h5, h6
+				p, ul, ol, img, b/strong, i/em, u, s
+				cover-left, cover-center, cover-right
+				quote
+			<div class="blog_cut">cut</div>
+			</div>
+			<div class="blog_footer">
+				<div class="blog_comments">comments</div>
+				<div class="blog_share">share</div>
+				<div class="blog_info"><p>source</p>	<p>movies/games</p>	<p>tags</p></div>			
+			</div>
+		</div>		
+
+		<div class="blog_entry">
+			<div class="blog_header">header</div>
+			<div class="blog_output">date, time, author</div>
+			<div class="blog_content clearfix">
+				h1, h2, h3, h4, h5, h6
+				p, ul, ol, img, b/strong, i/em, u, s
+				cover-left, cover-center, cover-right
+				quote
+			<div class="blog_cut">cut</div>
+			</div>
+			<div class="blog_footer">
+				<div class="blog_comments">comments</div>
+				<div class="blog_share">share</div>
+				<div class="blog_info"><p>source</p>	<p>movies/games</p>	<p>tags</p></div>			
+			</div>
+		</div>
+
+		<div class="blog_entry">
+			<div class="blog_header">header</div>
+			<div class="blog_output">date, time, author</div>
+			<div class="blog_content clearfix">
+				h1, h2, h3, h4, h5, h6
+				p, ul, ol, img, b/strong, i/em, u, s
+				cover-left, cover-center, cover-right
+				quote
+			<div class="blog_cut">cut</div>
+			</div>
+			<div class="blog_footer">
+				<div class="blog_comments">comments</div>
+				<div class="blog_share">share</div>
+				<div class="blog_info"><p>source</p>	<p>movies/games</p>	<p>tags</p></div>			
+			</div>
+		</div>		
+	
+		<div class="blog_entry">
+			<div class="blog_header">header</div>
+			<div class="blog_output">date, time, author</div>
+			<div class="blog_content clearfix">
+				h1, h2, h3, h4, h5, h6
+				p, ul, ol, img, b/strong, i/em, u, s
+				cover-left, cover-center, cover-right
+				quote
+			<div class="blog_cut">cut</div>
+			</div>
+			<div class="blog_footer">
+				<div class="blog_comments">comments</div>
+				<div class="blog_share">share</div>
+				<div class="blog_info"><p>source</p>	<p>movies/games</p>	<p>tags</p></div>			
+			</div>
+		</div>
+
+		<div class="blog_entry">
+			<div class="blog_header">header</div>
+			<div class="blog_output">date, time, author</div>
+			<div class="blog_content clearfix">
+				h1, h2, h3, h4, h5, h6
+				p, ul, ol, img, b/strong, i/em, u, s
+				cover-left, cover-center, cover-right
+				quote
+			<div class="blog_cut">cut</div>
+			</div>
+			<div class="blog_footer">
+				<div class="blog_comments">comments</div>
+				<div class="blog_share">share</div>
+				<div class="blog_info"><p>source</p>	<p>movies/games</p>	<p>tags</p></div>			
+			</div>
+		</div>
+
+		<div class="blog_entry">
+			<div class="blog_header">header</div>
+			<div class="blog_output">date, time, author</div>
+			<div class="blog_content clearfix">
+				h1, h2, h3, h4, h5, h6
+				p, ul, ol, img, b/strong, i/em, u, s
+				cover-left, cover-center, cover-right
+				quote
+			<div class="blog_cut">cut</div>
+			</div>
+			<div class="blog_footer">
+				<div class="blog_comments">comments</div>
+				<div class="blog_share">share</div>
+				<div class="blog_info"><p>source</p>	<p>movies/games</p>	<p>tags</p></div>			
+			</div>
+		</div>
+	
+		<div class="blog_pagination_wrap clearfix">
+			<div class="blog_pagination"><a href="#" class="prev">&nbsp;</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="javascript:void(0)" class="current">5 страница</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><span>&#133;</span><a href="#">24</a><a href="#" class="next">&nbsp;</a></div>
+		</div>
+
+
+
+
+
+
 	</div>	
 
 
-	<div class="page_lists_side">
-		<div class="ad_side_lists"><a href="#"><img src="temp/banner1.png" alt=""></a></div>
-
-		<div class="reviews_list">
-			<h1>Недавние рецензии</h1>
-			<div class="reviews_list_tabs"><a href="javascript:void(0)" id="button_reviews_list_movies" class="button_frontrow_down"><span>фильмы</span></a><a href="javascript:void(0)" id="button_reviews_list_games" class="button_frontrow"><span>игры</span></a></div>
-			<ul id="reviews_list_movies" style="display: block;">
-				<li><a href="javascript:void(0)"><b>Михаил Судаков</b> (Кино-Говно.ком) <u>оценивает</u> фильм <b>Тачбэк</b> на <span class="site_rating_small_good">83</span></a></li>
-				<li><a href="javascript:void(0)"><b>Александр Голубчиков</b> (Filmz.ru) <u>оценивает</u> фильм <b>Хоббит: Нежданное путешествие</b> на <span class="site_rating_small_bad">20</span></a></li>
-				<li><a href="javascript:void(0)"><b>Алекс Экслер</b> (Exler.ru) <u>оценивает</u> фильм <b>Мстители</b> на <span class="site_rating_small_good">отлично</span></a></li>
-				<li><a href="javascript:void(0)"><b>Лидия Маслова</b> (Коммерсантъ) <u>оценивает</u> фильм <b>Репортаж из преисподней</b> на <span class="site_rating_small_average">нормально</span></a></li>
-				<li><a href="javascript:void(0)"><b>Михаил Судаков</b> (Кино-Говно.ком) <u>оценивает</u> фильм <b>Мстители</b> на <span class="site_rating_small_good">98</span></a></li>
-				<li><a href="javascript:void(0)"><b>Станислав Зельвенский</b> (Афиша) <u>оценивает</u> фильм <b>Тёмный рыцарь: Возрождение легенды</b> на <span class="site_rating_small_awful">15</span></a></li>
-				<li><a href="javascript:void(0)"><b>Михаил Судаков</b> (Кино-Говно.ком) <u>оценивает</u> фильм <b>Тачбэк</b> на <span class="site_rating_small_average">69</span></a></li>
-				<li><a href="javascript:void(0)"><b>Александр Голубчиков</b> (Filmz.ru) <u>оценивает</u> фильм <b>Хоббит: Нежданное путешествие</b> на <span class="site_rating_small_bad">20</span></a></li>
-				<li><a href="javascript:void(0)"><b>Алекс Экслер</b> (Exler.ru) <u>оценивает</u> фильм <b>Мстители</b> на <span class="site_rating_small_good">отлично</span></a></li>
-				<li><a href="javascript:void(0)"><b>Лидия Маслова</b> (Коммерсантъ) <u>оценивает</u> фильм <b>Репортаж из преисподней</b> на <span class="site_rating_small_average">нормально</span></a></li>
+	<div class="page_lists_side_blog">
+		<div class="special_promo_side" onclick="javascript:void(0)" style="background-image: url('temp/pic3.jpg');"><h4><a href="#">Экранизации комиксов в 2013 году</a></h4></div>
+		<div class="special_promo_side" onclick="javascript:void(0)" style="background-image: url('temp/pic4.jpg');"><h4><a href="#">Самые кассовые фильмы 2012 года</a></h4></div>
+		<!--div class="ad_side_lists"><a href="#"><img src="temp/banner1.png" alt=""></a></div-->
+		<div class="blog_popular_list">
+			<h1>Популярные записи</h1>
+			<ul>
+				<li><div>1540</div><a href="#">Новогодние друзья</a></li>
+				<li><div>710</div><a href="javascript:void(0)">Почти документальный Чехов</a></li>
+				<li><div>355</div><a href="javascript:void(0)">Волшебный ноутбук и американский рэпер</a></li>
+				<li><div>340</div><a href="#">Космические подробности</a></li>
+				<li><div>201</div><a href="javascript:void(0)">Кассовые итоги 2012 года</a></li>
+				<li><div>197</div><a href="javascript:void(0)">От монголов к арамейцам</a></li>
+				<li><div>163</div><a href="javascript:void(0)">Воспитанный чужими</a></li>
+				<li><div>49</div><a href="javascript:void(0)">Бесконечная «Восьмерка»</a></li>
+				<li><div>18</div><a href="javascript:void(0)">Особенности национальной амнистии</a></li>
+				<li><div>2</div><a href="javascript:void(0)">Копирайтер и волшебный ноутбук</a></li>
 			</ul>
-			<ul id="reviews_list_games" style="display: none;">
-				<li><a href="#">Лидия Маслова</a> (Коммерсантъ) оценивает игру <a href="#">Mass Effect 3</a> на <span class="site_rating_small_average">74</span></li>
-				<li><a href="#">Михаил Судаков</a> (Кино-Говно.ком) оценивает игру <a href="#">I Am Alive</a> на <span class="site_rating_small_good">83</span></li>
-				<li><a href="#">Александр Голубчиков</a> (Filmz.ru) оценивает игру <a href="#">Wargame: European Escalation</a> на <span class="site_rating_small_bad">20</span></li>
-				<li><a href="#">Алекс Экслер</a> (Exler.ru) оценивает игру <a href="#">Street Fighter X Tekken</a> на <span class="site_rating_small_good">отлично</span></li>
-				<li><a href="#">Лидия Маслова</a> (Коммерсантъ) оценивает игру <a href="#">Star Wars: The Old Republic</a> на <span class="site_rating_small_average">нормально</span></li>
-				<!--li><a href="#">Михаил Судаков</a> (Кино-Говно.ком) оценивает игру <a href="#">Fieldrunners 2</a> на <span class="site_rating_small_good">98</span></li>
-				<li><a href="#">Станислав Зельвенский</a> (Афиша) оценивает игру <a href="#">Sleeping Dogs</a> на <span class="site_rating_small_awful">15</span></li>
-				<li><a href="#">Михаил Судаков</a> (Кино-Говно.ком) оценивает игру <a href="#">Darksiders 2</a> на <span class="site_rating_small_average">69</span></li>
-				<li><a href="#">Александр Голубчиков</a> (Filmz.ru) оценивает игру <a href="#">Deadlight</a> на <span class="site_rating_small_bad">20</span></li>
-				<li><a href="#">Алекс Экслер</a> (Exler.ru) оценивает игру <a href="#">Hybrid</a> на <span class="site_rating_small_good">отлично</span></li-->
-			</ul>
-			<div class="reviews_list_more"><a href="javascript:void(0)" class="pseudolink">Еще 10 обзоров</a></div>
+			<div class="reviews_list_more"><a href="javascript:void(0)" class="pseudolink">Еще 10 записей</a></div>
 		</div>
 	</div>
-
 
 </div>
 <!-- ============== // CONTENT ============== -->
