@@ -135,7 +135,7 @@ $(document).ready(function()
 .blog_popular_list li + li + li + li + li + li + li + li + li + li + li div {background-color: #dbd4bb;}
 
 
-.page_lists_blog .blog_entry {margin: 10px 10px 30px 10px; padding-bottom: 20px; font-size: 12px; line-height: 16px; color: #3c3c3c; border-bottom: 1px solid #dadedf;}
+.page_lists_blog .blog_entry {margin: 10px 10px 50px 10px; padding-bottom: 20px; font-size: 12px; line-height: 18px; color: #3c3c3c; border-bottom: 1px solid #dadedf;}
 .page_lists_blog .blog_entry img {max-width: 670px; overflow: hidden; border: 0;}
 
 
@@ -150,19 +150,34 @@ $(document).ready(function()
 .blog_entry .blog_output {padding-bottom: 8px; font-size: 11px; color: #9f9f9f;}
 .blog_entry .blog_output b {font-size: 14px; font-weight: normal; color: #1e1e1e;}
 
-.blog_entry .blog_content h1, .blog_entry .blog_content h2 {padding: 10px 0 6px 0; font-size: 18px; font-weight: normal; line-height: 22px;}
-.blog_entry .blog_content h3, .blog_entry .blog_content h4 {padding: 8px 0 6px 0; font-size: 16px; font-weight: normal; line-height: 20px;}
-.blog_entry .blog_content h5, .blog_entry .blog_content h6 {padding: 6px 0 4px 0; font-size: 14px; font-weight: normal; line-height: 18px;}
+.blog_entry .blog_content h1, .blog_entry .blog_content h2 {padding: 12px 0 4px 0; font-size: 16px; font-weight: bold; line-height: 22px;}
+.blog_entry .blog_content h3, .blog_entry .blog_content h4 {padding: 10px 0 4px 0; font-size: 14px; font-weight: bold; line-height: 20px;}
+.blog_entry .blog_content h5, .blog_entry .blog_content h6 {padding: 8px 0 2px 0; font-size: 12px; font-weight: bold; line-height: 20px;}
 
-.blog_entry .blog_content p {padding: 4px 0 4px 0; font-size: 12px; line-height: 16px;}
+.blog_entry .blog_content p {padding: 4px 0 4px 0; font-size: 12px; line-height: 18px;}
 .blog_entry .blog_content i, .blog_entry .blog_content em {font-style: italic;}
 .blog_entry .blog_content b, .blog_entry .blog_content strong {font-weight: bold;}
 .blog_entry .blog_content u {text-decoration: underline;}
 .blog_entry .blog_content s {text-decoration: line-through;}
 
-.blog_entry .blog_content .blog_img_left {float: left; margin: 8px 15px 5px 0; max-width: 270px; overflow: hidden; border: 0;}
+.blog_entry .blog_content ul {margin: 4px 0 8px 20px; list-style-type: disc;}
+.blog_entry .blog_content ol {margin: 4px 0 8px 20px; list-style-type: decimal;}
+.blog_entry .blog_content li {margin: 4px 0 4px 0;}
+
+.blog_entry .blog_content .blog_img_left {float: left; margin: 8px 15px 15px 0; max-width: 270px; overflow: hidden; border: 0;}
 .blog_entry .blog_content .blog_img_right {float: right; margin: 8px 0 5px 15px; max-width: 270px; overflow: hidden; border: 0;}
 .blog_entry .blog_content .blog_img_center {max-width: 670px; max-height: 500px; margin: 10px 0 5px 0; overflow: hidden; border: 0;}
+
+.blog_entry .blog_content .blog_quote {width: 60%; padding-left: 15px; margin: 15px 15px 25px 20px; font-style: italic; color: #000000; line-height: 20px; border-left: 1px dotted #e7ab06;}
+
+.blog_entry .blog_content .blog_cut a {display: inline-block; padding: 10px 15px 10px 15px; margin: 15px 0 20px 0;
+
+border-top: 1px solid #c8d4d7; border-bottom: 1px solid #394042; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;
+background-color: #747b7d; 
+background: -moz-linear-gradient(top,  #747b7d 0%, #394042 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#747b7d), color-stop(100%,#394042)); background: -webkit-linear-gradient(top,  #747b7d 0%,#394042 100%); background: -o-linear-gradient(top,  #747b7d 0%,#394042 100%);
+background: -ms-linear-gradient(top,  #747b7d 0%,#394042 100%); background: linear-gradient(to bottom,  #747b7d 0%,#394042 100%);
+
+}
 
 </style>
 
@@ -177,30 +192,28 @@ $(document).ready(function()
 			<div class="blog_header"><a href="link">Волшебный ноутбук и американский рэпер</a><span>&nbsp;&larr;</span></div>
 			<div class="blog_output"><b>Сегодня</b> &bull; 10:48 &bull; <a href="javascript:void(0)">Иван Иванов</a></div>
 			<div class="blog_content clearfix">
-				<div class="blog_img_left"><img src="/temp/poster7.jpg" alt=""></div>			
+				<div class="blog_img_left"><img src="/temp/poster8.jpg" alt=""></div>			
 				<p>Новость верстается простыми тэгами и, в общем, должна поддерживать markdown-разметку. Во многом здесь все аналогично &laquo;Кинопередовой&raquo;: картинки вставляются через <i>div</i> с классами <b>blog_img_left</b> и <b>blog_img_right</b> (максимальная ширина ограничена 270 пикс.), а также <b>blog_img_center</b> (максимальные размеры ограничены 670х500 пикс.) Можно и через &laquo;голый&raquo; <b>img src</b> — у этих тоже ограничение на 670 пикс. по ширине.</p>
 				<p>Предусмотрены все стандартные тэги: <b>b</b>, <strong>strong</strong>, <i>i</i>, <em>em</em>, <u>underline</u>, <s>s</s>. Здесь же все заголовки: <b>h1</b>, <b>h2</b>, <b>h3</b>, <b>h4</b>, <b>h5</b> и <b>h6</b>. Вот это, к примеру, <b>h1</b>:</p>
-				<h1>Заголовок H1. Сделаем его длиннее. Настолько длиннее, или даже больше. Например, вот так. Или даже так? Так нормально.</h1>
+				<h1>Заголовок h1. Сделаем его длиннее. Настолько длиннее, или даже больше. Например, вот так. Или даже так? Так нормально.</h1>
 				<p>В этом месте вставим длинный абзац:</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b>Duis aute irure dolor</b> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint</i> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor <s>incididunt</s> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute <a href="link2">irure dolor in reprehenderit</a> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<p>Разумеется, без списков мы никуда. Заготовлены обычные <b>ul&gt;li</b> и нумерованные <b>ol&gt;li</b>. Это — обычный:</p>
-
 				<ul><li>Pledge This!</li><li>Superbabies: Baby Geniuses 2</li><li>Manos: The Hands of Fate</li><li>The Hottie & the Nottie</li><li>Disaster Movie</li></ul>
-				
-				<h3>Самые кассовые фильмы всех времен (кстати, это — заголовок h3):</h3>
+				<h3>Самые кассовые фильмы всех времен нумерованным списком:</h3>
 				<ol><li>Avatar</li><li>Titanic</li><li>The Avengers</li><li>Harry Potter and the Deathly Hallows Part 2</li><li>Transformers: Dark of the Moon</li><li>The Lord of the Rings: The Return of the King</li><li>Skyfall</li><li>The Dark Knight Rises</li><li>Pirates of the Caribbean: Dead Man's Chest</li><li>Toy Story 3</li></ol>
 
-				<p>Терпение, мы почти закончили. Осталось показать цитату; у нее <i>div</i> с классом <b>blog_quote</b>:</p>
-				
+				<p>Теперь подключим fancybox. Чтобы не плодить сущности, полноценную галерею делать не будем; каждое изображение — само по себе:</p>
+
+				<p>Терпение, уже почти все. Осталось показать цитату; у нее <i>div</i> с классом <b>blog_quote</b>:</p>
 				<div class="blog_quote">«Нефть» — великий фильм, но я просто люблю Дэниела Дей-Льюиса. «Старикам тут не место» — не мое. Я мозгом понимаю, что это талантливо, но сам бы я не хотел таким кино заниматься. 90 процентов зрителей, которые этот фильм смотрят, не понимают ничего. Непонятно, зачем Коэны это все делают. Как и Тарантино. Люди балуются. Это кино не зрительское. Оно для критиков, киноманов. Я от «Мстителей» или «Железного человека» получаю большее удовольствие, чем от «Стариков».</div>
-
-
-				<p>Остались: кат, fancybox, футер</p>
-
-				<div class="blog_cut">cut</div>
+				<div id="uncut0000" class="blog_cut"><a href="javascript:void(0)">Развернуть запись полностью</a></div>
+				<div id="cut0000" style="display: none;">Сюда аяксом вставляем остаток записи, меняем display на block и скрываем кнопку разворота</div>
 				
-				<p>Текст продолжается после ката:</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Новость можно продолжать и после ката. Но мы на этом закончим.</p>
+
+				<p>Остались: кат, fancybox, футер, блоки рейтинга у фильмов и блоки мудрости у людей</p>
+
 			</div>
 			<div class="blog_footer">
 				<div class="blog_comments">comments</div>
