@@ -45,6 +45,24 @@ $(document).ready(function()
 //});});
 </script>
 
+<!-- Fancybox -->
+<script type="text/javascript" src="/js/jquery.fancybox.js?v=2.1.1"></script>
+<script type="text/javascript" src="/js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="/js/jquery.fancybox-media.js?v=1.0.4"></script>
+<link rel="stylesheet" type="text/css" href="/css/fancybox.css?v=2.1.1" media="screen">
+<script type="text/javascript">
+$(document).ready(function() {
+$('.blog_img').fancybox({
+//prevEffect : 'none',
+//nextEffect : 'none',
+//closeBtn  : false,
+//arrows    : false,
+nextClick : false,
+helpers : {thumbs : {width  : 50, height : 50}}
+});
+});
+</script>
+
 </head><body>
 
 
@@ -97,147 +115,11 @@ $(document).ready(function()
 
 	<div class="page_lists_blog">
 
-
-
-
-<!-- Fancybox -->
-<script type="text/javascript" src="/js/jquery.fancybox.js?v=2.1.1"></script>
-<script type="text/javascript" src="/js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-<script type="text/javascript" src="/js/jquery.fancybox-media.js?v=1.0.4"></script>
-<link rel="stylesheet" type="text/css" href="/css/fancybox.css?v=2.1.1" media="screen">
-<script type="text/javascript">
-$(document).ready(function() {
-$('.gallery_uncommon').fancybox({
-//prevEffect : 'none',
-//nextEffect : 'none',
-//closeBtn  : false,
-//arrows    : false,
-nextClick : false,
-helpers : {thumbs : {width  : 50, height : 50}}
-});
-$('.gallery_videos').fancybox({
-//prevEffect : 'none',
-//nextEffect : 'none',
-//closeBtn  : false,
-arrows    : false,
-nextClick : false,
-helpers : {thumbs : {width  : 90, height : 50}}
-});
-});
-</script>
-
-
-<style type="text/css">
-
-.page_lists_blog {float: left; width: 680px; margin: 10px 10px 0px 10px;}
-
-.blog_pagination {float: left; width: 660px; height: 30px; padding: 10px; margin-bottom: 10px; background-color: #faf3d9;}
-.blog_pagination a, .blog_pagination a:visited {display: inline-block; min-width: 28px; height: 28px; font-size: 14px; color: #4c3821; line-height: 28px; text-align: center; text-decoration: none; border: 1px solid #f8e2c6; border-left-width: 0; background-color: #fbf8ef;}
-.blog_pagination a:hover {color: #282828; text-shadow: 0 1px 1px #fffadf; background-color: #fcf1d2;}
-.blog_pagination a:first-child, .blog_pagination {border-left-width: 1px;}
-.blog_pagination span {display: inline-block; cursor: default; min-width: 28px; height: 30px; font-size: 14px; color: #bab29d; line-height: 30px; text-align: center; border: 1px solid #f8e2c6; border-left-width: 0; border-top-width: 0; border-bottom-width: 0;}
-.blog_pagination a.current, .blog_pagination a.current:visited {padding: 0 8px 0 8px; cursor: default; color: #282828; text-shadow: 0 1px 1px #fffadf; background-color: #ffe04d; box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.30); -moz-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.30); -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.30);}
-.blog_pagination a.prev {background-image: url('/i/blog_pages_prev.png'); background-position: 50% 50%; background-repeat: no-repeat;}
-.blog_pagination a.next {background-image: url('/i/blog_pages_next.png'); background-position: 50% 50%; background-repeat: no-repeat;}
-
-.special_promo_side {display: inline-block; cursor: pointer; position: relative; width: 236px; height: 154px; margin-bottom: 15px; border: 2px solid #ffd34d; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
-.special_promo_side:hover {opacity: 0.90; -moz-opacity: 0.90; -khtml-opacity: 0.90; filter: alpha(opacity=90);}
-.special_promo_side h4 {position: absolute; bottom: 0; left: 0; width: 100%; font-size: 12px;  background-image: url('/i/special_promo.png'); background-repeat: repeat;}
-.special_promo_side h4 a, .special_promo_side h4 a:visited {display: block; padding: 7px 5px 6px 5px; color: #171717; font-weight: normal; text-shadow: 0 1px 1px #f5e8a0;}
-
-.blog_popular_list h1 {display: block; height: 20px; padding: 10px; font-size: 20px; line-height: 20px; color: #171717; font-weight: normal; text-shadow: 0 1px 1px #fff6c1; background-color: #ffd34d;}
-.blog_popular_list li {position: relative; padding: 10px 10px 10px 40px; font-size: 12px; line-height: 14px; color: #919b9f; border-bottom: 1px solid #dee0e1;}
-.blog_popular_list li div {cursor: default; position: absolute; display: inline-block; overflow: hidden; top: 10px; right: 205px; padding: 1px 5px 1px 5px; font-size: 11px; line-height: 12px; color: #171717; text-shadow: 0 1px 1px #fff6c1; text-align: center; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;}
-.blog_popular_list li div {background-color: #ffd34d;}
-.blog_popular_list li + li div {background-color: #fad258;}
-.blog_popular_list li + li + li div {background-color: #f8d467;}
-.blog_popular_list li + li + li + li div {background-color: #f4d579;}
-.blog_popular_list li + li + li + li + li div {background-color: #f2d786;}
-.blog_popular_list li + li + li + li + li + li div {background-color: #ecd58e;}
-.blog_popular_list li + li + li + li + li + li + li div {background-color: #e9d69b;}
-.blog_popular_list li + li + li + li + li + li + li + li div {background-color: #e2d3a3;}
-.blog_popular_list li + li + li + li + li + li + li + li + li div {background-color: #e1d5ad;}
-.blog_popular_list li + li + li + li + li + li + li + li + li + li div {background-color: #ddd4b4;}
-.blog_popular_list li + li + li + li + li + li + li + li + li + li + li div {background-color: #dbd4bb;}
-
-
-.page_lists_blog .blog_entry {margin: 10px 10px 50px 10px; padding-bottom: 20px; font-size: 12px; line-height: 18px; color: #3c3c3c; border-bottom: 1px solid #dadedf;}
-.page_lists_blog .blog_entry img {max-width: 670px; overflow: hidden; border: 0;}
-
-
-.blog_entry .blog_header {padding-bottom: 8px; font-size: 22px; font-weight: normal; line-height: 28px;}
-.blog_entry .blog_header a {color: #151515; text-decoration: none; background-color: #ffeba4;}
-.blog_entry .blog_header a:visited {color: #453c2c; text-decoration: none; background-color: #f7f0d5;}
-.blog_entry .blog_header a:hover {color: #151515; text-decoration: none; background-color: #fff7ae;}
-.blog_entry .blog_header span {display: none;}
-.blog_entry .blog_header:hover span {display: inline;}
-
-
-.blog_entry .blog_output {padding-bottom: 8px; font-size: 11px; color: #9f9f9f;}
-.blog_entry .blog_output b {font-size: 14px; font-weight: normal; color: #1e1e1e;}
-
-.blog_entry .blog_content h1, .blog_entry .blog_content h2 {padding: 12px 0 4px 0; font-size: 16px; font-weight: bold; line-height: 22px;}
-.blog_entry .blog_content h3, .blog_entry .blog_content h4 {padding: 10px 0 4px 0; font-size: 14px; font-weight: bold; line-height: 20px;}
-.blog_entry .blog_content h5, .blog_entry .blog_content h6 {padding: 8px 0 2px 0; font-size: 12px; font-weight: bold; line-height: 20px;}
-
-.blog_entry .blog_content p {padding: 4px 0 4px 0; font-size: 12px; line-height: 18px;}
-.blog_entry .blog_content i, .blog_entry .blog_content em {font-style: italic;}
-.blog_entry .blog_content b, .blog_entry .blog_content strong {font-weight: bold;}
-.blog_entry .blog_content u {text-decoration: underline;}
-.blog_entry .blog_content s {text-decoration: line-through;}
-
-.blog_entry .blog_content ul {margin: 4px 0 8px 20px; list-style-type: disc;}
-.blog_entry .blog_content ol {margin: 4px 0 8px 20px; list-style-type: decimal;}
-.blog_entry .blog_content li {margin: 4px 0 4px 0;}
-
-.blog_entry .blog_content .blog_img_left {float: left; margin: 8px 15px 15px 0; max-width: 270px; overflow: hidden; border: 0;}
-.blog_entry .blog_content .blog_img_right {float: right; margin: 8px 0 5px 15px; max-width: 270px; overflow: hidden; border: 0;}
-.blog_entry .blog_content .blog_img_center {max-width: 670px; max-height: 500px; margin: 10px 0 5px 0; overflow: hidden; border: 0;}
-
-.blog_entry .blog_content blockquote {width: 60%; padding-left: 15px; margin: 15px 15px 25px 20px; font-style: italic; color: #000000; line-height: 20px; border-left: 1px dotted #e7ab06;}
-
-
-.blog_entry .blog_content .blog_cut {display: inline-block; margin: 10px 0 10px 0; border-top: 2px dashed #dddddd; border-bottom: 2px dashed #dddddd;}
-
-.blog_entry .blog_content .blog_cut a {display: inline-block; padding: 8px 10px 8px 10px; margin: 14px 0 16px 0; font-size: 14px; line-height: 14px; text-decoration: none; color: #ffffff; text-shadow: 0px -1px 2px #aa7200;
-border: 1px solid #ddad34;
-border-bottom: 1px solid #a98325;
-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
--webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
-background-color: #ffc32c; 
-background: -moz-linear-gradient(top,  #ffc32c 0%, #da810b 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc32c), color-stop(100%,#da810b)); background: -webkit-linear-gradient(top,  #ffc32c 0%,#da810b 100%); background: -o-linear-gradient(top,  #ffc32c 0%,#da810b 100%);
-background: -ms-linear-gradient(top,  #ffc32c 0%,#da810b 100%); background: linear-gradient(to bottom,  #ffc32c 0%,#da810b 100%);}
-
-.blog_entry .blog_content .blog_cut a:hover {
-color: #ffffff; text-shadow: 0px -1px 2px #aa7200;
-border: 1px solid #f3be39;
-border-bottom: 1px solid #cf9d1f;
-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
-background-color: #ffc977; 
-background: -moz-linear-gradient(top,  #ffc977 0%, #f0ac1c 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc977), color-stop(100%,#f0ac1c)); background: -webkit-linear-gradient(top,  #ffc977 0%,#f0ac1c 100%); background: -o-linear-gradient(top,  #ffc977 0%,#f0ac1c 100%);
-background: -ms-linear-gradient(top,  #ffc977 0%,#f0ac1c 100%); background: linear-gradient(to bottom,  #ffc977 0%,#f0ac1c 100%);}
-
-.blog_entry .blog_content .blog_cut a:active {
-color: #ffffff; text-shadow: 0px -1px 2px #aa7200;
-border: 1px solid #ffce83;
-border-bottom: 1px solid #ffda7b;
-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.30); -moz-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.30); -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.30);
-background-color: #d18400; 
-background: -moz-linear-gradient(top,  #d18400 0%, #e7a413 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d18400), color-stop(100%,#e7a413)); background: -webkit-linear-gradient(top,  #d18400 0%,#e7a413 100%); background: -o-linear-gradient(top,  #d18400 0%,#e7a413 100%);
-background: -ms-linear-gradient(top,  #d18400 0%,#e7a413 100%); background: linear-gradient(to bottom,  #d18400 0%,#e7a413 100%);}
-
-
-
-</style>
-
-
-
-	
 		<div class="blog_pagination_wrap clearfix">
 			<div class="blog_pagination"><a href="#" class="prev">&nbsp;</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="javascript:void(0)" class="current">5 страница</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><span>&#133;</span><a href="#">24</a><a href="#" class="next">&nbsp;</a></div>
 		</div>
 
-		<div class="blog_entry">
+		<div id="blog0000" class="blog_entry">
 			<div class="blog_header"><a href="link">Волшебный ноутбук и американский рэпер</a><span>&nbsp;&larr;</span></div>
 			<div class="blog_output"><b>Сегодня</b> &bull; 10:48 &bull; <a href="javascript:void(0)">Иван Иванов</a></div>
 			<div class="blog_content clearfix">
@@ -251,32 +133,23 @@ background: -ms-linear-gradient(top,  #d18400 0%,#e7a413 100%); background: line
 				<ul><li>Pledge This!</li><li>Superbabies: Baby Geniuses 2</li><li>Manos: The Hands of Fate</li><li>The Hottie & the Nottie</li><li>Disaster Movie</li></ul>
 				<h3>Самые кассовые фильмы всех времен нумерованным списком:</h3>
 				<ol><li>Avatar</li><li>Titanic</li><li>The Avengers</li><li>Harry Potter and the Deathly Hallows Part 2</li><li>Transformers: Dark of the Moon</li><li>The Lord of the Rings: The Return of the King</li><li>Skyfall</li><li>The Dark Knight Rises</li><li>Pirates of the Caribbean: Dead Man's Chest</li><li>Toy Story 3</li></ol>
-
-				<p>Теперь подключим fancybox. Чтобы не плодить сущности, полноценную галерею делать не будем; каждое изображение — само по себе:</p>
-
-			<a class="gallery_uncommon" data-fancybox-group="gallery1" href="/temp/testposter01.jpg"><img src="/temp/testposter01s.jpg" alt=""></a>
-			<a class="gallery_uncommon" data-fancybox-group="gallery1" href="/temp/testposter02.jpg"><img src="/temp/testposter02s.jpg" alt=""></a>
-			<a class="gallery_uncommon" data-fancybox-group="gallery1" href="/temp/testposter03.jpg"><img src="/temp/testposter03s.jpg" alt=""></a>
-			<a class="gallery_uncommon" data-fancybox-group="gallery1" href="/temp/testposter04.jpg"><img src="/temp/testposter04s.jpg" alt=""></a>
-
+				<p>Теперь подключим fancybox. Каждая картинка обрамляется тэгом <i>a</i> с классом <b>blog_img</b>. Если хотим полноценную галерею (чтобы картинки листались), группе можно задать одинаковый параметр <i>data-fancybox-group</i> (а можно не задавать). Для удобства можно приравнять этот параметр к ID самой новости (в данном случае - blog0000).</p>
+				<p><a class="blog_img" data-fancybox-group="blog0000" href="/temp/testposter01.jpg"><img src="/temp/testposter01s.jpg" alt="" height="70"></a><a class="blog_img" data-fancybox-group="blog0000" href="/temp/testposter02.jpg"><img src="/temp/testposter02s.jpg" alt="" height="60"></a><a class="blog_img" data-fancybox-group="blog0000" href="/temp/testposter03.jpg"><img src="/temp/testposter03s.jpg" alt=""></a><a class="blog_img" data-fancybox-group="blog0000" href="/temp/testposter04.jpg"><img src="/temp/testposter04s.jpg" alt="" height="100"></a><a class="blog_img" data-fancybox-group="blog0000" href="/temp/testposter01.jpg"><img src="/temp/testposter01s.jpg" alt="" height="40"></a><a class="blog_img" data-fancybox-group="blog0000" href="/temp/testposter02.jpg"><img src="/temp/testposter02s.jpg" alt="" height="60"></a><a class="blog_img" data-fancybox-group="blog0000" href="/temp/testposter03.jpg"><img src="/temp/testposter03s.jpg" alt=""></a><a class="blog_img" data-fancybox-group="blog0000" href="/temp/testposter04.jpg"><img src="/temp/testposter04s.jpg" alt="" height="80"></a><a class="blog_img" data-fancybox-group="blog0000" href="/temp/testposter04.jpg"><img src="/temp/testposter04s.jpg" alt="" height="100"></a><a class="blog_img" data-fancybox-group="blog0000" href="/temp/testposter01.jpg"><img src="/temp/testposter01s.jpg" alt="" height="40"></a><a class="blog_img" data-fancybox-group="blog0000" href="/temp/testposter03.jpg"><img src="/temp/testposter03s.jpg" alt=""></a></p>
 				<p>Терпение, уже почти все. Осталось показать цитату; она вставляется тэгом <b>blockquote</b>:</p>
 				<blockquote>«Нефть» — великий фильм, но я просто люблю Дэниела Дей-Льюиса. «Старикам тут не место» — не мое. Я мозгом понимаю, что это талантливо, но сам бы я не хотел таким кино заниматься. 90 процентов зрителей, которые этот фильм смотрят, не понимают ничего. Непонятно, зачем Коэны это все делают. Как и Тарантино. Люди балуются. Это кино не зрительское. Оно для критиков, киноманов. Я от «Мстителей» или «Железного человека» получаю большее удовольствие, чем от «Стариков».</blockquote>
 				<p>Заглянем под кат <b>div class="blog_cut"</b>? Лучше заглянем в код.</p>
-				<div id="uncut0000" class="blog_cut"><a href="javascript:void(0)">Развернуть запись полностью</a></div>
-				<div id="cut0000" style="display: none;">Сюда аяксом вставляем остаток записи, меняем display на block и скрываем кнопку разворота</div>
-				
+				<div id="bloguncut0000" class="blog_cut"><a href="javascript:void(0)">Развернуть запись полностью</a></div>
+				<div id="blogcut0000" style="display: none;">Сюда аяксом вставляем остаток записи, меняем display на block и скрываем кнопку разворота</div>
 				<p>Новость можно продолжать и после ката. Но мы на этом закончим.</p>
-
-				<p>Остались: fancybox, футер, блоки рейтинга у фильмов и блоки мудрости у людей</p>
-
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
-			<div class="blog_footer">
-				<div class="blog_comments">comments</div>
-				<div class="blog_share">share</div>
-				<div class="blog_info"><p>source</p> <p>movies/games</p> <p>tags</p></div>			
+			<div class="blog_footer clearfix">
+				<div class="blog_comments"><a href="javascript:void(0)" title="Комментарии"><span>+</span></a></div>
+				<div class="blog_share"><a href="javascript:void(0)" title="Поделиться">&nbsp;</a></div>
+				<div class="blog_info"><p><a href="javascript:void(0)">Гайд-Парк на Гудзоне</a>, <a href="javascript:void(0)">Неудержимый</a>, <a href="javascript:void(0)">Отверженные</a>, <a href="javascript:void(0)">Репортаж из преисподней</a></p><p>Метки: <a href="javascript:void(0)">фильмы</a>, <a href="javascript:void(0)">кассовые сборы</a>, <a href="javascript:void(0)">Оскар</a></p><p>Источник: <a href="javascript:void(0)">Box Office Mojo</a></p></div>
+				<div class="blog_share_container clearfix" style="display: none;"><a href="#" title="ВКонтакте" class="vk">&nbsp;</a><a href="#" title="Facebook" class="fb">&nbsp;</a><a href="#" title="Twitter" class="twitter">&nbsp;</a><a href="#" title="LiveJournal" class="livejournal">&nbsp;</a></div>
 			</div>
 		</div>
-
 
 		<div class="blog_entry">
 			<div class="blog_header"><a href="link5">От гардемаринов до мушкетеров</a><span>&nbsp;&larr;</span></div>
@@ -289,10 +162,11 @@ background: -ms-linear-gradient(top,  #d18400 0%,#e7a413 100%); background: line
 				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 			</div>
-			<div class="blog_footer">
-				<div class="blog_comments">comments</div>
-				<div class="blog_share">share</div>
-				<div class="blog_info"><p>source</p>	<p>movies/games</p>	<p>tags</p></div>			
+			<div class="blog_footer clearfix">
+				<div class="blog_comments"><a href="javascript:void(0)" title="Комментарии"><span>4271</span></a></div>
+				<div class="blog_share"><a href="javascript:void(0)" title="Поделиться">&nbsp;</a></div>
+				<div class="blog_info"><p><a href="javascript:void(0)">Гайд-Парк на Гудзоне</a>, <a href="javascript:void(0)">Неудержимый</a>, <a href="javascript:void(0)">Отверженные</a>, <a href="javascript:void(0)">Репортаж из преисподней</a></p><p>Метки: <a href="javascript:void(0)">фильмы</a>, <a href="javascript:void(0)">кассовые сборы</a>, <a href="javascript:void(0)">Оскар</a></p><p>Источник: <a href="javascript:void(0)">Box Office Mojo</a></p></div>
+				<div class="blog_share_container clearfix" style="display: none;"><a href="#" title="ВКонтакте" class="vk">&nbsp;</a><a href="#" title="Facebook" class="fb">&nbsp;</a><a href="#" title="Twitter" class="twitter">&nbsp;</a><a href="#" title="LiveJournal" class="livejournal">&nbsp;</a></div>
 			</div>
 		</div>		
 
@@ -306,21 +180,17 @@ background: -ms-linear-gradient(top,  #d18400 0%,#e7a413 100%); background: line
 				<ul><li>Toy Story 3</li><li>The Dark Knight</li><li>Spider-Man 3</li><li>Shrek 2</li><li>Saving Private Ryan</li><li>Titanic</li><li>Independence Day</li><li>Jurassic Park</li><li>Terminator 2</li></ul>
 				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
-			<div class="blog_footer">
-				<div class="blog_comments">comments</div>
-				<div class="blog_share">share</div>
-				<div class="blog_info"><p>source</p>	<p>movies/games</p>	<p>tags</p></div>			
+			<div class="blog_footer clearfix">
+				<div class="blog_comments"><a href="javascript:void(0)" title="Комментарии"><span>17</span></a></div>
+				<div class="blog_share"><a href="javascript:void(0)" title="Поделиться">&nbsp;</a></div>
+				<div class="blog_info"><p><a href="javascript:void(0)">Гайд-Парк на Гудзоне</a>, <a href="javascript:void(0)">Неудержимый</a>, <a href="javascript:void(0)">Отверженные</a>, <a href="javascript:void(0)">Репортаж из преисподней</a></p><p>Метки: <a href="javascript:void(0)">фильмы</a>, <a href="javascript:void(0)">кассовые сборы</a>, <a href="javascript:void(0)">Оскар</a></p><p>Источник: <a href="javascript:void(0)">Box Office Mojo</a></p></div>
+				<div class="blog_share_container clearfix" style="display: none;"><a href="#" title="ВКонтакте" class="vk">&nbsp;</a><a href="#" title="Facebook" class="fb">&nbsp;</a><a href="#" title="Twitter" class="twitter">&nbsp;</a><a href="#" title="LiveJournal" class="livejournal">&nbsp;</a></div>
 			</div>
 		</div>
 	
 		<div class="blog_pagination_wrap clearfix">
 			<div class="blog_pagination"><a href="#" class="prev">&nbsp;</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="javascript:void(0)" class="current">5 страница</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><span>&#133;</span><a href="#">24</a><a href="#" class="next">&nbsp;</a></div>
 		</div>
-
-
-
-
-
 
 	</div>	
 
