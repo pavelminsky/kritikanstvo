@@ -186,12 +186,10 @@ helpers : {thumbs : {width  : 50, height : 50}}
 <div class="content clearfix">
 
 	<div class="blog_entry_wrap clearfix">
-
 		<div class="blog_entry_info">
 			<div class="blog_output"><b>25 сентября 2013</b><br>10:48<br><a href="javascript:void(0)">Иван Иванов</a></div>
 			<div class="blog_share_container clearfix" style="display: block;"><a href="#" title="ВКонтакте" class="vk">&nbsp;</a><a href="#" title="Facebook" class="fb">&nbsp;</a><a href="#" title="Twitter" class="twitter">&nbsp;</a><a href="#" title="LiveJournal" class="livejournal">&nbsp;</a></div>
 		</div>
-
 		<div id="blog0000" class="blog_entry">
 			<div class="blog_header">Волшебный ноутбук и американский рэпер</div>
 			<div class="blog_content clearfix">
@@ -210,7 +208,6 @@ helpers : {thumbs : {width  : 50, height : 50}}
 				<div class="blog_info"><p><a href="javascript:void(0)">Гайд-Парк на Гудзоне</a>, <a href="javascript:void(0)">Неудержимый</a>, <a href="javascript:void(0)">Отверженные</a>, <a href="javascript:void(0)">Репортаж из преисподней</a></p><p>Метки: <a href="javascript:void(0)">фильмы</a>, <a href="javascript:void(0)">кассовые сборы</a>, <a href="javascript:void(0)">Оскар</a></p><p>Источник: <a href="javascript:void(0)">Box Office Mojo</a></p></div>
 			</div>
 		</div>
-
 	</div>
 
 
