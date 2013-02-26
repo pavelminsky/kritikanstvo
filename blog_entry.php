@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head><title>Критиканство &#8212; Обсуждение рецензии на фильм &laquo;Хоббит: Нежданное путешествие&raquo;</title>
+<html><head><title>Критиканство &#8212; Блог &#8212; Волшебный ноутбук и американский рэпер</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -118,6 +118,24 @@ $(document).ready(function(){
 </script>
 
 
+<!-- Fancybox -->
+<script type="text/javascript" src="/js/jquery.fancybox.js?v=2.1.1"></script>
+<script type="text/javascript" src="/js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="/js/jquery.fancybox-media.js?v=1.0.4"></script>
+<link rel="stylesheet" type="text/css" href="/css/fancybox.css?v=2.1.1" media="screen">
+<script type="text/javascript">
+$(document).ready(function() {
+$('.blog_img').fancybox({
+//prevEffect : 'none',
+//nextEffect : 'none',
+//closeBtn  : false,
+//arrows    : false,
+nextClick : false,
+helpers : {thumbs : {width  : 50, height : 50}}
+});
+});
+</script>
+
 </head><body>
 
 
@@ -137,16 +155,16 @@ $(document).ready(function(){
 	</div>
 	<div id="tabs">
 		<ul>
-		<li><a href="javascript:void(0)" id="tab_first" class="parent" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_first').show();">Фильмы</a></li>
+		<li><a href="javascript:void(0)" id="tab_first" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_first').show();">Фильмы</a></li>
 		<li><a href="#" id="tab_second" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_second').show();">Игры</a></li>
 		<li><a href="#" id="tab_third" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_third').show();">Критики</a></li>
-		<li><a href="#" id="tab_fourth" class="" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_fourth').show();">Блог</a></li>
+		<li><a href="#" id="tab_fourth" class="parent" onmouseover="$('[id*=subtabs_]').hide(); $('#subtabs_fourth').show();">Блог</a></li>
 		</ul>
 	</div>
 </div>
 
 <div class="submenu">
-	<div style="display: block;" id="subtabs_first">
+	<div style="display: none;" id="subtabs_first">
 		<ul><li><a href="javascript:void(0)" class="">Новые</a></li><li><a href="#" class="">Скоро в прокате</a></li><li><a href="#" class="">Популярные</a></li><li><a href="#" class="">Лучшие за всё время</a></li><li><a href="#" class="">Лучшие 2012 года</a></li><li><a href="#" class="">Кассовые сборы</a></li></ul>
 	</div>
 	<div style="display: none;" id="subtabs_second" onmouseover="$('#tab_second').addClass('subtabs_hover');" onmouseout="$('#tab_second').removeClass('subtabs_hover');">
@@ -155,8 +173,8 @@ $(document).ready(function(){
 	<div style="display: none;" id="subtabs_third" onmouseover="$('#tab_third').addClass('subtabs_hover');" onmouseout="$('#tab_third').removeClass('subtabs_hover');">
 		<ul><li><a href="#" class="">Новые персоны</a></li><li><a href="#" class="">Рейтинг ляпов</a></li><li><a href="#" class="">Рейтинг критиков</a></li></ul>
 	</div>
-	<div style="display: none;" id="subtabs_fourth" onmouseover="$('#tab_fourth').addClass('subtabs_hover');" onmouseout="$('#tab_fourth').removeClass('subtabs_hover');">
-		<ul><li><a href="#" class="">Новые записи</a></li><li><a href="#" class="">Архив записей</a></li><li><a href="#" class="">Комментарии</a></li></ul>
+	<div style="display: block;" id="subtabs_fourth" onmouseover="$('#tab_fourth').addClass('subtabs_hover');" onmouseout="$('#tab_fourth').removeClass('subtabs_hover');">
+		<ul><li><a href="#" class="">Новые записи</a></li><li><a href="#" class="">Архив записей</a></li></ul>
 	</div>
 	<div style="display: none;" id="subtabs_slogan">Сайт, где объективная критика невозможна</div>
 </div>
@@ -167,65 +185,34 @@ $(document).ready(function(){
 <!-- ============== CONTENT ============== -->
 <div class="content clearfix">
 
+	<div class="blog_entry_wrap clearfix">
 
-	<div class="page_item_title">
-		<h3><a href="movie.htm">Хоббит: Нежданное путешествие</a></h1>
-		<h4>The Hobbit: An Unexpected Journey</h2>
-	</div>
+		<div class="blog_entry_info">
+			<div class="blog_output"><b>25 сентября 2013</b><br>10:48<br><a href="javascript:void(0)">Иван Иванов</a></div>
+			<div class="blog_share_container clearfix" style="display: block;"><a href="#" title="ВКонтакте" class="vk">&nbsp;</a><a href="#" title="Facebook" class="fb">&nbsp;</a><a href="#" title="Twitter" class="twitter">&nbsp;</a><a href="#" title="LiveJournal" class="livejournal">&nbsp;</a></div>
+		</div>
 
-
-	<div class="page_comments_tabs clearfix">
-		<a href="#" id="page_comments_tab1_hd" class="inactive">Обсуждение&nbsp;рецензии</a><a href="#" id="page_comments_tab2_hd" class="active">&laquo;Мудрость&raquo;&nbsp;критика</a>
-	</div>
-
-
-	<div class="page_comments_top clearfix">
-		<div class="page_comments_poster" style="background-image: url('temp/poster2.jpg');"><div class="page_comments_site_rating site_rating_good" title="Оценка русских изданий"><h4>95</h4></div><div class="page_comments_users_rating users_rating_good" title="Оценка пользователей"><h4>92</h4></div></div>
-
-		<div id="page_comments_tab1" style="display: none;">
-			<p class="author"><a href="#">Станислав Зельвенский</a>&nbsp;<span class="wisdom_grade" style="background-image: url('i/wisdom_grade3.png');" title="Критик исключительной «мудрости»"></span></p>
-			<p class="source"><a href="#">Афиша</a>, 12 сентября</p>
-			<p class="quote">Пока ученые пытаются решить, что делать с тессерактом — энергетическим кубом, выловленным из океана еще в «Первом мстителе», — где-то в параллельной вселенной сводный брат Тора Локи (Хиддлстон), которого чуть раньше изгнали из Асгарда, получает от злобного нового начальника приказ похитить куб, чтобы на Земле настали хаос и разрушение.</p>
-			<p><a href="#" target="_blank">Прочесть рецензию</a><span class="newwindow">&nbsp;</span></p>
-			<div class="page_comments_critic_rating site_rating_good"><h4>97</h4>Оценка критика<br><b><span class="help" title="Поскольку издание не выставило явную оценку, она была определена редакцией «Критиканства» исходя из тона рецензии">&#8212; (нормально)</span></b></div>
-			<div class="page_item_share">
-				<p>Поделиться ссылкой</p><a href="#" title="ВКонтакте" class="vk">&nbsp;</a><a href="#" title="Facebook" class="fb">&nbsp;</a><a href="#" title="Twitter" class="twitter">&nbsp;</a><a href="#" title="LiveJournal" class="livejournal">&nbsp;</a><a href="#" title="Блоги@Mail.Ru" class="mailru">&nbsp;</a><a href="#" title="Google+" class="googleplus">&nbsp;</a><a href="#" title="LiveInternet" class="liveinternet">&nbsp;</a>
+		<div id="blog0000" class="blog_entry">
+			<div class="blog_header">Волшебный ноутбук и американский рэпер</div>
+			<div class="blog_content clearfix">
+				<div class="blog_img_center"><img src="/temp/testimg01.jpg" alt=""></div>			
+				<p>Новость верстается простыми тэгами и, в общем, должна поддерживать markdown-разметку. Во многом здесь все аналогично &laquo;Кинопередовой&raquo;: картинки вставляются через <i>div</i> с классами <b>blog_img_left</b> и <b>blog_img_right</b> (максимальная ширина ограничена 270 пикс.), а также <b>blog_img_center</b> (максимальные размеры ограничены 670х500 пикс.) Можно и через &laquo;голый&raquo; <b>img src</b> — у этих тоже ограничение на 670 пикс. по ширине.</p>
+				<p>Предусмотрены все стандартные тэги: <b>b</b>, <strong>strong</strong>, <i>i</i>, <em>em</em>, <u>underline</u>, <s>s</s>. Здесь же все заголовки: <b>h1</b>, <b>h2</b>, <b>h3</b>, <b>h4</b>, <b>h5</b> и <b>h6</b>. Вот это, к примеру, <b>h1</b>:</p>
+				<h1>Заголовок h1. Сделаем его длиннее. Настолько длиннее, или даже больше. Например, вот так. Или даже так? Так нормально.</h1>
+				<p>Разумеется, без списков мы никуда. Заготовлены обычные <b>ul&gt;li</b> и нумерованные <b>ol&gt;li</b>. Это — обычный:</p>
+				<ul><li>Pledge This!</li><li>Superbabies: Baby Geniuses 2</li><li>Manos: The Hands of Fate</li><li>The Hottie & the Nottie</li><li>Disaster Movie</li></ul>
+				<p>Заглянем под кат <b>div class="blog_cut"</b>? Лучше заглянем в код.</p>
+				<div id="bloguncut0000" class="blog_cut"><a href="javascript:void(0)">Развернуть запись полностью</a></div>
+				<div id="blogcut0000" style="display: none;">Сюда аяксом вставляем остаток записи, меняем display на block и скрываем кнопку разворота</div>
+				<p>Новость можно продолжать и после ката. Но мы на этом закончим.</p>
+			</div>
+			<div class="blog_footer clearfix">
+				<div class="blog_info"><p><a href="javascript:void(0)">Гайд-Парк на Гудзоне</a>, <a href="javascript:void(0)">Неудержимый</a>, <a href="javascript:void(0)">Отверженные</a>, <a href="javascript:void(0)">Репортаж из преисподней</a></p><p>Метки: <a href="javascript:void(0)">фильмы</a>, <a href="javascript:void(0)">кассовые сборы</a>, <a href="javascript:void(0)">Оскар</a></p><p>Источник: <a href="javascript:void(0)">Box Office Mojo</a></p></div>
 			</div>
 		</div>
 
-		<div id="page_comments_tab2" style="display: block;">
-			<p class="author"><a href="#">Станислав Зельвенский</a>&nbsp;<span class="wisdom_grade" style="background-image: url('i/wisdom_grade3.png');" title="Критик исключительной «мудрости»"></span></p>
-			<p class="source"><a href="#">Афиша</a>, 12 сентября</p>
-			<p><a href="#" target="_blank">Прочесть рецензию</a><span class="newwindow">&nbsp;</span></p>
-			<div class="wisdom_list">
-				<!--div class="nowisdom">Ни одной &laquo;мудрости&raquo; в этой рецензии пока не обнаружено.</div-->
-				<div class="wisdom_item">
-					<p>По сути, определения «Криминальная драма про копа под прикрытием» хватит, чтобы дать поразительно точное представление о том, что вас ждёт.</p>
-					<div class="user_note"><b>13 сентября, Rumpelstilzkin:</b> Без папаши-Борна «Эволюции», разумеется, было бы совсем хреноватенько.</div>
-				</div>
-				<div class="wisdom_item">
-					<p>Конечно, ничего принципиально нового в геймплее Sleeping Dogs нет, и слеплен он из множества знакомых идей.</p>
-					<div class="user_note"><b>10 марта, Иван Петрович:</b> Иначе говоря, никая это, нахер, не эволюция.</div>
-				</div>
-				<div class="wisdom_item">
-					<p>Без папаши-Борна «Эволюции», разумеется, было бы совсем хреноватенько.</p>
-					<div class="user_note"><b>4 января, Minsky:</b> Несоразмерность сил Кросса и его преследователей на корню убивает любое напряжение — ведь главный герой не только сильнее, но и умнее. Собственно, его главная цель — сохранить свою суперсолдатность и больше ничего.</div>
-				</div>
-				<div class="wisdom_item">
-					<p>Несоразмерность сил Кросса и его преследователей на корню убивает любое напряжение</p>
-					<div class="user_note"><b>1 января, Сергей Сергеевич:</b> На щелбаны.</div>
-				</div>
-			</div>
-			<div class="wisdom_add_wrap clearfix">
-				<div class="wisdom_add"><a href="#" class="button_add">Добавить&nbsp;<b>&#43;</b></a></div>
-				<div class="wisdom_add_info">Если вы нашли в тексте рецензии неточность или нелепость, добавьте её на сайт.</div>
-			</div>
-			<div class="page_item_share">
-				<p>Поделиться ссылкой</p><a href="#" title="ВКонтакте" class="vk">&nbsp;</a><a href="#" title="Facebook" class="fb">&nbsp;</a><a href="#" title="Twitter" class="twitter">&nbsp;</a><a href="#" title="LiveJournal" class="livejournal">&nbsp;</a><a href="#" title="Блоги@Mail.Ru" class="mailru">&nbsp;</a><a href="#" title="Google+" class="googleplus">&nbsp;</a><a href="#" title="LiveInternet" class="liveinternet">&nbsp;</a>
-			</div>
-		</div>
-		
 	</div>
+
 
 
 	<div class="comments_pagination_wrap clearfix">
