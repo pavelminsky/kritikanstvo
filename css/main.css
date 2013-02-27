@@ -30,7 +30,7 @@ a:hover {color: #008fbf;}
 
 
 /* Tooltips */
-.ui-tooltip, .qtip {position: absolute; left: -28000px; top: -28000px; display: none; max-width: 280px; min-width: 50px; font-size: 11px; line-height: 11px; border: 1px solid #ecf3f5; background-color: #c8d5da; color: #3d4347; text-shadow: 1px 1px 1px #e1e3e5; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -moz-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40);}
+.ui-tooltip, .qtip {position: absolute; left: -28000px; top: -28000px; display: none; max-width: 300px; min-width: 50px; font-size: 11px; line-height: 11px; border: 1px solid #ecf3f5; background-color: #c8d5da; color: #3d4347; text-shadow: 1px 1px 1px #e1e3e5; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -moz-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40);}
 .ui-tooltip-content {position: relative; padding: 3px 6px 4px 6px; overflow: hidden; text-align: center; word-wrap: break-word; overflow: hidden;}
 .ui-tooltip-fluid {display: block; visibility: hidden; position: static !important; float: left !important;} /* IE fix */
 * html .ui-tooltip-titlebar .ui-state-default {top: 16px;} /* IE fix */
