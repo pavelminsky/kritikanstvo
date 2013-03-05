@@ -169,6 +169,8 @@ a.button_add:active, a.button_add_down {cursor: default; border-top: 1px solid #
 .reviews_list li a:visited u {color: #61a9c0; text-decoration: none;}
 .reviews_list li a:hover {color: #008fbf;}
 .reviews_list li a:hover b {color: #008fbf;}
+.reviews_list li.rowa {background-color: #ffffff;}
+.reviews_list li.rowb {background-color: #f0f3f3;}
 
 .reviews_list .site_rating_small_good, .reviews_list .site_rating_small_average, .reviews_list .site_rating_small_bad, .reviews_list .site_rating_small_awful, .reviews_list .site_rating_small_none {cursor: default; display: inline-block; min-width: 12px; padding: 1px 5px 1px 5px; font-size: 11px; line-height: 12px; font-weight: normal; text-align: center;}
 .reviews_list_more {padding-top: 10px; padding-bottom: 40px; text-align: right; font-size: 13px; color: #6e8287;}
@@ -648,8 +650,7 @@ textarea {width: 634px; height: 194px; resize: none; overflow-y: hidden; vertica
 .page_lists_top_reviewers i {font-style: italic; font-size: 14px; margin-left: 2px; color: #4f606c;}
 
 
-/* Old navigator */
-/*
+/* Navigator */
 .navigator_inset {margin: -10px -10px 20px -10px;}
 
 .navigator {height: 40px; color: #ffffff; font-size: 14px; line-height: 40px;}
@@ -665,6 +666,7 @@ textarea {width: 634px; height: 194px; resize: none; overflow-y: hidden; vertica
 .range .selectbox .select {width: 40px; margin: 0 12px 0 2px; color: #b6edff;}
 .range .selectbox .select:hover, .range .selectbox .select:active {color: #69e1ff;}
 .range .selectbox.focused .select {color: #69e1ff;}
+.range .selectbox .select {/*float: left;*/}
 .range .selectbox .select .text {border-bottom: 1px dotted #b6edff; white-space: nowrap; text-overflow: ellipsis;}
 .range .selectbox .select .text:hover, .range .selectbox .select .text:active {border-bottom: 1px dotted #69e1ff;}
 .range .selectbox .trigger .arrow {position: absolute; top: 48%; right: -10px; width: 0; height: 0; overflow: hidden; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 4px solid #b6edff;}
@@ -672,6 +674,7 @@ textarea {width: 634px; height: 194px; resize: none; overflow-y: hidden; vertica
 .years .selectbox .select {width: 40px; margin: 0 12px 0 8px; color: #b6edff;}
 .years .selectbox .select:hover, .years .selectbox .select:active {color: #69e1ff;}
 .years .selectbox.focused .select {color: #69e1ff;}
+.years .selectbox .select {/*float: left;*/}
 .years .selectbox .select .text {border-bottom: 1px dotted #b6edff; white-space: nowrap; text-overflow: ellipsis;}
 .years .selectbox .select .text:hover, .years .selectbox .select .text:active {border-bottom: 1px dotted #69e1ff;}
 .years .selectbox .trigger .arrow {position: absolute; top: 48%; right: -10px; width: 0; height: 0; overflow: hidden; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 4px solid #b6edff;}
@@ -686,7 +689,7 @@ textarea {width: 634px; height: 194px; resize: none; overflow-y: hidden; vertica
 #search_submit_range:active {color: #fff9ea; text-shadow: 0 -1px 1px #645b29; border-bottom: 1px solid #dbc785; background: #8e6b08; background: -moz-linear-gradient(top, #8e6b08 0%, #d1b349 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8e6b08), color-stop(100%,#d1b349)); background: -webkit-linear-gradient(top, #8e6b08 0%,#d1b349 100%); background: -o-linear-gradient(top, #8e6b08 0%,#d1b349 100%); background: -ms-linear-gradient(top, #8e6b08 0%,#d1b349 100%); background: linear-gradient(to bottom, #8e6b08 0%,#d1b349 100%);}
 
 a.button_years_down {cursor: default; display: inline-block; padding: 1px 8px 2px 8px; font-size: 14px; line-height: 20px; font-weight: normal; color: #ffffff; text-shadow: 0 -1px 1px #256e86; text-decoration: none; border-top: 1px solid #2f7893; border-bottom: 1px solid #d5e2e7; background-color: #2f87a3; background: #2f87a3; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; background: -moz-linear-gradient(top,  #308aa8 0%, #44afd2 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#308aa8), color-stop(100%,#44afd2)); background: -webkit-linear-gradient(top,  #308aa8 0%,#44afd2 100%); background: -o-linear-gradient(top,  #308aa8 0%,#44afd2 100%); background: -ms-linear-gradient(top,  #308aa8 0%,#44afd2 100%); background: linear-gradient(to bottom,  #308aa8 0%,#44afd2 100%);}
-*/
+
 
 
 
@@ -1121,6 +1124,8 @@ background: -ms-linear-gradient(top,  #d18400 0%,#e7a413 100%); background: line
 .blog_entry_wrap .blog_share_container {text-align: right; float: right;}
 .blog_entry_wrap .blog_share_container a {display: block; width: 30px; height: 30px; margin-top: 10px; text-decoration: none; background-color: #a8c6d7; background-image: url('/i/share_icons.png');}
 
+/* Blog - hotfix for index */
+.main_column .special_promo_side {display: block; margin: 10px 0 15px 10px;}
 
 
 
