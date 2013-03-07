@@ -30,10 +30,13 @@ a:hover {color: #008fbf;}
 
 
 /* Tooltips */
-.ui-tooltip, .qtip {position: absolute; left: -28000px; top: -28000px; display: none; max-width: 280px; min-width: 50px; font-size: 11px; line-height: 11px; border: 1px solid #ecf3f5; background-color: #c8d5da; color: #3d4347; text-shadow: 1px 1px 1px #e1e3e5; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -moz-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40);}
+.ui-tooltip {position: absolute; left: -28000px; top: -28000px; display: none; max-width: 300px; min-width: 50px; font-size: 11px; line-height: 11px; border: 1px solid #ecf3f5; background-color: #c8d5da; color: #3d4347; text-shadow: 1px 1px 1px #e1e3e5; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -moz-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40);}
 .ui-tooltip-content {position: relative; padding: 3px 6px 4px 6px; overflow: hidden; text-align: center; word-wrap: break-word; overflow: hidden;}
 .ui-tooltip-fluid {display: block; visibility: hidden; position: static !important; float: left !important;} /* IE fix */
 * html .ui-tooltip-titlebar .ui-state-default {top: 16px;} /* IE fix */
+
+.qtip {position: absolute; left: -28000px; top: -28000px; display: none; max-width: 300px !important; min-width: 50px !important; padding: 2px !important; font-size: 11px !important; line-height: 11px !important; border: 1px solid #ecf3f5 !important; background-color: #c8d5da !important; color: #3d4347 !important; text-shadow: 1px 1px 1px #e1e3e5 !important; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -moz-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40);}
+
 
 
 
@@ -80,7 +83,8 @@ div#subtabs_first ul li a, div#subtabs_second ul li a, div#subtabs_third ul li a
 /* Userbar */
 .userbar {position: relative; width: 980px; height: 90px; margin: 0 auto;}
 .guest_wrap {float: right; width: 500px; margin-top: 40px; text-align: right;}
-.guest_wrap a {display: inline-block;}
+.guest_wrap a, .guest_wrap a:visited {display: inline-block; color: #006e93;}
+.guest_wrap a:hover {color: #008fbf;}
 a.guest_login, a.guest_login:visited {font-size: 14px; text-decoration: none; background: url('/i/user_icon.png') left center no-repeat; padding: 0 10px 0 14px;}
 a.guest_login span {border-bottom: 1px dotted #487686; text-shadow: 0px 1px 1px #ffffff;}
 a.guest_login:hover span {border-bottom-color: #56a8c4;}
@@ -160,8 +164,8 @@ a.button_add:active, a.button_add_down {cursor: default; border-top: 1px solid #
 .reviews_list h1 a:hover {color: #69e1ff;}
 .reviews_list_tabs {padding: 6px; background-color: #bbcbd1; text-align: center;}
 
-.reviews_list li {position: relative; font-size: 12px; line-height: 18px; color: #919b9f; border-bottom: 1px solid #dadedf;}
-.reviews_list li:hover {border-bottom: 1px solid #008fbf;}
+.reviews_list li {position: relative; font-size: 12px; line-height: 18px; color: #919b9f; /*border-bottom: 1px solid #dadedf;*/}
+.reviews_list li:hover {/*border-bottom: 1px solid #008fbf;*/}
 .reviews_list li a {display: block; padding: 10px 5px 10px 8px; text-decoration: none; color: #7e868a;}
 .reviews_list li a u {font-weight: normal; color: #006e93; text-decoration: underline;}
 .reviews_list li a b {color: #394146; font-weight: normal;}
@@ -422,7 +426,7 @@ a.item_tag_platform:hover {opacity: 0.80; -moz-opacity: 0.80; -khtml-opacity: 0.
 .item_reviews_list .row_b {min-height: 60px; background-color: #ffffff;}
 .item_reviews_list .row_c {min-height: 60px; background-color: #f6f4e4;}
 
-.item_reviews_list .source {float: left; width: 170px; padding: 12px 5px 5px 5px; font-size: 14px; color: #272828; text-align: center;}
+.item_reviews_list .source {float: left; width: 160px; padding: 12px 15px 5px 5px; font-size: 14px; color: #272828; text-align: center;}
 .item_reviews_list .source a, .item_reviews_list .source a:visited {font-size: 14px; color: #003749;}
 .item_reviews_list .source a:hover {color: #007196;}
 .item_reviews_list .source i {display: block; font-size: 12px; color: #616b6e; padding-top: 6px;}
@@ -592,7 +596,7 @@ background: -ms-linear-gradient(top,  #e2f4fa 0%,#cbe7f0 100%); background: line
 #page_comments_tab2 .wisdom_list .nowisdom {padding: 10px; border: 1px solid #e0e7e9; border-bottom: 0; background-color: #ffffff;}
 
 .comments_input {padding: 30px 0 60px 220px;}
-.comments_input_controls {width: 660px; background-color: #f0f3f3;}
+.comments_input_controls {width: 660px; background-color: #cdd8da;}
 .comments_input_styles {float: left; height: 34px; padding: 10px;}
 .comments_input_sending {width: 660px; height: 54px; background: #c1d3d7 url('/i/loading.gif') 50% 50% no-repeat;}
 a.input_bold, a.input_italic, a.input_strike, a.input_spoiler {display: inline-block; width: 30px; height: 30px; margin-right: 10px; background-color: #394042; background-image: url('/i/input_styles.png'); text-decoration: none; border: 1px solid #d3dedf; background-repeat: no-repeat; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;}
@@ -601,7 +605,7 @@ a.input_italic {background-position: 1px -30px;}
 a.input_strike {background-position: 1px -61px;}
 a.input_spoiler {background-position: 1px -92px;}
 a.input_bold:hover, a.input_italic:hover, a.input_strike:hover, a.input_spoiler:hover {text-decoration: none; opacity: 0.80; -moz-opacity: 0.80; -khtml-opacity: 0.80; filter: alpha(opacity=80);}
-textarea {width: 634px; height: 194px; resize: none; overflow-y: hidden; vertical-align: top; outline: none; -moz-appearance: none; border: 3px solid #f0f3f3; padding: 10px; margin: 0; background-color: #ffffff; font-size: 14px; color: #3c3c3c; font-family: Tahoma, sans-serif; color: #3c3c3c;}
+textarea {width: 634px; height: 194px; resize: none; overflow-y: hidden; vertical-align: top; outline: none; -moz-appearance: none; border: 3px solid #cdd8da; padding: 10px; margin: 0; background-color: #ffffff; font-size: 14px; color: #3c3c3c; font-family: Tahoma, sans-serif; color: #3c3c3c;}
 .comments_input_submit {float: right; height: 31px; padding: 10px;}
 .comments_input_submit #submit {height: 31px; padding: 0 14px 0 14px; cursor: pointer; font-size: 14px;  color: #ffffff; text-shadow: 1px -2px 1px #2a2e30; border: 1px solid #d3dedf; background-color: #394042; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;}
 .comments_input_submit #submit:hover {opacity: 0.80; -moz-opacity: 0.80; -khtml-opacity: 0.80; filter: alpha(opacity=80); text-decoration: none;}
@@ -1135,9 +1139,12 @@ background: -ms-linear-gradient(top,  #d18400 0%,#e7a413 100%); background: line
 /* Live server quick fixes */
 
 .parent_list_fixheight_small ul li {min-height: 55px;}
-.search_header {display: block; margin: 5px 5px 5px 5px; font-size: 12px;}
-.search_link {margin-left: 5px; color: #487686; font-size: 14px;}
-.search_text {color: #000000; font-size: 14px;}
+.search_header {display: block; padding-top: 4px; margin: 12px 5px 5px 5px; font-size: 14px; border-top: 1px dotted #cdcdcd;}
+.search_link {color: #006e93; font-size: 12px;}
+.search_text {color: #636363; font-size: 11px;}
+
+.search_item a.ui-corner-all {cursor: pointer !important; padding: 6px 10px 5px 15px !important; line-height: 13px !important;}
+.search_item a.ui-state-focus {border: 1px solid #d9edf6 !important; background-color: #d9edf6 !important; background-image: none !important;}
 
 .lastreviews {color: #ffffff !important; text-decoration: none !important; cursor: hand !important; cursor: pointer !important;}
 
