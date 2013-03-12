@@ -108,7 +108,7 @@ a.button_add:active, a.button_add_down {cursor: default; border-top: 1px solid #
 .titles_list h1.games {background-color: #433553;}
 .titles_list h1 a, .titles_list h1 a:visited, .critics_list h1 a, .critics_list h1 a:visited {color: #b6edff;}
 .titles_list h1 a:hover, .critics_list h1 a:hover {color: #69e1ff;}
-.titles_list li {position: relative; padding-bottom: 8px; margin: 10px 0 10px 0; border-bottom: 1px solid #e0e0e0;}
+.titles_list li {position: relative; min-height: 90px; padding-bottom: 8px; margin: 10px 0 10px 0; border-bottom: 1px solid #e0e0e0;}
 .titles_list h4 {cursor: default; position: absolute; top: 0; left: 0; width: 40px; height: 38px; overflow: hidden; font-size: 18px; font-weight: normal; line-height: 40px; text-align: center; text-decoration: none;}
 .titles_list .cover {position: absolute; top: 10px; left: 30px; width: 48px; height: 68px; border: 1px solid #e0e0e0; background-color: #e0e0e0; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
 .titles_list h2 {display: block; padding: 10px 0 2px 88px; font-size: 15px; font-weight: normal;}
@@ -1130,6 +1130,54 @@ background: -ms-linear-gradient(top,  #d18400 0%,#e7a413 100%); background: line
 
 /* Blog - hotfix for index */
 .main_column .special_promo_side {display: block; margin: 10px 0 15px 10px;}
+
+
+/* Search */
+.page_search {min-height: 400px;}
+.page_search .search_title {width: 100%; margin: 15px 5px 25px 0; font-size: 18px; line-height: 24px; color: #666666;}
+.page_search .search_title i {margin-right: 2px; color: #103f5b; background-color: #fede4c;}
+.page_search .search_row {width: 100%;}
+.page_search .search_cat {float: left; width: 235px; padding: 0 5px 40px 0; min-height: 100px; overflow: hidden;}
+
+.page_search .search_cat h3 {display: block; padding: 8px 5px 6px 10px; font-size: 16px; font-weight: normal;}
+.page_search .cat_movies h3 {color: #ffffff; background-color: #3c5e68;}
+.page_search .cat_games h3 {color: #ffffff; background-color: #433553;}
+.page_search .cat_critics h3 {color: #ffffff; background-color: #394042;}
+.page_search .cat_blog h3 {color: #171717; background-color: #ffd34d; text-shadow: 0 1px 1px #fffadf;}
+
+.page_search .search_cat li {display: inline-block; padding: 8px 10px 7px 0; font-size: 12px; background: url('/i/search_item_bg.png') left top repeat-x;}
+
+.page_search .cat_movies a.cover, .page_search .cat_games a.cover {display: inline-block; float: left; width: 48px; height: 65px; border: 1px solid #e0e0e0; text-decoration: none; background-color: #e1e1e1; background-position: center center; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;}
+.page_search .cat_critics a.cover {display: inline-block; float: left; width: 48px; height: 48px; border: 1px solid #e0e0e0; text-decoration: none; background-color: #e1e1e1; background-position: center center; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;}
+.page_search a.cover:hover {opacity: 0.80; -moz-opacity: 0.80; -khtml-opacity: 0.80; filter: alpha(opacity=80);}
+
+.page_search .cat_movies a.cover span, .page_search .cat_games a.cover span {display: inline-block; min-width: 16px; height: 18px; padding: 1px 4px 1px 4px; overflow: hidden; font-size: 12px; font-weight: normal; line-height: 20px; text-align: center; text-decoration: none;}
+.page_search .cat_movies a.cover span.rating_small_good, .page_search .cat_games a.cover span.rating_small_good {color: #ffffff; background-color: #00ba1f;}
+.page_search .cat_movies a.cover span.rating_small_average, .page_search .cat_games a.cover span.rating_small_average {color: #ffffff; background-color: #ffa200;}
+.page_search .cat_movies a.cover span.rating_small_bad, .page_search .cat_games a.cover span.rating_small_bad {color: #ffffff; background-color: #de160a;}
+.page_search .cat_movies a.cover span.rating_small_awful, .page_search .cat_games a.cover span.rating_small_awful {color: #ffffff; background-color: #404040;}
+.page_search .cat_movies a.cover span.rating_small_none, .page_search .cat_games a.cover span.rating_small_none {color: #ffffff; background-color: #cfcfcf;}
+
+.page_search .cat_critics a.cover span {display: inline-block; min-width: 12px; height: 14px; padding: 1px 2px 1px 2px; overflow: hidden; font-size: 12px; font-weight: normal; line-height: 15px; text-align: center; text-decoration: none;}
+.page_search .cat_critics a.cover span.rating_small_good {color: #008b20; border: 2px solid #00ba1f; background-color: #ffffff;}
+.page_search .cat_critics a.cover span.rating_small_average {color: #f17d00; border: 2px solid #ffa200; background-color: #ffffff;}
+.page_search .cat_critics a.cover span.rating_small_bad {color: #cb0705; border: 2px solid #de160a; background-color: #ffffff;}
+.page_search .cat_critics a.cover span.rating_small_awful {color: #404040; border: 2px solid #404040; background-color: #ffffff;}
+.page_search .cat_critics a.cover span.rating_small_none {color: #bbbbbb; border: 2px solid #cfcfcf; background-color: #ffffff;}
+
+span.search_wisdom_grade {display: inline-block; width: 14px; height: 14px; margin-left: 3px; vertical-align: -1px;}
+
+.page_search .info {display: inline-block; float: left; width: 165px; margin: 0 5px 5px 5px;}
+.page_search .info h5 {margin-bottom: 4px; font-size: 12px; font-weight: normal; line-height: 13px;}
+.page_search .cat_critics .info h5 {line-height: 15px;}
+.page_search .info h6 {margin-bottom: 6px; font-size: 11px; font-weight: normal; line-height: 12px; color: #4b5357;}
+.page_search .info p {margin-bottom: 2px; font-size: 11px; font-weight: normal; line-height: 12px; color: #738387;}
+.page_search .info p a:link, .page_search .info p a:visited {color: #6f8a93;}
+.page_search .info p a:hover {color: #387e95;}
+
+.page_search .search_more {padding-top: 10px; text-align: center; font-size: 13px;}
+.page_search .search_more a.pseudolink {text-decoration: none; border-bottom: 1px dotted #4387a4;}
+
 
 
 
