@@ -100,7 +100,10 @@ $('.navfilter').click(function() {
 $('.filterset').click(function() {
     $(this).removeClass('filter_dropdown').addClass('filter_dropdown_down');
 });
-
+$('.filters_reset').click(function() {
+    $('.navfilter').removeClass('filter_down').addClass('filter');
+    $('.filterset').removeClass('filter_dropdown_down').addClass('filter_dropdown');
+});
 });
 </script>
 
@@ -193,6 +196,7 @@ $('.filterset').click(function() {
 		</div>
 		<div class="filters_submit_wrap">
 			<div class="filters_submit"><input type="submit" value="Показать"></div>
+			<div class="filters_reset"><span>Сбросить</span></div>
 		</div>
 	</div>
 
