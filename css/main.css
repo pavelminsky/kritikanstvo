@@ -1174,7 +1174,9 @@ div.button_years_down, div.years_block_down {cursor: default; display: inline-bl
 .years .selectbox .select .text:hover, .years .selectbox .select .text:active {border-bottom: 1px dotted #69e1ff;}
 .years .selectbox .trigger .arrow {position: absolute; top: 48%; right: -10px; width: 0; height: 0; overflow: hidden; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 4px solid #b6edff;}
 
-.years .selectbox ul.dropdown, .range .selectbox ul.dropdown, .filterset .selectbox ul.dropdown {left: -4px; width: 100px; padding: 4px 0 4px 0; margin: 0; font: normal 14px Arial; text-align: left; border: 1px solid #c6cbd0; background: #ffffff; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.20); -moz-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.20); -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.20);}
+.years .selectbox ul.dropdown, .range .selectbox ul.dropdown, .filterset .selectbox ul.dropdown {padding: 4px 0 4px 0; margin: 0; font: normal 14px Arial; text-align: left; border: 1px solid #c6cbd0; background: #ffffff; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.20); -moz-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.20); -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.20);}
+.years .selectbox ul.dropdown, .range .selectbox ul.dropdown {left: -4px; width: 80px;}
+.filterset .selectbox ul.dropdown {left: -60px; width: 220px; word-wrap: normal;}
 .years .selectbox ul.dropdown {top: 32px;}
 .range .selectbox ul.dropdown {top: 26px;}
 .filterset .selectbox ul.dropdown {top: 20px;}
