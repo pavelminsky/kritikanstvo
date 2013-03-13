@@ -4,11 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=1061">
-<meta name="format-detection" content="telephone=no">
 <meta name="description" content="">
 <meta name="keywords" content="">
-<link rel="apple-touch-icon" href="apple-touch-icon.png"><!-- 144x114 -->
-<link rel="shortcut icon" href="favicon.ico">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Критиканство">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.png">
 
 <link rel="stylesheet" href="css/main.css">
 
@@ -107,6 +112,37 @@ $('.filters_reset').click(function() {
 });
 </script>
 
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.1"></script>
+<script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.4"></script>
+<link rel="stylesheet" type="text/css" href="css/fancybox.css?v=2.1.1" media="screen">
+
+<!-- Fancybox global_report -->
+<script type="text/javascript">
+$(document).ready(function() {
+$('.global_report').fancybox({
+scrolling: 'no',
+arrows    : false, autoCenter: true,
+autoSize: true,
+fitToView: false,
+topRatio: 0.5,
+nextClick : false,
+padding : 0,
+tpl: {closeBtn: '<a class="gr_close" href="javascript:;">&nbsp;</a>'},
+helpers : {thumbs : {width  : 1, height : 1}, overlay : null, title:  null}
+}).click();
+$('#gr_submit').click(function() {
+    $('.gr_form').hide();
+    $('.gr_done').fadeIn('slow');
+});
+$('#gr_finish').click(function() {
+	$.fancybox.close();
+    $('.gr_done').hide('slow');
+    $('.gr_form').show('slow');
+});
+});
+</script>
+
 
 <script type="text/javascript" src="js/selectbox.js"></script>
 <script>
@@ -165,8 +201,11 @@ $('.filters_reset').click(function() {
 
 
 
+
 <!-- ============== CONTENT ============== -->
 <div class="content page_movie clearfix">
+
+	<a href="#gr_default" class="global_report" data-fancybox-group="global_report" title="Сообщить об ошибке или неточности">&nbsp;</a>
 
 	<div class="navigator clearfix">
 		<div class="years">
@@ -174,14 +213,14 @@ $('.filters_reset').click(function() {
 		</div>
 		<div class="or_range">или фильмы</div>
 		<div id="range_dropdown" class="range range_block">
-			<form method="post" action="/years_range">с&nbsp;<select class="styled" id="years_range_from" name="years_range_from"><option value="from_2011">2011</option><option value="from_2010">2010</option><option value="from_2009">2009</option><option value="from_2008">2008</option><option value="from_2007">2007</option><option value="from_2011">2006</option><option value="from_2010">2005</option><option value="from_2009">2004</option><option value="from_2008">2003</option><option value="from_2007">2002</option><option value="from_2011">2001</option><option value="from_2010">2000</option><option value="from_2009">1999</option><option value="from_2008">1998</option><option value="from_2007">1997</option><option value="from_2011">1996</option><option value="from_2010">1995</option><option value="from_2009">1994</option><option value="from_2008">1993</option><option value="from_2007">1992</option><option value="from_2011">1991</option><option value="from_2010">1990</option><option value="from_2009">1989</option><option value="from_2008">1988</option><option value="from_2007">1987</option><option value="from_2011">1986</option><option value="from_2010">1985</option><option value="from_2009">1984</option><option value="from_2008">1983</option><option value="from_2007">1982</option><option value="from_2011">1981</option><option value="from_2010">1980</option><option value="from_2009">1979</option><option value="from_2008">1978</option><option value="from_2007">1977</option><option value="from_2011">1976</option><option value="from_2010">1975</option><option value="from_2009">1974</option><option value="from_2008">1973</option><option value="from_2007">1972</option><option value="from_2011">1971</option><option value="from_2010">1970</option><option value="from_2009">1969</option><option value="from_2008">1968</option><option value="from_2007">1967</option><option value="from_2011">1966</option><option value="from_2010">1965</option><option value="from_2009">1964</option><option value="from_2008">1963</option><option value="from_2007">1962</option><option value="from_2011">1961</option><option value="from_2010">1960</option><option value="from_2009">1959</option><option value="from_2008">1958</option><option value="from_2007">1957</option><option value="from_2011">1956</option><option value="from_2010">1955</option><option value="from_2009">1954</option><option value="from_2008">1953</option><option value="from_2007">1952</option><option value="from_2011">1951</option><option value="from_2010">1950</option></select>&nbsp;по&nbsp;<select class="styled" id="years_range_to" name="years_range_to"><option value="to_2012">2012</option><option value="to_2011">2011</option><option value="to_2010">2010</option><option value="to_2009">2009</option><option value="to_2008">2008</option><option value="to_2007">2007</option></select>
+			с&nbsp;<select class="styled" id="years_range_from" name="years_range_from"><option value="from_2011">2011</option><option value="from_2010">2010</option><option value="from_2009">2009</option><option value="from_2008">2008</option><option value="from_2007">2007</option><option value="from_2011">2006</option><option value="from_2010">2005</option><option value="from_2009">2004</option><option value="from_2008">2003</option><option value="from_2007">2002</option><option value="from_2011">2001</option><option value="from_2010">2000</option><option value="from_2009">1999</option><option value="from_2008">1998</option><option value="from_2007">1997</option><option value="from_2011">1996</option><option value="from_2010">1995</option><option value="from_2009">1994</option><option value="from_2008">1993</option><option value="from_2007">1992</option><option value="from_2011">1991</option><option value="from_2010">1990</option><option value="from_2009">1989</option><option value="from_2008">1988</option><option value="from_2007">1987</option><option value="from_2011">1986</option><option value="from_2010">1985</option><option value="from_2009">1984</option><option value="from_2008">1983</option><option value="from_2007">1982</option><option value="from_2011">1981</option><option value="from_2010">1980</option><option value="from_2009">1979</option><option value="from_2008">1978</option><option value="from_2007">1977</option><option value="from_2011">1976</option><option value="from_2010">1975</option><option value="from_2009">1974</option><option value="from_2008">1973</option><option value="from_2007">1972</option><option value="from_2011">1971</option><option value="from_2010">1970</option><option value="from_2009">1969</option><option value="from_2008">1968</option><option value="from_2007">1967</option><option value="from_2011">1966</option><option value="from_2010">1965</option><option value="from_2009">1964</option><option value="from_2008">1963</option><option value="from_2007">1962</option><option value="from_2011">1961</option><option value="from_2010">1960</option><option value="from_2009">1959</option><option value="from_2008">1958</option><option value="from_2007">1957</option><option value="from_2011">1956</option><option value="from_2010">1955</option><option value="from_2009">1954</option><option value="from_2008">1953</option><option value="from_2007">1952</option><option value="from_2011">1951</option><option value="from_2010">1950</option></select>&nbsp;по&nbsp;<select class="styled" id="years_range_to" name="years_range_to"><option value="to_2012">2012</option><option value="to_2011">2011</option><option value="to_2010">2010</option><option value="to_2009">2009</option><option value="to_2008">2008</option><option value="to_2007">2007</option></select>
 		</div>
-		<div class="navigator_submit" style="display: none;"><input type="submit" value="Показать"></form></div>
-		<div class="button_filters filters_hide" style="display: block;"><span>Фильтры</span></div>
-		<div class="button_filters filters_show" style="display: none;"><span>Фильтры</span></div>
+		<div class="navigator_submit" style="display: block;"><input type="submit" value="Показать"></div>
+		<div class="button_filters filters_hide" style="display: none;"><span>Фильтры</span></div>
+		<div class="button_filters filters_show" style="display: block;"><span>Фильтры</span></div>
 	</div>
 
-	<div class="navigator_filters clearfix" style="display: block;">
+	<div class="navigator_filters clearfix" style="display: none;">
 		<div class="filters_section">
 			<h5>Фильтрация по жанру</h5>
 			<div class="navfilter filter_down"><span>экшен</span></div> <div class="navfilter filter"><span>драма</span></div> <div class="navfilter filter"><span>комедия</span></div> <div class="navfilter filter"><span>боевик</span></div> <div class="navfilter filter"><span>экранизация</span></div>
@@ -308,6 +347,37 @@ $('.filters_reset').click(function() {
 	<div class="right"><p>Создание сайта: <a href="http://www.kino-govno.com" target="_blank" title="Откроется в новом окне">КГ.Дизайн</a></p></div>
 </div>
 <!-- ============== // FOOTER ============== -->
+
+
+
+
+<!-- ============== GLOBAL REPORT ============== -->
+	<div id="gr_default" class="gr_default" style="display: none;">
+		<h3>Сообщение об ошибке или неточности</h3>
+
+		<!-- Обычный вид для залогиненных -->
+		<div class="gr_form" style="display: block;">
+			<div class="gr_type"><select class="styled" name="gr_type"><option value="" disabled selected>Выберите тип ошибки</option><option value="">Опечатка</option><option value="">Неверная оценка</option><option value="">Экслер — мудак</option><option value="">Неправильная ссылка</option><option value="">Правильная ссылка</option><option value="">Неполная информация</option><option value="">Другое</option></select></div>
+			<p>Прокомментируйте неточность или процитируйте ошибку</p>
+			<textarea class="gr_userinput" name="" maxlength="1000"></textarea>
+			<p>Адрес страницы с ошибкой</p>
+			<input class="gr_url" type="text" name="" maxlength="200" value="http://www.kritikanstvo.ru/somepage/somecontent/miscinfo/">
+			<input type="hidden" maxlength="200" value="ссылка_на_страницу_с_которой_вызвана_форма">
+			<div class="gr_submit"><input id="gr_submit" type="submit" value="Отправить"></div>
+		</div>
+		
+		<!-- Предупреждение для незалогиненных -->
+		<div class="gr_guest" style="display: none;">
+			<div class="gr_header">Пожалуйста, войдите на сайт, чтобы отправлять сообщения</div>
+		</div>
+		
+		<!-- Выводится после отправки -->
+		<div class="gr_done" style="display: none;">
+			<div class="gr_header">Ваше сообщение отправлено. Спасибо.</div>
+			<div class="gr_finish"><input id="gr_finish" type="button" value="Пожалуйста"></div>
+		</div>
+	</div>
+<!-- ============== //GLOBAL REPORT ============== -->
 
 
 
