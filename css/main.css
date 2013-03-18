@@ -201,8 +201,6 @@ a.button_add:active, a.button_add_down {cursor: default; border-top: 1px solid #
 .social_block h1 {display: block; padding: 10px; font-size: 16px; line-height: 16px; color: #ffffff; font-weight: normal; background-color: #89bfd1;}
 .social_block_content {padding: 10px; font-size: 12px;}
 
-
-
 /* Front row */
 a.button_frontrow, a.button_frontrow:visited {display: inline-block; padding: 2px 8px 3px 8px; font-size: 12px; font-weight: normal; color: #006c8f; text-shadow: 0 1px 1px #e7ecee; text-decoration: none;}
 a.button_frontrow span {border-bottom: 1px dotted #4a8294;}
@@ -848,10 +846,6 @@ form .exceeded {color: #ed0000;}
 
 
 
-
-
-
-
 /* Releases */
 .page_movie .releases_datepicker .months {background-color: #3c5e68;}
 .page_movie .page_releases_short .platform, .page_movie .page_releases_full .platform {display: none;}
@@ -1247,6 +1241,7 @@ div.button_years_down, div.years_block_down {cursor: default; display: inline-bl
 
 /* Global Report */
 a.global_report {position: absolute; right: -30px; top: 70px; width: 30px; height: 30px; overflow: hidden; text-decoration: none; background-color: #e1e9ec; background-image: url('/i/gr.png'); background-repeat: no-repeat;}
+/*a.global_report {position: fixed; width: 30px; height: 30px; overflow: hidden; text-decoration: none; background-color: #e1e9ec; background-image: url('/i/gr.png'); background-repeat: no-repeat;}*/
 a.global_report {background-position: 0 0;}
 a.global_report:hover {background-position: 0 -30px;}
 
@@ -1285,6 +1280,10 @@ a.global_report:hover {background-position: 0 -30px;}
 
 
 
+/* Scrolltop */
+#scrolltop {display: none; position: fixed; bottom: 20px; right: 40px; font-size: 16px; padding: 3px 8px 3px 8px; cursor: pointer; z-index: 1000; color: #eac085; background-color: #5f2302; text-shadow: 0 -1px 1px #381900; border: 1px solid #8c4017; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -moz-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+#scrolltop:hover {color: #f7cf98; background-color: #883407; border: 1px solid #ac5527;}
+
 
 
 
@@ -1308,6 +1307,3 @@ a.global_report:hover {background-position: 0 -30px;}
 .frontrow_item {position: relative; float: left; width: 180px !important; height: 260px; overflow: hidden; cursor: pointer; background-color: #a1bac5; margin: 0 9px 0 10px; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover; box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.40); -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.40); -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.40);}
 
 .page_item_poster {position: relative; float: left; width: 180px !important; height: 260px !important; margin-right: 8px !important; border: 1px solid #ababab; background-color: #f2f2f2; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
-
-
-
