@@ -1287,10 +1287,8 @@ a.global_report:hover {background-position: 0 -30px;}
 
 
 /* Scrolltop */
-#scrolltop {display: none; position: fixed; bottom: 20px; right: 40px; font-size: 16px; padding: 3px 8px 3px 8px; cursor: pointer; z-index: 1000; color: #eac085; background-color: #5f2302; text-shadow: 0 -1px 1px #381900; border: 1px solid #8c4017; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -moz-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
-#scrolltop:hover {color: #f7cf98; background-color: #883407; border: 1px solid #ac5527;}
-
-
+#scrolltop {display: none; position: fixed; bottom: 20px; right: 40px; font-size: 16px; padding: 2px 8px 4px 8px; cursor: pointer; z-index: 1000; color: #464646; background-color: #d9d9d9; text-shadow: 0 1px 1px #ffffff; border: 1px solid #ededed; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -moz-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+#scrolltop:hover {color: #30a6e9; background-color: #ececec; border: 1px solid #f4f4f4;}
 
 
 
