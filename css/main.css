@@ -857,7 +857,7 @@ form .exceeded {color: #ed0000;}
 .page_movie .page_releases_short .platform, .page_movie .page_releases_full .platform {display: none;}
 .page_game .releases_datepicker .months {background-color: #443655;}
 .page_default .releases_datepicker .months {background-color: #394042;}
-.releases_day.past_day {opacity: 0.60; -moz-opacity: 0.60; -khtml-opacity: 0.60; filter: alpha(opacity=60);}
+.releases_day.past_day {/*opacity: 0.60; -moz-opacity: 0.60; -khtml-opacity: 0.60; filter: alpha(opacity=60);*/ margin: 10px 10px 40px 10px !important;}
 
 
 /* Datepicker */
@@ -1246,7 +1246,7 @@ div.button_years_down, div.years_block_down {cursor: default; display: inline-bl
 
 
 /* Global Report */
-a.global_report {position: absolute; right: -30px; top: 70px; width: 30px; height: 30px; overflow: hidden; text-decoration: none; background-color: #e1e9ec; background-image: url('/i/gr.png'); background-repeat: no-repeat;}
+a.global_report {position: absolute; right: -30px; top: 70px !important; width: 30px; height: 30px; overflow: hidden; text-decoration: none; background-color: #e1e9ec; background-image: url('/i/gr.png'); background-repeat: no-repeat;}
 /*a.global_report {position: fixed; width: 30px; height: 30px; overflow: hidden; text-decoration: none; background-color: #e1e9ec; background-image: url('/i/gr.png'); background-repeat: no-repeat;}*/
 a.global_report {background-position: 0 0;}
 a.global_report:hover {background-position: 0 -30px;}
