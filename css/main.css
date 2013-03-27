@@ -1293,6 +1293,43 @@ a.global_report:hover {background-position: 0 -30px;}
 
 
 
+/* User quick buttons */
+.row_a,
+.row_b,
+.row_c {position: relative;}
+
+.row_a .userqb,
+.row_b .userqb,
+.row_c .userqb {position: absolute; top: 2px; right: 2px;}
+
+.row_a .userqb .user_rated,
+.row_b .userqb .user_rated,
+.row_c .userqb .user_rated,
+.row_a .userqb .user_faved,
+.row_b .userqb .user_faved,
+.row_c .userqb .user_faved {width: 16px; height: 16px; background-image: url('/i/userqb.png'); background-repeat: no-repeat;}
+
+.row_a .userqb .user_rated,
+.row_b .userqb .user_rated,
+.row_c .userqb .user_rated {background-position: -16px 0;}
+
+.row_a .userqb .user_faved,
+.row_b .userqb .user_faved,
+.row_c .userqb .user_faved {background-position: 0 -16px;}
+
+.row_a .userqb .user_faved.active,
+.row_b .userqb .user_faved.active,
+.row_c .userqb .user_faved.active {background-position: -16px -16px;}
+
+.row_a .userqb .user_faved:hover,
+.row_b .userqb .user_faved:hover,
+.row_c .userqb .user_faved:hover {cursor: pointer; opacity: 0.60; -moz-opacity: 0.60; -khtml-opacity: 0.60; filter: alpha(opacity=60);}
+
+
+
+
+
+
 
 /* Live server quick fixes */
 
