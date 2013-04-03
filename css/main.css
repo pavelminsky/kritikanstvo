@@ -112,7 +112,7 @@ a.button_add:active, a.button_add_down {cursor: default; border-top: 1px solid #
 .titles_list li {position: relative; min-height: 90px; padding-bottom: 8px; margin: 10px 0 10px 0; border-bottom: 1px solid #e0e0e0;}
 .titles_list h4 {cursor: default; position: absolute; top: 0; left: 0; width: 40px; height: 38px; overflow: hidden; font-size: 18px; font-weight: normal; line-height: 40px; text-align: center; text-decoration: none;}
 .titles_list .cover {position: absolute; top: 10px; left: 30px; width: 48px; height: 68px; border: 1px solid #e0e0e0; background-color: #e0e0e0; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
-.titles_list h2 {display: block; padding: 10px 0 2px 88px; font-size: 15px; font-weight: normal;}
+.titles_list h2 {display: block; padding: 10px 0 2px 88px; margin-right: 30px; font-size: 15px; font-weight: normal;}
 .titles_list p {display: block; padding: 2px 0 2px 88px; font-size: 11px; color: #474d4f;}
 .titles_list p a, .titles_list p a:visited {color: #7e9ca6;}
 .titles_list p a:hover {color: #6ab3cb;}
@@ -685,7 +685,7 @@ textarea {width: 634px; height: 194px; resize: none; overflow-y: hidden; vertica
 .parent_list_short ul li.row_a {background-color: #f0f3f3;}
 .parent_list_short ul li.row_b {background-color: #ffffff;}
 
-.parent_list ul li h2 {display: block; padding: 0 14px 2px 74px; font-size: 15px; font-weight: normal;}
+.parent_list ul li h2 {display: block; padding: 0 14px 2px 74px; margin-right: 30px; font-size: 15px; font-weight: normal;}
 .parent_list_short ul li h2 {display: block; padding: 0 14px 2px 38px; font-size: 12px; line-height: 14px; font-weight: normal;}
 
 .parent_list ul li h4 {position: absolute; top: 0; left: 0; width: 32px; height: 30px; cursor: default; overflow: hidden; font-size: 16px; font-weight: normal; line-height: 32px; text-align: center; text-decoration: none;}
@@ -701,14 +701,14 @@ textarea {width: 634px; height: 194px; resize: none; overflow-y: hidden; vertica
 .parent_list_short ul li i {display: block; padding: 0 0 2px 38px; font-size: 11px; color: #576165; line-height: 11px;}
 .parent_list ul li u, .parent_list_short ul li u {display: block; color: #92999c; text-decoration: none;}
 
-.parent_list div.parent_list_pos {position: absolute; top: -5px; right: 0px; text-align: right; font-size: 10px; color: #c1cdd5;}
+.parent_list div.parent_list_pos {position: absolute; bottom: 5px; right: 7px; text-align: right; font-size: 10px; color: #c1cdd5;}
 .parent_list_short div.subhd {margin: 14px 0 2px 43px; font-size: 16px; color: #3c3c3c;}
 
 .parent_list div.parent_list_box {cursor: default; position: absolute; top: 0px; left: -10px; width: 64px; overflow: hidden; padding: 4px 0 1px 0; margin: 0; font-size: 14px; font-weight: normal; line-height: 12px; text-align: center; text-decoration: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; color: #8e601c; text-shadow: 0 1px 1px #fffdf2; border-bottom: 1px solid #f7e3c0; background-color: #f0de78; background: #f0de78; background: -moz-linear-gradient(top,  #f1e28e 0%, #fff8b0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e28e), color-stop(100%,#fff8b0)); background: -webkit-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: -o-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: -ms-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: linear-gradient(to bottom,  #f1e28e 0%,#fff8b0 100%);}
 .parent_list div.parent_list_box span {display: block; font-size: 10px;}
 
-.parent_list span.parent_list_important {display: inline-block; padding: 2px 7px 1px 7px; margin: 1px 0 1px -7px; color: #333333; font-size: 11px; -webkit-border-radius: 0 8px 8px 0; -moz-border-radius: 0 8px 8px 0; border-radius: 0 8px 8px 0; color: #224a5b; text-shadow: 0 1px 1px #f3faff; border-bottom: 1px solid #b9d0d8; background-color: #c9dade; background: #c9dade; background: -moz-linear-gradient(top,  #bdd4db 0%, #ebf3f5 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdd4db), color-stop(100%,#ebf3f5)); background: -webkit-linear-gradient(top,  #bdd4db 0%,#ebf3f5 100%); background: -o-linear-gradient(top,  #bdd4db 0%,#ebf3f5 100%); background: -ms-linear-gradient(top,  #bdd4db 0%,#ebf3f5 100%); background: linear-gradient(to bottom,  #bdd4db 0%,#ebf3f5 100%);}
-.parent_list span.parent_list_important_box {display: inline-block; padding: 2px 7px 1px 7px; margin: 1px 0 1px -7px; color: #333333; font-size: 11px; -webkit-border-radius: 0 8px 8px 0; -moz-border-radius: 0 8px 8px 0; border-radius: 0 8px 8px 0; color: #8e601c; text-shadow: 0 1px 1px #fffdf2; border-bottom: 1px solid #f7e3c0; background-color: #f0de78; background: #f0de78; background: -moz-linear-gradient(top,  #f1e28e 0%, #fff8b0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e28e), color-stop(100%,#fff8b0)); background: -webkit-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: -o-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: -ms-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: linear-gradient(to bottom,  #f1e28e 0%,#fff8b0 100%);}
+.parent_list span.parent_list_important {display: inline-block; padding: 2px 7px 1px 7px; margin: 1px 30px 1px -7px; color: #333333; font-size: 11px; -webkit-border-radius: 0 8px 8px 0; -moz-border-radius: 0 8px 8px 0; border-radius: 0 8px 8px 0; color: #224a5b; text-shadow: 0 1px 1px #f3faff; border-bottom: 1px solid #b9d0d8; background-color: #c9dade; background: #c9dade; background: -moz-linear-gradient(top,  #bdd4db 0%, #ebf3f5 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdd4db), color-stop(100%,#ebf3f5)); background: -webkit-linear-gradient(top,  #bdd4db 0%,#ebf3f5 100%); background: -o-linear-gradient(top,  #bdd4db 0%,#ebf3f5 100%); background: -ms-linear-gradient(top,  #bdd4db 0%,#ebf3f5 100%); background: linear-gradient(to bottom,  #bdd4db 0%,#ebf3f5 100%);}
+.parent_list span.parent_list_important_box {display: inline-block; padding: 2px 7px 1px 7px; margin: 1px 30px 1px -7px; color: #333333; font-size: 11px; -webkit-border-radius: 0 8px 8px 0; -moz-border-radius: 0 8px 8px 0; border-radius: 0 8px 8px 0; color: #8e601c; text-shadow: 0 1px 1px #fffdf2; border-bottom: 1px solid #f7e3c0; background-color: #f0de78; background: #f0de78; background: -moz-linear-gradient(top,  #f1e28e 0%, #fff8b0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e28e), color-stop(100%,#fff8b0)); background: -webkit-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: -o-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: -ms-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: linear-gradient(to bottom,  #f1e28e 0%,#fff8b0 100%);}
 
 
 
@@ -1294,14 +1294,22 @@ a.global_report:hover {background-position: 0 -30px;}
 
 
 /* User quick buttons */
+.titles_list,
+.parent_list,
 .row_a,
 .row_b,
 .row_c {position: relative;}
 
+.titles_list .userqb,
+.parent_list .userqb,
 .row_a .userqb,
 .row_b .userqb,
 .row_c .userqb {position: absolute; top: 2px; right: 2px;}
 
+.titles_list .userqb .user_rated,
+.parent_list .userqb .user_rated,
+.titles_list .userqb .user_faved,
+.parent_list .userqb .user_faved,
 .row_a .userqb .user_rated,
 .row_b .userqb .user_rated,
 .row_c .userqb .user_rated,
@@ -1309,21 +1317,33 @@ a.global_report:hover {background-position: 0 -30px;}
 .row_b .userqb .user_faved,
 .row_c .userqb .user_faved {width: 16px; height: 16px; background-image: url('/i/userqb.png'); background-repeat: no-repeat;}
 
+.titles_list .userqb .user_rated,
+.parent_list .userqb .user_rated,
 .row_a .userqb .user_rated,
 .row_b .userqb .user_rated,
 .row_c .userqb .user_rated {background-position: -16px 0;}
 
+.titles_list .userqb .user_faved,
+.parent_list .userqb .user_faved,
 .row_a .userqb .user_faved,
 .row_b .userqb .user_faved,
 .row_c .userqb .user_faved {background-position: 0 -16px;}
 
+.titles_list .userqb .user_faved.active,
+.parent_list .userqb .user_faved.active,
 .row_a .userqb .user_faved.active,
 .row_b .userqb .user_faved.active,
 .row_c .userqb .user_faved.active {background-position: -16px -16px;}
 
+.titles_list .userqb .user_faved:hover,
+.parent_list .userqb .user_faved:hover,
 .row_a .userqb .user_faved:hover,
 .row_b .userqb .user_faved:hover,
 .row_c .userqb .user_faved:hover {cursor: pointer; opacity: 0.60; -moz-opacity: 0.60; -khtml-opacity: 0.60; filter: alpha(opacity=60);}
+
+
+
+
 
 
 

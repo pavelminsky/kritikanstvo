@@ -191,6 +191,7 @@ changeYear: true
 				<h2><a href="movie.htm">Хоббит: Нежданное путешествие</a></h2>
 				<p>12 рецензий</p>
 				<b>Оценка читателей:<span class="users_rating_good">92</span></b>
+				<div class="userqb"><div class="user_rated" title="Ваша оценка: 40%">&nbsp;</div><div class="user_faved active" title="Удалить из избранного">&nbsp;</div></div>
 				</li>
 				<li class="site_rating_average">
 				<a href="movie.htm"><div class="cover" style="background-image: url('temp/poster2.jpg');"></div></a><h4>65</h4>
@@ -198,6 +199,7 @@ changeYear: true
 				<p><a href="#">боевик</a>, <a href="#">триллер</a></p>
 				<p>4 рецензии</p>
 				<b>Оценка читателей:<span class="users_rating_average">69</span></b>
+				<div class="userqb"><div class="user_rated" title="Ваша оценка: 40%">&nbsp;</div><div class="user_faved" title="Добавить в избранное">&nbsp;</div></div>
 				</li>
 				<li class="site_rating_bad">
 				<a href="movie.htm"><div class="cover" style="background-image: url('temp/poster3.jpg');"></div></a><h4>49</h4>
@@ -312,6 +314,7 @@ changeYear: true
 				<p><a href="#">PC</a>, <a href="#">Xbox 360</a>, <a href="#">PS3</a></p>
 				<p>30 рецензий</p>
 				<b>Оценка читателей:<span class="users_rating_good">73</span></b>
+				<div class="userqb"><div class="user_rated" title="Ваша оценка: 40%">&nbsp;</div><div class="user_faved active" title="Удалить из избранного">&nbsp;</div></div>
 				</li>
 				<li class="site_rating_none">
 				<a href="#"><div class="cover" style="background-image: url('temp/poster7.jpg');"></div></a><h4>&minus;</h4>
