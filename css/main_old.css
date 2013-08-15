@@ -1,11 +1,5 @@
 /* Reset + fixes */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, img, b, i, ol, ul, li, fieldset, form, input, dl, dt, dd {padding: 0; margin: 0; border: 0; font-family: Arial, sans-serif; vertical-align: baseline; word-wrap: break-word;
-	
--webkit-text-size-adjust: 100%;
--moz-text-size-adjust: 100%;
--ms-text-size-adjust: 100%;
-text-size-adjust: 100%;
-}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, img, b, i, ol, ul, li, fieldset, form, input, dl, dt, dd {padding: 0; margin: 0; border: 0; font-family: Arial, sans-serif; vertical-align: baseline; word-wrap: break-word;}
 ul {list-style-type: none;}
 i {font-style: normal;}
 ::selection {color: #ffffff; background: #9dabb3;}
@@ -118,7 +112,7 @@ a.button_add:active, a.button_add_down {cursor: default; border-top: 1px solid #
 .titles_list li {position: relative; min-height: 90px; padding-bottom: 8px; margin: 10px 0 10px 0; border-bottom: 1px solid #e0e0e0;}
 .titles_list h4 {cursor: default; position: absolute; top: 0; left: 0; width: 40px; height: 38px; overflow: hidden; font-size: 18px; font-weight: normal; line-height: 40px; text-align: center; text-decoration: none;}
 .titles_list .cover {position: absolute; top: 10px; left: 30px; width: 48px; height: 68px; border: 1px solid #e0e0e0; background-color: #e0e0e0; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
-.titles_list h2 {display: block; padding: 10px 0 2px 88px; margin-right: 30px; font-size: 15px; font-weight: normal;}
+.titles_list h2 {display: block; padding: 10px 0 2px 88px; font-size: 15px; font-weight: normal;}
 .titles_list p {display: block; padding: 2px 0 2px 88px; font-size: 11px; color: #474d4f;}
 .titles_list p a, .titles_list p a:visited {color: #7e9ca6;}
 .titles_list p a:hover {color: #6ab3cb;}
@@ -402,7 +396,7 @@ a.item_tag_platform:hover {opacity: 0.80; -moz-opacity: 0.80; -khtml-opacity: 0.
 .page_item_user_rating p {padding: 0 0 2px 1px;}
 
 .page_item_stills, .page_item_videos {float: left; position: relative; width: 180px; height: 50px; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
-.page_item_stills {margin: 2px 10px 10px 0;}
+.page_item_stills {margin: 0 10px 10px 0;}
 .page_item_videos {margin: 0 0 10px 0;}
 .page_item_stills b, .page_item_videos b {position: absolute; bottom: 0; left: 0; width: 100%; height: 32px; padding-top: 18px; text-align: center;}
 .page_item_stills a span, .page_item_videos a span {border-bottom: 1px dotted #ffffff;}
@@ -415,17 +409,9 @@ a.item_tag_platform:hover {opacity: 0.80; -moz-opacity: 0.80; -khtml-opacity: 0.
 .page_item_info dl {padding-top: 5px; margin-bottom: 5px;}
 .page_item_info dt {padding-bottom: 1px; font-size: 11px; color: #727677;}
 .page_item_info dd {padding-bottom: 5px; font-size: 12px; color: #3c3c3c;}
-.page_item_info i {display: block; padding: 7px 0 7px 0; font-size: 11px; color: #727677; font-style: italic;}
+.page_item_info i {display: block; padding: 2px 0 7px 0; font-size: 11px; color: #727677; font-style: italic;}
 .page_item_story {padding-top: 10px; margin-top: 10px; font-size: 11px; color: #727677; border-top: 1px solid #e0e0e0;}
 .page_item_story p {padding-bottom: 8px;}
-
-.page_item_info_saleshd, .page_item_info_sales {display: inline-block; height: 18px; font-size: 11px; line-height: 18px;}
-.page_item_info_saleshd {margin-top: 6px; color: #aa916b; background-color: #faf7ef;}
-.page_item_info_sales {margin-bottom: 6px; color: #8c6b3b; border-top: 1px solid #f6eed2;}
-
-.page_item_info_saleshd li, .page_item_info_sales li {display: inline-block; width: 65px; text-align: center;}
-.page_item_info_saleshd li.first, .page_item_info_sales li.first {width: 130px; color: #3c3c3c;}
-
 
 .page_movie .item_reviews_list_header h2 {background-color: #3c5e68;}
 .page_game .item_reviews_list_header h2 {background-color: #433553;}
@@ -529,22 +515,18 @@ span.wisdom_grade_inset {display: inline-block; width: 14px; height: 14px; margi
 
 .page_critic_photo {position: absolute; left: 55px; top: 0; z-index: 2; height: 100px; width: 100px; border: 1px solid #394042; background-color: #f2f2f2; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -o-background-size: cover; -moz-background-size: cover; background-size: cover;}
 
-.page_critic_info {margin-top: 20px; margin-bottom: 30px;}
+.page_critic_info {margin-top: 20px; margin-bottom: 40px;}
 .rate_critic {margin-left: 20px; text-align: center;}
 .page_critic_timeline {float: left; padding: 9px 30px 0 20px; width: 460px;}
 .page_critic_timeline b {font-weight: normal;}
 .page_critic_timeline div {padding-bottom: 12px;}
 .page_critic_aka {font-size: 12px; color: #333333;}
-.page_critic_empl b {font-size: 12px; color: #333333;}
-.page_critic_empl .count {font-size: 12px;}
+.page_critic_empl b {font-size: 14px; color: #333333;}
 .page_critic_empl p {padding-bottom: 8px; font-size: 12px; color: #6b7072;}
 .page_critic_bio {font-size: 11px; color: #6b7072;}
 .page_critic_bio p {padding-bottom: 8px;}
 .page_critic_timeline span {display: block; padding-bottom: 2px; font-size: 11px; color: #6b7072;}
-.page_critic_onepub {clear: both; width: 700px; padding: 0 0 20px 220px; font-size: 20px; line-height: 24px;}
-.page_critic_onepub sup a {padding-left: 5px; font-size: 14px; line-height: 14px; text-decoration: none; white-space: nowrap;}
-.page_critic_onepub sup a:visited {color: #006e93;}
-.page_critic_onepub sup a:hover {color: #008fbf; text-decoration: underline;}
+
 
 
 
@@ -703,7 +685,7 @@ textarea {width: 634px; height: 194px; resize: none; overflow-y: hidden; vertica
 .parent_list_short ul li.row_a {background-color: #f0f3f3;}
 .parent_list_short ul li.row_b {background-color: #ffffff;}
 
-.parent_list ul li h2 {display: block; padding: 0 14px 2px 74px; margin-right: 30px; font-size: 15px; font-weight: normal;}
+.parent_list ul li h2 {display: block; padding: 0 14px 2px 74px; font-size: 15px; font-weight: normal;}
 .parent_list_short ul li h2 {display: block; padding: 0 14px 2px 38px; font-size: 12px; line-height: 14px; font-weight: normal;}
 
 .parent_list ul li h4 {position: absolute; top: 0; left: 0; width: 32px; height: 30px; cursor: default; overflow: hidden; font-size: 16px; font-weight: normal; line-height: 32px; text-align: center; text-decoration: none;}
@@ -719,14 +701,14 @@ textarea {width: 634px; height: 194px; resize: none; overflow-y: hidden; vertica
 .parent_list_short ul li i {display: block; padding: 0 0 2px 38px; font-size: 11px; color: #576165; line-height: 11px;}
 .parent_list ul li u, .parent_list_short ul li u {display: block; color: #92999c; text-decoration: none;}
 
-.parent_list div.parent_list_pos {position: absolute; bottom: 5px; right: 7px; text-align: right; font-size: 10px; color: #c1cdd5;}
+.parent_list div.parent_list_pos {position: absolute; top: -5px; right: 0px; text-align: right; font-size: 10px; color: #c1cdd5;}
 .parent_list_short div.subhd {margin: 14px 0 2px 43px; font-size: 16px; color: #3c3c3c;}
 
 .parent_list div.parent_list_box {cursor: default; position: absolute; top: 0px; left: -10px; width: 64px; overflow: hidden; padding: 4px 0 1px 0; margin: 0; font-size: 14px; font-weight: normal; line-height: 12px; text-align: center; text-decoration: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; color: #8e601c; text-shadow: 0 1px 1px #fffdf2; border-bottom: 1px solid #f7e3c0; background-color: #f0de78; background: #f0de78; background: -moz-linear-gradient(top,  #f1e28e 0%, #fff8b0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e28e), color-stop(100%,#fff8b0)); background: -webkit-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: -o-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: -ms-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: linear-gradient(to bottom,  #f1e28e 0%,#fff8b0 100%);}
 .parent_list div.parent_list_box span {display: block; font-size: 10px;}
 
-.parent_list span.parent_list_important {display: inline-block; padding: 2px 7px 1px 7px; margin: 1px 30px 1px -7px; color: #333333; font-size: 11px; -webkit-border-radius: 0 8px 8px 0; -moz-border-radius: 0 8px 8px 0; border-radius: 0 8px 8px 0; color: #224a5b; text-shadow: 0 1px 1px #f3faff; border-bottom: 1px solid #b9d0d8; background-color: #c9dade; background: #c9dade; background: -moz-linear-gradient(top,  #bdd4db 0%, #ebf3f5 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdd4db), color-stop(100%,#ebf3f5)); background: -webkit-linear-gradient(top,  #bdd4db 0%,#ebf3f5 100%); background: -o-linear-gradient(top,  #bdd4db 0%,#ebf3f5 100%); background: -ms-linear-gradient(top,  #bdd4db 0%,#ebf3f5 100%); background: linear-gradient(to bottom,  #bdd4db 0%,#ebf3f5 100%);}
-.parent_list span.parent_list_important_box {display: inline-block; padding: 2px 7px 1px 7px; margin: 1px 30px 1px -7px; color: #333333; font-size: 11px; -webkit-border-radius: 0 8px 8px 0; -moz-border-radius: 0 8px 8px 0; border-radius: 0 8px 8px 0; color: #8e601c; text-shadow: 0 1px 1px #fffdf2; border-bottom: 1px solid #f7e3c0; background-color: #f0de78; background: #f0de78; background: -moz-linear-gradient(top,  #f1e28e 0%, #fff8b0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e28e), color-stop(100%,#fff8b0)); background: -webkit-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: -o-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: -ms-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: linear-gradient(to bottom,  #f1e28e 0%,#fff8b0 100%);}
+.parent_list span.parent_list_important {display: inline-block; padding: 2px 7px 1px 7px; margin: 1px 0 1px -7px; color: #333333; font-size: 11px; -webkit-border-radius: 0 8px 8px 0; -moz-border-radius: 0 8px 8px 0; border-radius: 0 8px 8px 0; color: #224a5b; text-shadow: 0 1px 1px #f3faff; border-bottom: 1px solid #b9d0d8; background-color: #c9dade; background: #c9dade; background: -moz-linear-gradient(top,  #bdd4db 0%, #ebf3f5 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdd4db), color-stop(100%,#ebf3f5)); background: -webkit-linear-gradient(top,  #bdd4db 0%,#ebf3f5 100%); background: -o-linear-gradient(top,  #bdd4db 0%,#ebf3f5 100%); background: -ms-linear-gradient(top,  #bdd4db 0%,#ebf3f5 100%); background: linear-gradient(to bottom,  #bdd4db 0%,#ebf3f5 100%);}
+.parent_list span.parent_list_important_box {display: inline-block; padding: 2px 7px 1px 7px; margin: 1px 0 1px -7px; color: #333333; font-size: 11px; -webkit-border-radius: 0 8px 8px 0; -moz-border-radius: 0 8px 8px 0; border-radius: 0 8px 8px 0; color: #8e601c; text-shadow: 0 1px 1px #fffdf2; border-bottom: 1px solid #f7e3c0; background-color: #f0de78; background: #f0de78; background: -moz-linear-gradient(top,  #f1e28e 0%, #fff8b0 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e28e), color-stop(100%,#fff8b0)); background: -webkit-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: -o-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: -ms-linear-gradient(top,  #f1e28e 0%,#fff8b0 100%); background: linear-gradient(to bottom,  #f1e28e 0%,#fff8b0 100%);}
 
 
 
@@ -919,17 +901,6 @@ background: linear-gradient(to bottom,  #ffeb67 0%,#e9b500 100%); filter: progid
 .page_releases_short .releases_datepicker .months a.past.active:hover span,
 .page_releases_short .releases_datepicker .months a.active.past:hover span {border: none;}
 .page_releases_short .releases_datepicker .months span.empty {display: inline-block; padding: 0 6px 0 6px; font-size: 13px; line-height: 31px; color: #708a92;}
-
-.page_releases_short .releases_datepicker .months .quarter {margin: 0 0 0 19px;}
-
-.page_releases_short .releases_datepicker .months a.subactive {color: #ffe04d;}
-.page_releases_short .releases_datepicker .months a.subactive span {border-bottom: 1px dotted #ffe04d;}
-.page_releases_short .releases_datepicker .months a.subactive:hover {color: #ffff6e;}
-.page_releases_short .releases_datepicker .months a.subactive:hover span {border-bottom: 1px dotted #ffff6e;}
-.page_releases_short .releases_datepicker .months span.subempty {display: inline-block; padding: 0 6px 0 6px; font-size: 13px; line-height: 31px; color: #9c8e5f;}
-
-
-
 
 /* Days short */
 .page_releases_short .releases_day {position: relative; padding-top: 40px; margin: 10px 10px 60px 10px; background: url('/i/releases_day_bg.png') left top repeat-x; -webkit-border-top-right-radius: 14px; -moz-border-radius-topright: 14px; border-top-right-radius: 14px;}
@@ -1323,22 +1294,14 @@ a.global_report:hover {background-position: 0 -30px;}
 
 
 /* User quick buttons */
-.titles_list,
-.parent_list,
 .row_a,
 .row_b,
 .row_c {position: relative;}
 
-.titles_list .userqb,
-.parent_list .userqb,
 .row_a .userqb,
 .row_b .userqb,
 .row_c .userqb {position: absolute; top: 2px; right: 2px;}
 
-.titles_list .userqb .user_rated,
-.parent_list .userqb .user_rated,
-.titles_list .userqb .user_faved,
-.parent_list .userqb .user_faved,
 .row_a .userqb .user_rated,
 .row_b .userqb .user_rated,
 .row_c .userqb .user_rated,
@@ -1346,33 +1309,21 @@ a.global_report:hover {background-position: 0 -30px;}
 .row_b .userqb .user_faved,
 .row_c .userqb .user_faved {width: 16px; height: 16px; background-image: url('/i/userqb.png'); background-repeat: no-repeat;}
 
-.titles_list .userqb .user_rated,
-.parent_list .userqb .user_rated,
 .row_a .userqb .user_rated,
 .row_b .userqb .user_rated,
 .row_c .userqb .user_rated {background-position: -16px 0;}
 
-.titles_list .userqb .user_faved,
-.parent_list .userqb .user_faved,
 .row_a .userqb .user_faved,
 .row_b .userqb .user_faved,
 .row_c .userqb .user_faved {background-position: 0 -16px;}
 
-.titles_list .userqb .user_faved.active,
-.parent_list .userqb .user_faved.active,
 .row_a .userqb .user_faved.active,
 .row_b .userqb .user_faved.active,
 .row_c .userqb .user_faved.active {background-position: -16px -16px;}
 
-.titles_list .userqb .user_faved:hover,
-.parent_list .userqb .user_faved:hover,
 .row_a .userqb .user_faved:hover,
 .row_b .userqb .user_faved:hover,
 .row_c .userqb .user_faved:hover {cursor: pointer; opacity: 0.60; -moz-opacity: 0.60; -khtml-opacity: 0.60; filter: alpha(opacity=60);}
-
-
-
-
 
 
 
